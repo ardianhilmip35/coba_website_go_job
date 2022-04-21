@@ -67,7 +67,6 @@
                 <p class="mt-3" style="text-align: center; color: #021668;">Or</p>
                 <div class="d-flex justify-content-center">
                 <button class="btn" style="background-color: #021668; color:#ffff; width:100%" type="submit" name="login"><img src="/img/google.png" alt="" width="20px">   Sign In With Google
-              
                 </button>
               </div>
               <div class="d-flex justify-content-center">
