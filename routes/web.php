@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('admin.login');
 });
+Route::get('/lowongan', function () {
+    return view('user.lowongan_kerja_pelamar');
+});
