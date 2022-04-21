@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('login');
 });
+
+Route::get('/lowongan', function () {
+    return view('user.lowongan_kerja_pelamar');
+});
