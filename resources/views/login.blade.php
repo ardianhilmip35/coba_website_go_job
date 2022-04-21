@@ -1,4 +1,4 @@
-@extends('navbar.main')
+@extends('navfoot.main')
 
  <!-- Navbar -->
  <!-- <nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background-color: #021668">

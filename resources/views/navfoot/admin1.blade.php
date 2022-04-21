@@ -24,71 +24,68 @@
 <body style="background-color: #F1F1F1">
 
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #021668;">
-  <div class="container-fluid">
-  <img src="/img/LOGO 1.png" alt="" width="160px" class="d-inline-block align-text-top pe-3 ps-2 mb-1" />
+    <div class="container-fluid">
+    <img src="/img/LOGO 1.png" alt="" width="160px" class="d-inline-block align-text-top pe-3 ps-2 mb-1" />
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="d-flex ms-auto mb-2 mb-lg-0">
-            <button class="btn btn-outline-success ms-auto m-1" type="button">Main button</button>
-            <button class="btn btn-outline-success ms-auto m-1" type="button">Main button</button>
-            <button class="btn btn-outline-success ms-auto m-1" type="button">Main button</button>
-        </form>
-    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-            <a class="nav-link active fw-bold m-1 rounded text-center"  style="background-color: #D7E9F7; color:#000; " aria-current="page" href="#">Masuk</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active fw-bold m-1 rounded text-center"  style="background-color: #C81F1F; color:#ffff" aria-current="page" href="#">Mendaftar</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active fw-bold m-1 text-center rounded"  style="background-color: #ffff; color:#000" aria-current="page" href="#">Untuk Kandidat</a>
-        </li>
-    </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            {{-- <a class="nav-link active fw-bold m-1 rounded text-center"  style="background-color: #D7E9F7; color:#000;" aria-current="page" href="#">Masuk</a> --}}
+                <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="#">
+                    <button class="btn me-md-2 fw-bold m-1" type="button" style="background-color: #D7E9F7; color:#000;">Masuk</button>
+                </a>
+            </li>
+            <li class="nav-item">
+            {{-- <a class="nav-link active fw-bold m-1 rounded text-center btn-outline-success"  style="background-color: #C81F1F; color:#ffff" aria-current="page" href="#">Mendaftar</a> --}}
+                <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="#">
+                    <button class="btn me-md-2 fw-bold m-1" type="button" style="background-color: #C81F1F; color:#ffff;">Mendaftar</button>
+                </a>
+            </li>
+            <li class="nav-item">
+            {{-- <a class="nav-link active fw-bold m-1 text-center rounded"  style="background-color: #ffff; color:#000" aria-current="page" href="#">Untuk Kandidat</a> --}}
+                <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="#">
+                    <button class="btn me-md-2 fw-bold m-1" type="button" style="background-color: #ffff; color:#000;">Untuk Kandidat</button>
+                </a>
+            </li>
+        </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
 <div class="container mt-6">
-
     @yield('content')
 </div>
-<!-- Copyright -->
 
-
-<!-- <footer class="text-center text-white mt-6 fixed-bottom" style="background-color: #021668">
-    <div class="container ">
-        <div class="row d-flex justify-content-between">
-            <div class="col-md-4">
-                <img src="/img/Logo.png" alt="logo" width="50%">
-                </div>
-                <div class="col-md-5">
-                    <div class="row">
-                        <div class="col-md-12">
-                            kunjungi Media Sosial Kami Di
-                        </div>
-                    </div>
-                    <ul class="d-flex justify-content-center list-style-none" style="list-style:none">
-                        <li><a href=""><img src="/img/ig.png" width="36px" alt="ig"></a></li>
-                        <li><a href=""><img src="/img/twitter.png" width="40px" alt="ig"></a></li>
-                        <li><a href=""><img src="/img/linkedin.png" width="32px" alt="ig"></a></li>
-                        <li><a href=""><img src="/img/youtube.png" width="40px" alt="ig"></a></li>
-                    </ul>
-                    </ul>
-                    <div class="row">
-                        perlu bantuan ?
-                    </div>
-                </div>
-            </div>
+{{-- Footer --}}
+    <div class="container-fluid" style="background-color: #021668">
+        <footer class="py-5">
             <div class="row">
-                <div class="col-md-12">
-                    <p class="lead">Produced by Newbie Team. Since @2022 <span style="color: #021668">Go Job</span></p>
-                </div>
+              <div class="col-3 justify-content-start">
+                <img src="/img/Logo.png" alt="" width="160px" class="d-inline-block align-text-top pe-3 ps-2 mb-1" />
+              </div>
+        
+              <div class="col-3 d-flex justify-content-end ms-auto me-2">
+                <form>
+                  <h5 class="text-light fw-bold">Kunjungi Media Sosial Kami Di</h5>
+                  <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"></a></li>
+                  </ul>
+                </form>
+              </div>
             </div>
-        </div>
-    </footer> -->
-        <!-- akhir footer -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+              <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+              
+            </div>
+          </footer>
+    </div>
+    {{-- Akhir Footer --}}
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
