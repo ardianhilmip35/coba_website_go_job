@@ -37,33 +37,44 @@
       <form method="POST" action="">
         <div class="container mt-6">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-7">
               <img src="/img/image_login.png" alt="img" class="img-fluid p-6 m-6">
             </div>
-              <div class="col-lg-6 p-6">
-              <div class="container mt-4 p-4 shadow" style="background-color:#ffff ;">
-              <h3 class="text-center mb-3 fw-bold" style="color: #021668;">Please Login Your Account</h3>
-              <div class="form-floating mb-4">
+              <div class="col-lg-5 p-6">
+                <div class="container mt-4 ps-5 p-5 shadow m-auto" style="background-color:#ffff ;width:auto;">
+                  <h4 class="text-center mb-3 fw-bold" style="color: #021668;">Please Login Your Account</h4>
+              <div class="form-floating mb-4 ps-4 pe-4">
                 <input type="email" name="user" class="form-control" id="floatingInput" placeholder="email" style="border: 3px solid #021668; background-color: #f1f1f1" />
-                <label for="floatingInput" style="padding-left: 50px; color: #000">Email</label>
+                <label for="floatingInput" style="padding-left: 40px; color: #000;">Email</label>
               </div>
-              <div class="form-floating mb-3">
+              <div class="form-floating mb-3 ps-4 pe-4">
                 <input type="password" name="pass" class="form-control" id="floatingPassword" placeholder="Password" style="border: 3px solid #021668; background-color: #f1f1f1" />
-                <label for="floatingPassword" style="padding-left: 50px; color: #000">Password</label>
+                <label for="floatingPassword" style="padding-left: 40px; color: #000">Password</label>
               </div>
-              <div class="d-flex justify-content-between">
-              <div class="form-check" style="padding-left: 35px;">
-                <input class="form-check-input" style="border: 3px solid #021668;" type="checkbox" value="" id="flexCheckChecked" name="remember"/>
-                <label class="form-check-label" style="color: #021668;" for="flexCheckChecked"> Remember Me </label>
+              <div class="d-flex justify-content-between ps-4 pe-4">
+              <div class="form-check" style="padding-left: 25px;">
+                <input class="form-check-input" style="border: 2px solid #021668;" type="checkbox" value="" id="flexCheckChecked" name="remember"/>
+                <label class="form-check-label" style="color: #021668;" for="flexCheckChecked">Remember Me </label>
               </div>
               <div class="">
                 <a href="#" style="color: #021668;">Forgot Password?</a>
               </div>
               </div>
-                <button class="btn mt-4" style="background-color: #021668; color:#ffff; width:100%" type="submit" name="login">Login</button>
-                <button class="btn mt-4" style="background-color: #021668; color:#ffff; width:100%" type="submit" name="login">Sign In With Google
+              <div class="container ps-4 pe-4 m-auto">
+                <div class="d-flex justify-content-center">
+                  <button class="btn mt-3" style="background-color: #021668; color:#ffff; width:100%" type="submit" name="login">Login</button>
+                </div>
+                <p class="mt-3" style="text-align: center; color: #021668;">Or</p>
+                <div class="d-flex justify-content-center">
+                <button class="btn" style="background-color: #021668; color:#ffff; width:100%" type="submit" name="login">Sign In With Google
               <img src="/img/google.com" alt="">
                 </button>
+              </div>
+              <div class="d-flex justify-content-center">
+                <p style="font-size: 12px; color: #021668;">Very easy and fast. We will not upload anything without your permission</p>
+              </div>
+                <p style="text-align: center; color: #021668;">Don’t have an account? <a href="" style="font-weight: bold;">Register!</a></p>
+              </div>
               </div>
               
             </div>

@@ -42,9 +42,7 @@
         <li class="nav-item">
           <a class="nav-link active"  style="color: #ffff;" aria-current="page" href="#">Masuk</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled"  style="color: #ffff;" aria-current="page" href="#">|</a>
-        </li>
+       
         <li class="nav-item">
           <a class="nav-link active"  style="color: #ffff;" aria-current="page" href="#">Mendaftar</a>
         </li>
@@ -60,7 +58,7 @@
 
     @yield('content')
 </div>
-<!-- Copyright -->
+<!--Footer -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
   <div class="container-fluid">
@@ -97,7 +95,7 @@
       </form>
     </div>
   </div>
-</nav>
+</nav> -->
 <!-- <footer class="text-center text-white mt-6 fixed-bottom" style="background-color: #021668">
     <div class="container ">
         <div class="row d-flex justify-content-between">
@@ -118,13 +116,13 @@
                     </ul>
                     </ul>
                     <div class="row">
-                        perlu bantuan ?
+                        perlu bantuan ? Kunjungi Online Help Central Kami
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p class="lead">Produced by Newbie Team. Since @2022 <span style="color: #021668">Go Job</span></p>
+                    <p class="lead" style="font-size: small;">Produced by Newbie Team. Since @2022</p>
                 </div>
             </div>
         </div>
