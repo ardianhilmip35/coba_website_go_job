@@ -44,9 +44,6 @@
           <a class="nav-link active"  style="color: #ffff;" aria-current="page" href="#">Masuk</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled"  style="color: #ffff;" aria-current="page" href="#">|</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link active"  style="color: #ffff;" aria-current="page" href="#">Mendaftar</a>
         </li>
         <li class="nav-item">
