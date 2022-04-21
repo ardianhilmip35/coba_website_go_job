@@ -23,7 +23,6 @@
     </head>
 <body style="background-color: #F1F1F1">
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #021668;">
   <div class="container-fluid">
   <img src="/img/LOGO 1.png" alt="" width="160px" class="d-inline-block align-text-top pe-3 ps-2 mb-1" />
@@ -43,9 +42,7 @@
         <li class="nav-item">
           <a class="nav-link active"  style="color: #ffff;" aria-current="page" href="#">Masuk</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled"  style="color: #ffff;" aria-current="page" href="#">|</a>
-        </li>
+       
         <li class="nav-item">
           <a class="nav-link active"  style="color: #ffff;" aria-current="page" href="#">Mendaftar</a>
         </li>
@@ -56,15 +53,13 @@
     </div>
   </div>
 </nav>
-<!-- akhir navbar -->
 
 <div class="container mt-6">
-
     @yield('content')
 </div>
-<!-- Copyright -->
+<!--Footer -->
 
-{{-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,76 +94,39 @@
       </form>
     </div>
   </div>
-</nav> --}}
-<!-- {{-- Footer --}}
-      <footer class="text-white mt-6" style="background-color: #021668; height: 17%">
-          <div class="container-fluid">
-              <div class="row d-flex justify-content-between">
-                  <div class="col-md-4" >
-                      <img src="/img/Logo.png" alt="logo" width="35%" style="margin-top: 15px;">
-                  </div>
-                      <div class="col-md-5">
-                          <div class="row">
-                              <div class="col-md-12" style="margin-left: 60%; margin-top: 15px">
-                                  Kunjungi Media Sosial Kami Di
-                              </div>
-                          </div>
-                          <ul class="d-flex justify-content-center list-style-none" style="list-style:none; margin-left: 55%">
-                              <li><a href=""><img src="/img/ig.png" width="50px" alt="ig"></a></li>
-                              <li><a href=""><img src="/img/twitter.png" width="60px" alt="ig"></a></li>
-                              <li><a href=""><img src="/img/linkedin.png" width="46px" alt="ig" style="margin-top: 6px"></a></li>
-                              <li><a href=""><img src="/img/youtube.png" width="60px" alt="ig"></a></li>
-                          </ul>
-                          <!-- <div class="row" style="margin-bottom: 70px">
-                              perlu bantuan ?
-                          </div> -->
-                      <!-- </div>
-              </div>
-                  <div class="row text-center">
-                      <div class="col-md-12">
-                          <p class="lead fs-5 mb-3" >Produced by Newbie Team. Since @2022</p>
-                      </div>
-                  </div>
-          </div>
-      </footer> -->
-      <footer class="text-white pt-5 pb-4" style="background-color: #021668;">
-        <div class="container text-center text-md-left">
-
-        <div class="row text-center text-md-left">
-
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
-          <img src="/img/Logo.png" alt="logo">
-        </div>
-        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto">
-        </div>
-             
-              <div class="col-md-5 col-lg-5 col-xl-5 mx-auto text-end">
-              <h6 class="text-uppercase mb-4 fw-bold text-warning">Kunjungi Media Sosial Kami</h6>
-             
-                          <a href=""><img src="/img/ig.png" width="50px" alt="ig"></a>
-                          <a href=""><img src="/img/twitter.png" width="60px" alt="twitter"></a>
-                          <a href=""><img src="/img/linkedin.png" width="46px" alt="ig" style="margin-top: 6px"></a>
-                          <a href=""><img src="/img/youtube.png" width="60px" alt="ig"></a>
-              <p class="mt-2">
-                <strong>Perlu Bantuan?</strong> Kunjungi Online Help Central Kami
-              </p>
-              </div>
-
-              <hr class="mb-4">
-              <div class="row align-items-center justify-content-center">
-                <div class="col-md-7 col-lg-8 ">
-                  <p>Produced by Newbie Team. Since @2022
-                    <a href="#" style="text-decoration: none;"></a>
-                  </p>
-
+</nav> -->
+<!-- <footer class="text-center text-white mt-6 fixed-bottom" style="background-color: #021668">
+    <div class="container ">
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-4">
+                <img src="/img/Logo.png" alt="logo" width="50%">
                 </div>
-               
-              </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            kunjungi Media Sosial Kami Di
+                        </div>
+                    </div>
+                    <ul class="d-flex justify-content-center list-style-none" style="list-style:none">
+                        <li><a href=""><img src="/img/ig.png" width="36px" alt="ig"></a></li>
+                        <li><a href=""><img src="/img/twitter.png" width="40px" alt="ig"></a></li>
+                        <li><a href=""><img src="/img/linkedin.png" width="32px" alt="ig"></a></li>
+                        <li><a href=""><img src="/img/youtube.png" width="40px" alt="ig"></a></li>
+                    </ul>
+                    </ul>
+                    <div class="row">
+                        perlu bantuan ? Kunjungi Online Help Central Kami
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="lead" style="font-size: small;">Produced by Newbie Team. Since @2022</p>
+                </div>
+            </div>
         </div>
-        </div>
-
-      </footer>
-   <!-- akhir footer -->
+    </footer> -->
+        <!-- akhir footer -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
