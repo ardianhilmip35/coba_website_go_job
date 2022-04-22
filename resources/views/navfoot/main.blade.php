@@ -119,7 +119,7 @@
                               <li><a href=""><img src="/img/linkedin.png" width="46px" alt="ig" style="margin-top: 6px"></a></li>
                               <li><a href=""><img src="/img/youtube.png" width="60px" alt="ig"></a></li>
                           </ul>
-                          <!-- <div class="row" style="margin-bottom: 70px">
+                           <div class="row" style="margin-bottom: 70px">
                               perlu bantuan ?
                           </div> -->
                       <!-- </div>
