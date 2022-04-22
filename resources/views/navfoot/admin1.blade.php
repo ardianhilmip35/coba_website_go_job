@@ -70,9 +70,10 @@
                 <form>
                   <h5 class="text-light fw-bold">Kunjungi Media Sosial Kami Di</h5>
                   <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-dark" href="#"></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"></a></li>
+                    <li ><a href="#"><img src="/img/ig.png" alt="" width="50px" class="d-inline-block align-text-top mb-1 mt-1"/></a></li>
+                    <li class="ms-1"><a href="#"><img src="/img/twitter.png" alt="" width="60px" class="d-inline-block align-text-top mb-2" /></a></li>
+                    <li class=""><a href="#"><img src="/img/youtube.png" alt="" width="60px" class="d-inline-block align-text-top" /></a></li>
+                    <li class=""><a href="#"><img src="/img/linkedin.png" alt="" width="60px" class="d-inline-block align-text-top" /></a></li>
                   </ul>
                 </form>
               </div>
