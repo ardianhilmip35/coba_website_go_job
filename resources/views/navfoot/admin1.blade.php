@@ -23,7 +23,7 @@
     </head>
 <body style="background-color: #F1F1F1">
 
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #021668;">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #021668;">
     <div class="container-fluid">
     <img src="/img/LOGO 1.png" alt="" width="160px" class="d-inline-block align-text-top pe-3 ps-2 mb-1" />
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,32 +59,42 @@
 </div>
 
 {{-- Footer --}}
-    <div class="container-fluid" style="background-color: #021668">
-        <footer class="py-5">
-            <div class="row">
-              <div class="col-3 justify-content-start">
-                <img src="/img/Logo.png" alt="" width="160px" class="d-inline-block align-text-top pe-3 ps-2 mb-1" />
-              </div>
-        
-              <div class="col-3 d-flex justify-content-end ms-auto me-2">
-                <form>
-                  <h5 class="text-light fw-bold">Kunjungi Media Sosial Kami Di</h5>
-                  <ul class="list-unstyled d-flex">
-                    <li ><a href="#"><img src="/img/ig.png" alt="" width="50px" class="d-inline-block align-text-top mb-1 mt-1"/></a></li>
-                    <li class="ms-1"><a href="#"><img src="/img/twitter.png" alt="" width="60px" class="d-inline-block align-text-top mb-2" /></a></li>
-                    <li class=""><a href="#"><img src="/img/youtube.png" alt="" width="60px" class="d-inline-block align-text-top" /></a></li>
-                    <li class=""><a href="#"><img src="/img/linkedin.png" alt="" width="60px" class="d-inline-block align-text-top" /></a></li>
-                  </ul>
-                </form>
-              </div>
-            </div>
-        
-            <div class="d-flex justify-content-between py-4 my-4 border-top">
-              <p>&copy; 2021 Company, Inc. All rights reserved.</p>
-              
-            </div>
-          </footer>
+<footer class="text-white pt-5 pb-4" style="background-color: #021668;">
+    <div class="container text-center text-md-left">
+
+    <div class="row text-center text-md-left">
+
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+      <img src="/img/Logo.png" alt="logo">
     </div>
+    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto">
+    </div>
+         
+          <div class="col-md-5 col-lg-5 col-xl-5 mx-auto text-end">
+          <h6 class="text-uppercase mb-1 fw-bold text-warning">Kunjungi Media Sosial Kami</h6>
+                      <a href=""><img src="/img/ig.png" width="50px" alt="ig"></a>
+                      <a href=""><img src="/img/twitter.png" width="60px" alt="twitter"></a>
+                      <a href=""><img src="/img/linkedin.png" width="46px" alt="ig"></a>
+                      <a href=""><img src="/img/youtube.png" width="60px" alt="ig"></a>
+          <p class="mt-2">
+            <strong>Perlu Bantuan?</strong> <a href="#" style="text-decoration: none">Kunjungi Online Help Central Kami</a>
+          </p>
+          </div>
+
+          <hr class="mb-4">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 col-lg-8 ">
+              <p>Produced by Newbie Team. Since @2022
+                <a href="#" style="text-decoration: none;"></a>
+              </p>
+
+            </div>
+           
+          </div>
+    </div>
+    </div>
+
+  </footer>
     {{-- Akhir Footer --}}
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
