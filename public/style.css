@@ -1,0 +1,103 @@
+.container-background {
+    background-color: #F1F1F1;
+    padding: 10px;
+}
+
+.container-profil {
+    padding: 10px;
+    border: #021668 solid 1.5px;
+    background-color: #FFFFFF;
+    width: 320px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.container-item{
+    padding: 10px;
+    border: #021668 solid 1.5px;
+    background-color: #FFFFFF;
+    width: 320px;
+    height: 400px;
+    display: flex;
+
+}
+
+.container-saran{
+    padding: 10px;
+    background-color: #FFFFFF;
+    width: 800px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-left: -200px;
+
+}
+
+.container-detail{
+    padding: 30px;
+    border: #021668 solid 2px;
+    background-color: #FFFFFF;
+    width: 800px;
+    height: 390px;
+    margin-top: 10px;
+    margin-left: -200px;
+}
+
+#btnitem:hover{
+    background-color: #021668;
+    opacity: 0.7;
+    color: #021668;
+    filter: alpha(opacity=70);
+}
+
+.wrapper{
+    max-height:400px;
+    display: flex;
+    overflow: auto;
+  }
+  
+  .wrapper::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .wrapper .card{
+    background-color: #021668;
+    min-width: 380px;
+    height: 250px;
+    line-height: 150px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 0%;
+  }
+  
+  .img-perusahaan {
+    margin: auto;
+    width: 360px;
+    height: 210px;
+    border-radius: 0%;
+    margin-top: 8px;
+    
+  }
+  
+  .card-img {
+    width: 380px;
+    height: 250px;
+    filter: opacity(60%);
+    border-radius: 0%;
+  }
+  
+  .logo-img {
+    width: 120px;
+    height: 70px;
+    margin-top: -80px;
+  }
+  
+  .bookmarkbtn{
+    background-color: transparent;
+    vertical-align: top;
+    margin-left: 180px;
+    border: transparent;
+  }

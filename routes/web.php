@@ -23,3 +23,9 @@ Route::get('/admin', function () {
 Route::get('/lowongan', function () {
     return view('user.lowongan_kerja_pelamar');
 });
+Route::get('/profil', function () {
+    return view('user.profil');
+});
+Route::get('/dashboard', function () {
+    return view('user.dashboard');
+});
