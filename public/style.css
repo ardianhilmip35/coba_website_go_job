@@ -1,3 +1,7 @@
+  body {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+  }
+
 .container-background {
     background-color: #F1F1F1;
     padding: 10px;
@@ -100,4 +104,15 @@
     vertical-align: top;
     margin-left: 180px;
     border: transparent;
+  }
+
+  .namaformreg{
+    color: #000;
+    margin-bottom: 4px;
+    font-size: medium;
+  }
+  .namaformreg1{
+    color: #fff;
+    margin-bottom: 4px;
+    font-size: medium;
   }

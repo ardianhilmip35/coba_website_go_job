@@ -9,10 +9,10 @@
                         <img src="/img/logofull.png" alt="" width="230" class="mb-4 rounded mx-auto d-block">
                         <h4 class="text-center pb-3 fw-bold" style="color: #021668;">Please Login Your Account</h4>
                         <div class="form-group mb-3 px-1">
-                            <input type="email" name="user" class="form-control" id="floatingInput" placeholder="Email" style="border: 3px solid #021668; background-color: #f1f1f1" />
+                            <input type="email" name="user" class="form-control" id="floatingInput" placeholder="Email" style="border: 1px solid #021668; background-color: #f1f1f1" />
                         </div>
                         <div class="form-group mb-3 px-1">
-                            <input type="password" name="pass" class="form-control" id="floatingPassword" placeholder="Password" style="border: 3px solid #021668; background-color: #f1f1f1" />
+                            <input type="password" name="pass" class="form-control" id="floatingPassword" placeholder="Password" style="border: 1px solid #021668; background-color: #f1f1f1" />
                         </div>
                         <div class="d-flex justify-content-between px-1">
                             <div class="form-check">

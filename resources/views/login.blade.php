@@ -42,7 +42,7 @@
             </div>
               <div class="col-lg-5 p-6">
                 <div class="container mt-4 ps-5 p-5 shadow m-auto" style="background-color:#ffff ;width:auto;">
-                  <h4 class="text-center mb-3 fw-bold" style="color: #021668;">Please Login Your Account</h4>
+                  <h4 class="text-center mb-4 " style="color: #021668;">Please Login Your Account</h4>
               <div class="form-group mb-3 ps-4 pe-4">
                 <!-- <label for="floatingInput" style="padding-left: 40px; color: #000;">Email</label> -->
                 <input type="email" name="user" class="form-control" id="floatingInput" placeholder="Email" style="border: 3px solid #021668; background-color: #f1f1f1" />
