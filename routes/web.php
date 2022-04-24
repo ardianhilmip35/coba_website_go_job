@@ -64,4 +64,7 @@ Route::get('/profilperusahaan2', function () {
 Route::get('/historilamaran', function () {
     return view('user.riwayat_lamaran');
 });
+Route::get('/detaillowonganuser', function () {
+    return view('user.detail_lowongan_user');
+});
 
