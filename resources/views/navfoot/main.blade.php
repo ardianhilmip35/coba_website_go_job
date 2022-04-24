@@ -49,7 +49,7 @@
           <a class="nav-link text-white"  href="/">Masuk</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white"  href="#">Mendaftar</a>
+          <a class="nav-link text-white"  href="/register">Mendaftar</a>
         </li>
         <li class="nav-item">
           <a class="nav-link "  style="background-color: #ffff; color:#1a202c"  href="/admin/login">Untuk Perusahaan</a>

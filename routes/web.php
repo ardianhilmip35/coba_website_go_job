@@ -30,7 +30,7 @@ Route::get('/', function () {
     return view('user.login');
 });
 
-Route::get('/user/register', function () {
+Route::get('/register', function () {
     return view('user.register');
 });
 
