@@ -1,4 +1,4 @@
-@extends('navfoot.admin1')
+@extends('navfoot.navadm1')
 
 @section('content')
     <section id="form">
