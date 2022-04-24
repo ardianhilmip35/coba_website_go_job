@@ -25,9 +25,15 @@ Route::get('/admin/profil', function () {
     return view('admin.profil');
 });
 
-Route::get('/', function () {
-    return view('login');
+// User
+Route::get('/user/login', function () {
+    return view('user.login');
 });
+Route::get('/user/register', function () {
+    return view('user.register');
+});
+
+//
 Route::get('/lowongan', function () {
     return view('user.lowongan_kerja_pelamar');
 });
