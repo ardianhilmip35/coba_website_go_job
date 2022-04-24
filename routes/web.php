@@ -22,20 +22,26 @@ Route::get('/admin/register', function () {
     return view('admin.register');
 });
 
-Route::get('/', function () {
-    return view('login');
+// User
+Route::get('/user/login', function () {
+    return view('user.login');
 });
+Route::get('/user/register', function () {
+    return view('user.register');
+});
+
+//
 Route::get('/lowongan', function () {
     return view('user.lowongan_kerja_pelamar');
 });
-<<<<<<< HEAD
+
 Route::get('/profilperusahaan', function () {
     return view('user.tampilan_profil_perusahaan');
-=======
+});
 Route::get('/profil', function () {
     return view('user.profil');
 });
 Route::get('/dashboard', function () {
     return view('user.dashboard');
->>>>>>> aec6809c9495ce1bdbd2f9bbf92ccf3274731290
+
 });
