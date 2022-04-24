@@ -21,12 +21,26 @@ Route::get('/admin/login', function () {
 Route::get('/admin/register', function () {
     return view('admin.register');
 });
-
-Route::get('/', function () {
-    return view('login');
+Route::get('/admin/profil', function () {
+    return view('admin.profil');
 });
+
+// User
+Route::get('/user/login', function () {
+    return view('user.login');
+});
+
+Route::get('/user/register', function () {
+    return view('user.register');
+});
+
+//
 Route::get('/lowongan', function () {
     return view('user.lowongan_kerja_pelamar');
+});
+
+Route::get('/profilperusahaan', function () {
+    return view('user.tampilan_profil_perusahaan');
 });
 Route::get('/profil', function () {
     return view('user.profil');
@@ -43,3 +57,4 @@ Route::get('/profilperusahaan2', function () {
 Route::get('/historilamaran', function () {
     return view('user.riwayat_lamaran');
 });
+
