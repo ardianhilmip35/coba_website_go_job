@@ -8,7 +8,9 @@
         <!--Bootstrap css-->
         <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
         <!-- Styles -->
 
@@ -21,7 +23,7 @@
 
         <style>
             body {
-                font-family: 'Nunito', sans-serif;
+              font-family: 'Poppins', sans-serif;
             }
         </style>
     </head>
@@ -45,13 +47,13 @@
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-white"  href="#">Masuk</a>
+          <a class="nav-link text-white"  href="/">Masuk</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white"  href="#">Mendaftar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link "  style="background-color: #ffff; color:#1a202c"  href="#">Untuk Perusahaan</a>
+          <a class="nav-link "  style="background-color: #ffff; color:#1a202c"  href="/admin/login">Untuk Perusahaan</a>
         </li>
       </ul>
     </div>
@@ -133,9 +135,9 @@
       </footer> -->
       <footer class="text-white pt-5 pb-4" style="background-color: #021668;">
         <div class="container text-center text-md-left">
-
+      
         <div class="row text-center text-md-left">
-
+      
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
           <img src="/img/Logo.png" alt="logo">
         </div>
@@ -143,30 +145,29 @@
         </div>
              
               <div class="col-md-5 col-lg-5 col-xl-5 mx-auto text-end">
-              <h6 class="text-uppercase mb-4 fw-bold text-warning">Kunjungi Media Sosial Kami</h6>
-             
-                          <a href=""><img src="/img/ig.png" width="50px" alt="ig"></a>
-                          <a href=""><img src="/img/twitter.png" width="60px" alt="twitter"></a>
-                          <a href=""><img src="/img/linkedin.png" width="46px" alt="ig" style="margin-top: 6px"></a>
-                          <a href=""><img src="/img/youtube.png" width="60px" alt="ig"></a>
+              <h6 class="text-uppercase mb-1 fw-bold text-warning">Kunjungi Media Sosial Kami</h6>
+              <a href=""><img src="/img/ig.png" width="50px" alt="ig"></a>
+              <a href=""><img src="/img/twitter.png" width="60px" alt="twitter"></a>
+              <a href=""><img src="/img/linkedin.png" width="46px" alt="ig"></a>
+              <a href=""><img src="/img/youtube.png" width="60px" alt="ig"></a>
               <p class="mt-2">
                 <strong>Perlu Bantuan?</strong> Kunjungi Online Help Central Kami
               </p>
               </div>
-
+      
               <hr class="mb-4">
               <div class="row align-items-center justify-content-center">
                 <div class="col-md-7 col-lg-8 ">
                   <p>Produced by Newbie Team. Since @2022
                     <a href="#" style="text-decoration: none;"></a>
                   </p>
-
+      
                 </div>
                
               </div>
         </div>
         </div>
-
+      
       </footer>
    <!-- akhir footer -->
         <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->

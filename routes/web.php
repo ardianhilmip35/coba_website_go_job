@@ -13,16 +13,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('login');
+
+// Admin
+Route::get('/admin/login', function () {
+    return view('admin.login');
+});
+Route::get('/admin/register', function () {
+    return view('admin.register');
 });
 
-Route::get('/admin', function () {
-    return view('admin.login');
+Route::get('/', function () {
+    return view('login');
 });
 Route::get('/lowongan', function () {
     return view('user.lowongan_kerja_pelamar');
 });
+<<<<<<< HEAD
 Route::get('/profilperusahaan', function () {
     return view('user.tampilan_profil_perusahaan');
+=======
+Route::get('/profil', function () {
+    return view('user.profil');
+});
+Route::get('/dashboard', function () {
+    return view('user.dashboard');
+>>>>>>> aec6809c9495ce1bdbd2f9bbf92ccf3274731290
 });
