@@ -1,5 +1,6 @@
 @extends('navfoot.navadm1')
 
+@section('title', 'Register Admin')
 @section('content')
     <section id="form">
         <form action="POST" action="">
@@ -56,5 +57,3 @@
         </form>
     </section>
 @endsection
-</body>
-</html>

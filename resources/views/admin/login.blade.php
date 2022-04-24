@@ -1,5 +1,6 @@
 @extends('navfoot.navadm1')
 
+@section('title', 'Login Admin')
 @section('content')
     <section id="form">
         <form action="POST" action="">
@@ -33,5 +34,7 @@
             </div>
         </form>
     </section>
+    
 @endsection
+
 
