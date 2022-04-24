@@ -49,3 +49,19 @@ Route::get('/lowongan', function () {
 Route::get('/profilperusahaan', function () {
     return view('user.tampilan_profil_perusahaan');
 });
+Route::get('/profil', function () {
+    return view('user.profil');
+});
+Route::get('/dashboard', function () {
+    return view('user.dashboard');
+});
+Route::get('/profilperusahaan', function () {
+    return view('user.tampilan_profil_perusahaan1');
+});
+Route::get('/profilperusahaan2', function () {
+    return view('user.tampilan_profil_perusahaan2');
+});
+Route::get('/historilamaran', function () {
+    return view('user.riwayat_lamaran');
+});
+
