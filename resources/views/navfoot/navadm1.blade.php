@@ -56,4 +56,6 @@
 </div>
 
 
+{{-- awal footer --}}
 @include('navfoot.footer')
+{{-- Akhir Footer --}}

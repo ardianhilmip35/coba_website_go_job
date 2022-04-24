@@ -26,7 +26,7 @@ Route::get('/admin/profil', function () {
 });
 
 // User
-Route::get('/user/login', function () {
+Route::get('/', function () {
     return view('user.login');
 });
 
@@ -34,10 +34,18 @@ Route::get('/user/register', function () {
     return view('user.register');
 });
 
-//
+Route::get('/dashboard', function () {
+    return view('user.dashboard');
+});
+
+Route::get('/profil', function () {
+    return view('user.profil');
+});
+
 Route::get('/lowongan', function () {
     return view('user.lowongan_kerja_pelamar');
 });
+
 Route::get('/profilperusahaan', function () {
     return view('user.tampilan_profil_perusahaan');
 });
