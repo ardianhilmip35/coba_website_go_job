@@ -99,7 +99,7 @@
 		  </div>
 		</div>
 		<div class="card text-white">
-			<img src="https://pict.sindonews.net/dyn/620/content/2015/08/12/150/1032012/alfamart-alfamidi-ajak-konsumen-taat-pajak-vaL-thumb.jpg" class="img-perusahaan" alt="...">
+			<img src="https://alfamart.co.id/storage/page/September2020/k16dR7o7h6ReVRRdSBiu.jpg" class="img-perusahaan" alt="...">
 			<p class="namaperusahaan" style="font-style: bold;
 			margin-top: -60px;
 			text-align: center;">PT AlFAMART</p>
