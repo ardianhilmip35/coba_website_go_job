@@ -23,3 +23,6 @@ Route::get('/admin', function () {
 Route::get('/lowongan', function () {
     return view('user.lowongan_kerja_pelamar');
 });
+Route::get('/profilperusahaan', function () {
+    return view('user.tampilan_profil_perusahaan');
+});

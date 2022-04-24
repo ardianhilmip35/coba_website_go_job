@@ -31,7 +31,7 @@
                           <ul  class="navbar-nav">
                             <li>
                               <img src="/img/alfa.jpg" alt="logo" width="130" height="80">
-                              <i class="far fa-bookmark" style="margin-top: 0%; margin-left: 200px; color: black;" ></i>
+                              <i class="far fa-bookmark fa-2x" style="margin-top: 0%; margin-left: 189px; color: black;" ></i>
                             </li>
                           </ul>
                           <label style="margin-top: 20px; font-size: 19px"><b>Crew Store (Pramuniaga/Kasir)</b></label>
@@ -56,7 +56,7 @@
                             <ul  class="navbar-nav">
                             <li>
                               <img src="/img/jac.png" alt="logo" width="130" height="80">
-                              <i class="far fa-bookmark" style="margin-top: 0%; margin-left: 200px; color: black;" ></i>
+                              <i class="far fa-bookmark fa-2x" style="margin-top: 0%; margin-left: 200px; color: black;" ></i>
                             </li>
                           </ul>
                           <label style="margin-top: 20px; font-size: 19px"><b>Crew Store (Pramuniaga/Kasir)</b></label>
@@ -79,8 +79,8 @@
                         <div class="d-flex flex-column h-20 pb-2 pt-3 ps-3 text-white text-shadow-1">
                             <ul  class="navbar-nav">
                               <li>
-                                <img src="/img/linkedin.png" alt="logo" width="130" height="80">
-                                <i class="far fa-bookmark" style="margin-top: 0%; margin-left: 200px; color: black;" ></i>
+                                <img src="/img/linkedin.png" alt="logo" width="90" height="80">
+                                <i class="far fa-bookmark fa-2x" style="margin-top: 0%; margin-left: 260px; color: black;" ></i>
                               </li>
                             </ul>
                           <label style="margin-top: 20px; font-size: 19px"><b>Crew Store (Pramuniaga/Kasir)</b></label>
@@ -108,7 +108,7 @@
                             <ul  class="navbar-nav">
                               <li>
                                 <img src="/img/alfa.jpg" alt="logo" width="130" height="80">
-                                <i class="far fa-bookmark" style="margin-top: 0%; margin-left: 195px; color: black;" ></i>
+                                <i class="far fa-bookmark fa-2x" style="margin-top: 0%; margin-left: 183px; color: black;" ></i>
                               </li>
                             </ul>
                           <label style="margin-top: 20px; font-size: 19px"><b>Crew Store (Pramuniaga/Kasir)</b></label>
@@ -133,7 +133,7 @@
                             <ul  class="navbar-nav">
                             <li>
                               <img src="/img/jac.png" alt="logo" width="130" height="80">
-                              <i class="far fa-bookmark" style="margin-top: 0%; margin-left: 200px; color: black;" ></i>
+                              <i class="far fa-bookmark fa-2x" style="margin-top: 0%; margin-left: 200px; color: black;" ></i>
                             </li>
                           </ul>
                            </ul>
@@ -157,8 +157,8 @@
                         <div class="d-flex flex-column h-20 pb-2 pt-3 ps-3 text-white text-shadow-1">
                             <ul  class="navbar-nav">
                               <li>
-                                <img src="/img/linkedin.png" alt="logo" width="130" height="80">
-                                <i class="far fa-bookmark" style="margin-top: 0%; margin-left: 200px; color: black;" ></i>
+                                <img src="/img/linkedin.png" alt="logo" width="90" height="80">
+                                <i class="far fa-bookmark fa-2x" style="margin-top: 0%; margin-left: 250px; color: black;" ></i>
                               </li>
                             </ul>
                           <label style="margin-top: 20px; font-size: 19px"><b>Crew Store (Pramuniaga/Kasir)</b></label>

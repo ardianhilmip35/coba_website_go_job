@@ -80,7 +80,7 @@
 <div class="container mt-6">
     @yield('content')
 </div>
-</footer> -->
+</footer> 
       <footer class="text-white pt-5 pb-4" style="background-color: #021668;">
         <div class="container text-center text-md-left">
 
