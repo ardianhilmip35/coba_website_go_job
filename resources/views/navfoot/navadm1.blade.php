@@ -14,12 +14,13 @@
         <link rel="stylesheet" href="/style.css">
         <style>
             body {
-              font-family: 'Poppins', sans-serif;
+                font-family: 'Poppins', sans-serif;
             }
         </style>
     </head>
 <body style="background-color: #F1F1F1">
 
+{{-- Awal Navbar --}}
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #021668;">
     <div class="container-fluid">
     <img src="/img/LOGO 1.png" alt="" width="160px" class="d-inline-block align-text-top pe-3 ps-2 mb-1" />
@@ -50,12 +51,14 @@
         </div>
     </div>
 </nav>
+{{-- Akhir Navbar --}}
 
+{{-- Awal content --}}
 <div class="container mt-6">
     @yield('content')
 </div>
-
+{{-- Akhir content --}}
 
 {{-- awal footer --}}
-@include('navfoot.footer')
+    @include('navfoot.footer')
 {{-- Akhir Footer --}}

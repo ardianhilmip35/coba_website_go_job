@@ -9,7 +9,6 @@
     </div>
     <div class="col-md-4 col-lg-4 col-xl-4 mx-auto">
     </div>
-         
           <div class="col-md-5 col-lg-5 col-xl-5 mx-auto text-end">
           <h6 class="text-uppercase mb-1 fw-bold text-warning">Kunjungi Media Sosial Kami</h6>
           <a href=""><img src="/img/ig.png" width="50px" alt="ig"></a>
@@ -29,7 +28,6 @@
               </p>
   
             </div>
-           
           </div>
     </div>
     </div>

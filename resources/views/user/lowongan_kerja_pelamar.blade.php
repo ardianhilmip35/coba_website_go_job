@@ -1,6 +1,7 @@
 @extends('navfoot.main2')
 
     <!-- Tentang Anda -->
+    @section('title', 'Lowongan Kerja Pelamar')
     @section('content')
 
     <section id="form">

@@ -1,5 +1,6 @@
 @extends('navfoot.main2')
 
+@section('title', 'Dashboard')
 @section('content')
 <section> 
 <link rel="stylesheet" href="style.css">
