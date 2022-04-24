@@ -26,8 +26,11 @@ Route::get('/admin/register', function () {
 Route::get('/user/login', function () {
     return view('user.login');
 });
-Route::get('/user/register', function () {
-    return view('user.register');
+Route::get('/user/register1', function () {
+    return view('user.register1');
+});
+Route::get('/user/register2', function () {
+    return view('user.register2');
 });
 
 //

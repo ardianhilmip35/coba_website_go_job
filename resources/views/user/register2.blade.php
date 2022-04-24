@@ -34,25 +34,60 @@
     @section('content')
 
     <section id="form">
-      <form method="POST" action="">
-        <div class="container mt-6">
+      <form method="POST" action="" class="mt-4" style="border: 4px solid #021668; border: radius 25px;">
           <div class="row">
-            <div class="col-lg-5">
-              <img src="/img/image_register.png" alt="img" class="img-fluid p-6 m-6">
-            </div>
-              <div class="col-lg-7 p-6">
-                <div class="container mt-4 ps-5 p-5 shadow m-auto" style="background-color:#021668 ;width:auto;">
-                  <h4 class="text-center mb-4 fw-bold " style="color: #ffff;">REGISTER</h4>
+              <div class="col-lg-12">
+                <div class="container  p-2 shadow m-auto" style="background-color:#021668 ;width:auto;">
+                  <h4 class="text-center mb-4 fw-bold " style="color: #ffff;">Isikan Pengalaman Kerjamu</h4>
+                  <h5 class="text-center mb-4" style="color: #ffff;">Find Your job With Go Job</h5>
+                </div>
+            <div class="container px-5 py-3  m-auto" style="width:auto;">
 
-            <div class="d-flex justify-content-between ps-6 pe-6">
-                <div class="form-group mb-4 ps-3 pe-3">
-                <input type="text" name="first_name" class="form-control" id="floatingInput" placeholder="First name" style="color: #021668; background-color: #f1f1f1" />
-              </div>
-              <div class="form-group mb-4 ps-3 pe-3">
-                <input type="text" name="last_name" class="form-control" id="floatingInput" placeholder="Last name" style="color: #021668; background-color: #f1f1f1" />
-              </div>
+            <div class="row px-3">
+                <div class=" container border col-lg-5 col-sm-9 px-3 py-2 text-center" style="background-color:#D7E9F7">
+                Memiliki Pengalaman Kerja
+                </div>
+                <div class="container col-lg-2 col-sm-9 px-3 py-2 text-center" style="color: #021668;">
+                    <Strong>Atau</Strong>
+                </div>
+                <div class="container col-lg-5 col-sm-9 px-3 py-2 text-center" style="border: 3px solid #021668;">
+                Mahasiswa/Baru Lulus
+                </div>
+            </div>
+            </div>
+            
+            <div class="row mt-3">
+                <div class="container col-lg-5 ms-4">
+                    <div class="form-group mb-4 ps-4 pe-1">
+                    <label for="floatingInput" style="color: #000;">Pernah Bekerja Di</label>
+                    <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Pengalaman Bekerja" style="color: #021668; background-color: #f1f1f1" />
+                    </div>
+                </div>
+                <div class="container col-lg-5 me-4">
+                    <div class="form-group mb-4 ps-1 pe-4">
+                    <label for="floatingInput" style="color: #000;">Pernah Bekerja Di</label>
+                    <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Pengalaman Bekerja" style="color: #021668; background-color: #f1f1f1" />
+                    </div>
+                </div>
             </div>
 
+            <div class="row mt-2">
+                <div class="container col-lg-5 ms-4">
+                    <div class="form-group mb-4 ps-4 pe-1">
+                    <label for="floatingInput" style="color: #000;">Pernah Bekerja Di</label>
+                    <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Pengalaman Bekerja" style="color: #021668; background-color: #f1f1f1" />
+                    </div>
+                </div>
+                <div class="container col-lg-5 me-4">
+                    <div class="form-group mb-4 ps-1 pe-4">
+                    <label for="floatingInput" style="color: #000;">Pernah Bekerja Di</label>
+                    <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Pengalaman Bekerja" style="color: #021668; background-color: #f1f1f1" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container px-5 py-3  m-auto" style="width:auto;">
               <div class="form-group mb-4 ps-3 pe-3">
                 <input type="email" name="email" class="form-control" id="floatingInput" placeholder="Email" style="color: #021668; background-color: #f1f1f1" />
               </div>
@@ -76,7 +111,6 @@
                 <div class="d-flex justify-content-center mb-4">
                   <button class="btn" style="background-color: #D7E9F7; color:#000000; width:100%" type="submit" name="register">Register</button>
                 </div>
-                <p style="text-align: center; color: #ffff;">Don’t have an account? <a href="" style="font-weight: bold;">Register!</a></p>
               </div>
               
               
@@ -84,6 +118,9 @@
           </div>
        </div>
     </form>
+    <div class="container mt-4 mb-4 text-end">
+    <button type="button" class="btn btn-sm " style="background-color: #021668; color:#ffff; width: 200px;">SIMPAN</button>
+    </div>
     </section>
     @endsection
     <!-- Akhir Login -->
