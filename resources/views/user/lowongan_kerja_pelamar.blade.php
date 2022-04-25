@@ -44,7 +44,7 @@
                               <small>3 juta - 5 juta per bulan</small>
                             </label>
                             <label class="ms-auto">
-                              <small>5 hari yang lalu</small>
+                              <small>7 hari yang lalu</small>
                             </label>
                         </div>
                       </div>

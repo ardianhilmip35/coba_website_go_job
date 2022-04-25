@@ -19,13 +19,13 @@
                     <a href="#"><li style="margin-left: 86%"><i class="fas fa-edit fa-2x"></i></a><br></li>
                     </ul>
                     <label class="" style="font-size: 15px; margin-top: -23px">Dibuat : </label><br>
-                    <label class="mt-3" style="font-size: 15px;"><b>Alamat Perusahaan</b></label><br>
+                    <label class="mt-4" style="font-size: 15px;"><b>Alamat Perusahaan</b></label><br>
                     <label class="mt-1" style="font-size: 15px;">Go Job </label><br>
-                    <label class="mt-3" style="font-size: 15px;"><b>Nomor Telephone</b></label><br>
+                    <label class="mt-4" style="font-size: 15px;"><b>Nomor Telephone</b></label><br>
                     <label class="mt-1" style="font-size: 15px;">087784666329</label><br>
-                    <label class="mt-3" style="font-size: 15px;"><b>Website</b></label><br>
+                    <label class="mt-4" style="font-size: 15px;"><b>Website</b></label><br>
                     <a href="http://127.0.0.1:8000/profilperusahaan2"><label class="mt-1" style="font-size: 15px;">http://127.0.0.1:8000/profilperusahaan2</label></a><br>
-                    <label class="mt-3" style="font-size: 15px;"><b>Jam Kerja</b></label><br>
+                    <label class="mt-4" style="font-size: 15px;"><b>Jam Kerja</b></label><br>
                     <label class="mt-1" style="font-size: 15px;">Senin - Jumat</label>
                 </div>
             </div>
