@@ -40,7 +40,7 @@
         <ul class="navbar-nav  fw-bold">
             <li class="nav-item dropdown">
                 <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Nama Perusahaan
+                Nama Pelamar
                 </a>
                 <ul class="dropdown-menu mx-auto" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Lihat Profil</a></li>
