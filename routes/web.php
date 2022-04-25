@@ -35,7 +35,6 @@ Route::get('/user/register1', function () {
 Route::get('/user/register1', function () {
     return view('user.register2');
 });
-<<<<<<< HEAD
 Route::get('/user/register1', function () {
     return view('user.register1');
 });
