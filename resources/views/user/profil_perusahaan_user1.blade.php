@@ -7,11 +7,8 @@
                 <a class="nav-link active"  style="color: #021668;" aria-current="page" href="#"><b>Informasi Perusahaan</b></a>
               </li>
               <li>
-                <a class="nav-link"  style="color: #021668;" aria-current="page" href="#"><b>Informasi Tambahan Perusahaan</b></a>
+                <a class="nav-link"  style="color: #021668;" aria-current="page" href="#">Informasi Tambahan Perusahaan</a>
               </li>
-              <li>
-                <a class="nav-link"  style="color: #021668;" aria-current="page" href="#"><b>Branding</b></a>
-              </li> 
             </ul>
       <div class="container">
           <div class="row" style="margin-top: -2%;">
@@ -19,12 +16,12 @@
                 <div style="color: #021668;">
                     <ul class="d-flex list-unstyled">
                     <li><label style="font-size: 15px;"><b>Nama Profil</b></label><br></li>
-                    <li><label style="font-size: 15px;"><b>Nama Profil</b></label><br></li>
+                    <li style="margin-left: 90%"><a href="#"><i class="fas fa-edit fa-2x"></i></a><br></li>
                     </ul>
-                    <label class="mt-1" style="font-size: 15px;">Dibuat : </label><br>
-                    <label class="mt-3" style="font-size: 15px;"><b>Nama Perusahaan</b></label><br>
+                    <label class="" style="font-size: 15px; margin-top: -23px">Dibuat : </label><br>
+                    <label class="mt-4" style="font-size: 15px;"><b>Nama Perusahaan</b></label><br>
                     <label class="mt-1" style="font-size: 15px;">Go Job </label><br>
-                    <label class="mt-3" style="font-size: 15px;"><b>Tentang Perusahaan</b></label><br>
+                    <label class="mt-4" style="font-size: 15px;"><b>Tentang Perusahaan</b></label><br>
                     <label class="mt-1" style="font-size: 15px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
                     of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 

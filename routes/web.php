@@ -21,19 +21,35 @@ Route::get('/admin/login', function () {
 Route::get('/admin/register', function () {
     return view('admin.register');
 });
+Route::get('/admin/profil', function () {
+    return view('admin.profil');
+});
 
 // User
-Route::get('/user/login', function () {
+Route::get('/', function () {
     return view('user.login');
 });
+<<<<<<< HEAD
 Route::get('/user/register1', function () {
     return view('user.register1');
 });
 Route::get('/user/register2', function () {
     return view('user.register2');
+=======
+
+Route::get('/register', function () {
+    return view('user.register');
+>>>>>>> d848b6e01fadb3f1d1b4393460dd0385766eb037
 });
 
-//
+Route::get('/dashboard', function () {
+    return view('user.dashboard');
+});
+
+Route::get('/profil', function () {
+    return view('user.profil');
+});
+
 Route::get('/lowongan', function () {
     return view('user.lowongan_kerja_pelamar');
 });
@@ -46,5 +62,14 @@ Route::get('/profil', function () {
 });
 Route::get('/dashboard', function () {
     return view('user.dashboard');
-
 });
+Route::get('/profilperusahaan', function () {
+    return view('user.profil_perusahaan_user1');
+});
+Route::get('/profilperusahaan2', function () {
+    return view('user.profil_perusahaan_user2');
+});
+Route::get('/historilamaran', function () {
+    return view('user.riwayat_lamaran');
+});
+

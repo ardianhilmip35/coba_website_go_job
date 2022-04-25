@@ -1,5 +1,6 @@
 @extends('navfoot.main2')
 
+@section('title', 'Profil Pelamar')
 @section('content')
 <section> 
     <link rel="stylesheet" href="style.css">

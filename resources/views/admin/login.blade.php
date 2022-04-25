@@ -1,5 +1,6 @@
-@extends('navfoot.admin1')
+@extends('navfoot.navadm1')
 
+@section('title', 'Login Admin')
 @section('content')
     <section id="form">
         <form action="POST" action="">
@@ -23,7 +24,7 @@
                                 <a href="#" style="color: #021668;">Forgot Password?</a>
                             </div>
                         </div>
-                        <div class="container px-1 m-auto mt-4">
+                        <div class="container px-1 mx-auto mt-4">
                             <div class="d-flex justify-content-center">
                                 <button class="btn fw-bold fs-5" style="background-color: #021668; color:#ffff; width:100%" type="submit" name="login">Login</button>
                             </div>
@@ -33,6 +34,7 @@
             </div>
         </form>
     </section>
+    
 @endsection
-</body>
-</html>
+
+
