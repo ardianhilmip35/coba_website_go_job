@@ -122,4 +122,15 @@
     opacity: 0.2;
   }
 
+  /*Admin*/
+  .namaperusahaan{
+    font-weight: bold;
+    text-align: end;
+  }
+
+  .listmenu{
+    margin-left: auto;}
+
+  
+
   

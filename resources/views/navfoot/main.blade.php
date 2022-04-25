@@ -29,7 +29,7 @@
 <body style="background-color: #F1F1F1">
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #021668;">
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #021668;">
   <div class="container-fluid">
   <img src="/img/LOGO 1.png" alt="" width="160px" class="d-inline-block align-text-top pe-3 ps-2 mb-1" />
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

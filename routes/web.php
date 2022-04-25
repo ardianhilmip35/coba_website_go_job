@@ -26,7 +26,7 @@ Route::get('/admin/profil', function () {
 });
 
 // User
-Route::get('/user/login', function () {
+Route::get('/', function () {
     return view('user.login');
 });
 Route::get('/user/register1', function () {
@@ -40,11 +40,6 @@ Route::get('/user/register1', function () {
 });
 Route::get('/user/register2', function () {
     return view('user.register2');
-=======
-
-Route::get('/register', function () {
-    return view('user.register');
->>>>>>> d848b6e01fadb3f1d1b4393460dd0385766eb037
 });
 
 Route::get('/dashboard', function () {

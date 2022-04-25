@@ -1,5 +1,5 @@
 {{-- awal footer --}}
-<footer class="text-white pt-5 pb-4" style="background-color: #021668;">
+<footer class="text-white pt-5 pb-4 shadow-sm" style="background-color: #021668;">
     <div class="container text-center text-md-left">
       <div class="row justify-content-center d-flex mx-auto">
         

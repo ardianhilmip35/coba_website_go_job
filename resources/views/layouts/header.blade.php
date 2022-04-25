@@ -33,3 +33,5 @@
         }
     </style>
 </head>
+
+<body style="background-color: #F1F1F1">
