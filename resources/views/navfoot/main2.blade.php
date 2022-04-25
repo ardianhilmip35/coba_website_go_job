@@ -75,7 +75,7 @@
 {{-- Akhir Navbar --}}
 
 {{-- Awal content --}}
-<div class="container mt-6">
+<div class="container mt-2">
     @yield('content')
 </div>
 {{-- Akhir content --}}
