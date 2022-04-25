@@ -7,10 +7,10 @@
       <form method="POST" action="">
         <div class="container mt-6">
           <div class="row">
-            <div class="col-lg-5">
+            <div class="col-lg-6">
               <img src="/img/image_register.png" alt="img" class="img-fluid p-6 m-6">
             </div>
-              <div class="col-lg-7 p-6">
+              <div class="col-lg-6 p-6">
                 <div class="container mt-4 ps-5 p-5 shadow m-auto" style="background-color:#021668 ;width:auto;">
                   <h4 class="text-center mb-4 fw-bold " style="color: #ffff;">REGISTER</h4>
 
@@ -46,7 +46,6 @@
                 <div class="d-flex justify-content-center mb-4">
                   <button class="btn" style="background-color: #D7E9F7; color:#000000; width:100%" type="submit" name="register">Register</button>
                 </div>
-                <p style="text-align: center; color: #ffff;">Don’t have an account? <a href="" style="font-weight: bold;">Register!</a></p>
               </div>
               
               

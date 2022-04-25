@@ -26,12 +26,26 @@ Route::get('/admin/profil', function () {
 });
 
 // User
-Route::get('/', function () {
+Route::get('/user/login', function () {
     return view('user.login');
 });
+Route::get('/user/register1', function () {
+    return view('user.register1');
+});
+Route::get('/user/register1', function () {
+    return view('user.register2');
+});
+<<<<<<< HEAD
+Route::get('/user/register1', function () {
+    return view('user.register1');
+});
+Route::get('/user/register2', function () {
+    return view('user.register2');
+=======
 
 Route::get('/register', function () {
     return view('user.register');
+>>>>>>> d848b6e01fadb3f1d1b4393460dd0385766eb037
 });
 
 Route::get('/dashboard', function () {
