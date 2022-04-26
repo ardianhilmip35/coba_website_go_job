@@ -41,3 +41,6 @@
 </div>
 {{-- Akhir content --}}
 
+{{-- awal footer --}}
+    @include('navfoot.footer')
+{{-- Akhir Footer --}}
