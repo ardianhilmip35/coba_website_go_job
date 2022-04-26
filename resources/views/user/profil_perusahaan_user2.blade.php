@@ -1,4 +1,5 @@
 @extends('navfoot.main2')
+    @section('title', 'Profil Perusahaan')
     @section('content')
     <section id="form">
       <h2 class="pb-3 fw-bold" style="font-size: 30px; margin-top: 120px; color: #021668;">Profil Perusahaan</h2>
