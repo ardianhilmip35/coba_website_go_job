@@ -3,7 +3,7 @@
 @section('title', 'Profil Perusahaan')
 @section('content')   
 <section id="form">
-    <h2 class="pb-2 border-bottom border-5" style="font-size: 30px; margin-top: 100px; color: #021668;"><b>Profil Perusahan</b></h2>
+    <h2 class="pb-2 border-bottom border-5s " style="font-size: 30px; margin-top: 100px; color: #021668;"><b>Profil Perusahan</b></h2>
         <ul class="d-flex list-unstyled">
           <li>
             <a class="nav-link"  style="color: #021668;" aria-current="page" href="#"><b>Informasi Perusahaan</b></a>
