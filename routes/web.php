@@ -25,6 +25,7 @@ Route::get('/admin/profil', function () {
     return view('admin.profil');
 });
 
+
 // User
 Route::get('/', function () {
     return view('user.login');
@@ -45,7 +46,6 @@ Route::get('/user/register2', function () {
 Route::get('/dashboard', function () {
     return view('user.dashboard');
 });
-
 Route::get('/profil', function () {
     return view('user.profil');
 });
