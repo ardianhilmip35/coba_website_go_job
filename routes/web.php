@@ -66,7 +66,7 @@ Route::get('/dashboard', function () {
 Route::get('/profilperusahaan', function () {
     return view('user.profil_perusahaan_user1');
 });
-Route::get('/profilperusahaan2', function () {
+Route::get('/detailperusahaan', function () {
     return view('user.profil_perusahaan_user2');
 });
 Route::get('/historilamaran', function () {
