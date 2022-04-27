@@ -27,7 +27,9 @@ Route::get('/admin/profil', function () {
 Route::get('/admin/editprofilperusahaan', function () {
     return view('admin.edit_ptofil_perusahaan');
 });
-
+Route::get('/admin/lowongan', function () {
+    return view('admin.iklan');
+});
 
 // User
 Route::get('/', function () {
