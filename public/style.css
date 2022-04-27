@@ -168,7 +168,17 @@
 
   .listmenu{
     margin-left: auto;}
-
   
+  .menu{
+    color: #fff;
+    text-decoration: none;
+  }
 
+  .menu:hover{
+    color: #021668;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
   
