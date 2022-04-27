@@ -5,14 +5,7 @@
 <section id="form">
 
     <h2 class="pb-2 border-bottom" style="font-size: 30px; margin-top: 100px; color: #021668;"><b>Profil Perusahan</b></h2>
-        <ul class="d-flex list-unstyled">
-          <li>
             <a class="nav-link"  style="color: #021668;" aria-current="page" href="#"><b>Informasi Perusahaan</b></a>
-          </li>
-          <li>
-            <a class="nav-link"  style="color: #021668;" aria-current="page" href="#">Informasi Tambahan Perusahaan</a>
-          </li>
-        </ul>
      
   <div class="container" style="width: 160%;">
       <div class="row" style="margin-top: -2%;">

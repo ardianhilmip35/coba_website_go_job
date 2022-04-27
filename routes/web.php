@@ -24,6 +24,9 @@ Route::get('/admin/register', function () {
 Route::get('/admin/profil', function () {
     return view('admin.profil');
 });
+Route::get('/admin/editprofilperusahaan', function () {
+    return view('admin.edit_ptofil_perusahaan');
+});
 
 
 // User
