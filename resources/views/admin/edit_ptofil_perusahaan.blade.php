@@ -14,11 +14,15 @@
                 <label style="font-size: 15px; margin-top: 10px; margin-left: 10px"><b>Apa nama profil Anda?</b></label><br>
                 <input type="text" name="nama" class="form-control" id="floatingInput" placeholder="Admin" style="color: #021668; background-color: #f1f1f1; width: 300px; margin-left: 7px" />
                 <label class="mt-4" style="font-size: 15px; margin-left: 10px" ><b>Apa nama perusahaan anda?</b></label><br>
-                <input type="text" name="nama" class="form-control" id="floatingInput" placeholder="Admin" style="color: #021668; background-color: #f1f1f1; width: 300px; margin-left: 7px" />
+                <input type="text" name="nama" class="form-control" id="floatingInput" placeholder="PT Alfaria Trijaya Tbk." style="color: #021668; background-color: #f1f1f1; width: 300px; margin-left: 7px" />
                 <label class="mt-4" style="font-size: 15px; margin-left: 10px" ><b>Apa industri perusahaan Anda?</b></label><br>
-                <input type="text" name="nama" class="form-control" id="floatingInput" placeholder="Admin" style="color: #021668; background-color: #f1f1f1; width: 300px; margin-left: 7px" />
+                <input type="text" name="nama" class="form-control" id="floatingInput" placeholder="Toko" style="color: #021668; background-color: #f1f1f1; width: 300px; margin-left: 7px" />
                 <label class="mt-4" style="font-size: 15px; margin-left: 10px" ><b>Tentang Perusahan</b></label><br>
-                <input type="text" name="nama" class="form-control" id="floatingInput" placeholder="Admin" style="color: #021668; background-color: #f1f1f1; width: 300px; margin-left: 7px" />
+                <textarea class="form-control" rows="4" style="font-size: 15px; margin-left: 10px; width: 90%" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."></textarea>
             </div>
         </div>
       </div>
