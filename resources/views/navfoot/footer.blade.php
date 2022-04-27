@@ -1,37 +1,39 @@
 {{-- awal footer --}}
-<footer class="text-white pt-5 pb-4 shadow-sm" style="background-color: #021668;">
-    <div class="container">
-      <div class="row justify-content-center d-flex mx-auto">
-        
-        <div class="mb-6">
-          <img src="/img/Logo.png" alt="logo" width="auto" style="margin-left: -50px">
-        </div>
-
-        <div class="col-md-5" style="margin-left: 400px">
-          <h6 class="text-uppercase mb-1 fw-bold text-warning text-end">Kunjungi Media Sosial Kami</h6>
-          <div  class="text-end">
-            <a href=""><img src="/img/ig.png" width="50px" alt="ig"></a>
-            <a href=""><img src="/img/twitter.png" width="60px" alt="twitter"></a>
-            <a href=""><img src="/img/linkedin.png" width="46px" alt="ig"></a>
-            <a href=""><img src="/img/youtube.png" width="60px" alt="ig"></a>
-          </div>
-          <p class="mt-2 text-end">
-            <strong>Perlu Bantuan?</strong> <a href="#" style="text-decoration: none; color:white;">Kunjungi Online Help Central Kami</a>
-          </p>
-        </div>
-
-        <hr class="mb-4">
-
-        <div class="row justify-content-center">
-          {{-- <div class="col-md-2"> --}}
-            <p>Produced by Newbie Team. Since @2022
-              <a href="#" style="text-decoration: none;"></a>
-            </p>
-          {{-- </div> --}}
-        </div>
-
-      </div>
+<footer class="text-white pt-5 pb-4" style="background-color: #021668;">
+    <div class="container text-center text-md-left">
+  
+    <div class="row text-center text-md-left">
+  
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+      <img src="/img/Logo.png" alt="logo">
     </div>
+    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto">
+    </div>
+         
+          <div class="col-md-5 col-lg-5 col-xl-5 mx-auto text-end">
+          <h6 class="text-uppercase mb-1 fw-bold text-warning">Kunjungi Media Sosial Kami</h6>
+          <a href=""><img src="/img/ig.png" width="50px" alt="ig"></a>
+          <a href=""><img src="/img/twitter.png" width="60px" alt="twitter"></a>
+          <a href=""><img src="/img/linkedin.png" width="46px" alt="ig"></a>
+          <a href=""><img src="/img/youtube.png" width="60px" alt="ig"></a>
+          <p class="mt-2">
+            <strong>Perlu Bantuan?</strong> Kunjungi Online Help Central Kami
+          </p>
+          </div>
+  
+          <hr class="mb-4">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 col-lg-8 ">
+              <p>Produced by Newbie Team. Since @2022
+                <a href="#" style="text-decoration: none;"></a>
+              </p>
+  
+            </div>
+           
+          </div>
+    </div>
+    </div>
+  
   </footer>
       {{-- Akhir Footer --}}
       
