@@ -1,13 +1,13 @@
 {{-- awal footer --}}
 <footer class="text-white pt-5 pb-4 shadow-sm" style="background-color: #021668;">
-    <div class="container text-center text-md-left">
+    <div class="container">
       <div class="row justify-content-center d-flex mx-auto">
         
-        <div class="col-md-2 me-auto mb-3 text-start">
-          <img src="/img/Logo.png" alt="logo" width="auto">
+        <div class="mb-6">
+          <img src="/img/Logo.png" alt="logo" width="auto" style="margin-left: -50px">
         </div>
 
-        <div class="col-md-4 auto-center">
+        <div class="col-md-5" style="margin-left: 400px">
           <h6 class="text-uppercase mb-1 fw-bold text-warning text-end">Kunjungi Media Sosial Kami</h6>
           <div  class="text-end">
             <a href=""><img src="/img/ig.png" width="50px" alt="ig"></a>
@@ -23,11 +23,11 @@
         <hr class="mb-4">
 
         <div class="row justify-content-center">
-          <div class="col-md-7">
+          {{-- <div class="col-md-2"> --}}
             <p>Produced by Newbie Team. Since @2022
               <a href="#" style="text-decoration: none;"></a>
             </p>
-          </div>
+          {{-- </div> --}}
         </div>
 
       </div>
