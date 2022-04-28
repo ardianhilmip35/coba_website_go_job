@@ -14,17 +14,30 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-// Admin
+// AdminLoginRegister
 Route::get('/admin/login', function () {
     return view('admin.login');
 });
 Route::get('/admin/register', function () {
     return view('admin.register');
 });
+//Profil Admin
 Route::get('/admin/profil', function () {
-    return view('admin.profil');
+    return view('admin.profil_perusahaan.profil');
 });
-
+Route::get('/admin/profil/edit', function () {
+    return view('admin.profil_perusahaan.edit');
+});
+//Lowongan Admin
+Route::get('/admin/lowongan', function () {
+    return view('admin.lowongan.iklan');
+});
+Route::get('/admin/lowongan/tambah', function () {
+    return view('admin.lowongan.tambah');
+});
+Route::get('/admin/lowongan/edit', function () {
+    return view('admin.lowongan.edit');
+});
 
 // User
 Route::get('/', function () {
@@ -66,7 +79,7 @@ Route::get('/dashboard', function () {
 Route::get('/profilperusahaan', function () {
     return view('user.profil_perusahaan_user1');
 });
-Route::get('/profilperusahaan2', function () {
+Route::get('/detailperusahaan', function () {
     return view('user.profil_perusahaan_user2');
 });
 Route::get('/historilamaran', function () {
