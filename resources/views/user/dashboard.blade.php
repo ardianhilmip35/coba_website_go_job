@@ -1,33 +1,28 @@
 @extends('navfoot.main2')
 @section('title', 'Dashboard')
-<div class="container-search">
-		<div>
-			<h2 style="margin-top:20px">SELAMAT DATANG TOM HANKS,</h2>
-			<h6>YUK, CARI LOWONGAN KERJA UNTUKMU</h6>
-		</div>
-			<div class="row align-items-start" style="margin-top: 20px;">
-				<div class="col-md-4">	
-					<input type="text" id="txtsearch" placeholder="Nama Jabatan atau Nama Perusahaan">
-				</div>
-				<div class="col-md-4">	
-					<input type="text" id="txtpin" placeholder="Daerah atau Tempat Perusahaan">
-				</div>
-				<div class="col-md-3" style="margin-left:-50px;">
-					<select name="case" id="txtcase">
-						<option value="pekerjaan">Semua Jenis Pekerjaan</option>
-						<option value="pekerjaan">Semua Jenis Pekerjaan</option>
-						<option value="pekerjaan">Semua Jenis Pekerjaan</option>
-						<option value="pekerjaan">Semua Jenis Pekerjaan</option>
-					</select>	
-				</div>
-				<div class="col-md-1" style="margin-left:-20px">
-					<button type="button" class="btn btn-primary"
-					style="background-color: #021668; border-radius: 0px; width:100px;"
-					id="btnsearch">CARI</button>			
-				</div>
+@section('content')
+<div class="container-fluid container-search">
+	<div>
+		<h2 style="margin-top:20px">SELAMAT DATANG TOM HANKS,</h2>
+		<h6>YUK, CARI LOWONGAN KERJA UNTUKMU</h6>
+	</div>
+		<div class="row d-flex justify-content-start" style="margin-top: 20px;">	
+				
+			<div class="col-md-16">
+				<input type="text" id="txtsearch" style="margin-right:30px; margin-bottom: 20px;" placeholder="Nama Jabatan atau Nama Perusahaan">	
+				<input type="text" id="txtpin" style="margin-right:30px" placeholder="Daerah atau Tempat Perusahaan">
+				<select name="case" style="margin-right:30px" id="txtcase">
+					<option value="pekerjaan">Semua Jenis Pekerjaan</option>
+					<option value="pekerjaan">Semua Jenis Pekerjaan</option>
+					<option value="pekerjaan">Semua Jenis Pekerjaan</option>
+					<option value="pekerjaan">Semua Jenis Pekerjaan</option>
+				</select>	
+				<button type="button" class="btn btn-primary"
+				style="background-color: #021668; border-radius: 0px; width:100px;"
+				id="btnsearch">CARI</button>			
+			</div>
 </div>
 </div> 	
-@section('content')
 <section>	
 <div class="container-dashboard" style="margin-top: 2rem; margin-bottom: 5rem;"> 
 	<h1 class="header" style="font-style: bold;
