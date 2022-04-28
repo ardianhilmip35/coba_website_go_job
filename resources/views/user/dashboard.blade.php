@@ -1,5 +1,4 @@
 @extends('navfoot.main2')
-
 @section('title', 'Dashboard')
 <div class="container-search">
 		<div>
@@ -27,10 +26,10 @@
 					id="btnsearch">CARI</button>			
 				</div>
 </div>
+</div> 	
 @section('content')
-<section> 
-
-<div class="container-dashboard" style="margin-top: 6rem; margin-bottom: 5rem;"> 
+<section>	
+<div class="container-dashboard" style="margin-top: 2rem; margin-bottom: 5rem;"> 
 	<h1 class="header" style="font-style: bold;
 	text-align: start;
 	font-size: large;">Rekomendasi Berdasarkan Minatmu</h1>
