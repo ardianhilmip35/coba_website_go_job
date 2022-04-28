@@ -126,6 +126,7 @@
     background-color: #D7E9F7;
     height: 280px;
     padding: 80px;
+    width: auto;
   }
   
   #txtsearch {
