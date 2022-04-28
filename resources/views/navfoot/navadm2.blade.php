@@ -57,7 +57,7 @@
 {{-- Akhir Navbar --}}
 
 {{-- Awal content --}}
-<div class="container mt-6">
+<div class="container-fluid mt-6" style="padding-bottom: 150px;">
     @yield('content')
 </div>
 {{-- Akhir content --}}

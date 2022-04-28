@@ -1,6 +1,7 @@
 {{-- awal footer --}}
+
 <footer class="text-white pt-5 pb-4" style="background-color: #021668;">
-    <div class="container text-center text-md-left">
+    <div class="container foot text-center text-md-left">
   
     <div class="row text-center text-md-left">
   
