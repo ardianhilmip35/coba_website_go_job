@@ -4,7 +4,7 @@
 @section('content')
 <section> 
     <link rel="stylesheet" href="style.css">
-    <div class="container-background" style="margin-top:5rem;">
+    <div class="container-background" style="margin-top:7rem;">
       <div class="row">
       <div class="col-md-6">
         <div class="container-profil">

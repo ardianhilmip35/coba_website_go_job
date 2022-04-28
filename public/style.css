@@ -40,12 +40,13 @@
 
 .container-detail{
     padding: 30px;
-    border: #021668 solid 2px;
+    border: none;
     background-color: #FFFFFF;
     width: 800px;
     height: 390px;
     margin-top: 10px;
     margin-left: -200px;
+    margin-bottom: 5rem;
 }
 
 #btnitem:hover{
@@ -101,9 +102,22 @@
   
   .bookmarkbtn{
     background-color: transparent;
-    vertical-align: top;
-    margin-left: 180px;
+    margin-left: 330px; 
+    margin-top: -70px;
     border: transparent;
+    padding: 0px;
+    
+  }
+
+  .bookmarkbtn:hover{
+    border-color: white;
+    opacity: 0.2;
+  }
+
+  .bookmarkbtn:focus{
+    background-color: #021668;
+    border-color: #021668;
+    opacity: 20.2;
   }
 
   .namaformreg{
@@ -117,49 +131,57 @@
     font-size: medium;
   }
 
-  .bookmarkbtn :hover{
-    border-color: white;
-    opacity: 0.2;
-  }
-
-  .container-search{
+  #container-search{
     background-color: #D7E9F7;
-    height: 280px;
+    height: 290px;
     padding: 80px;
     width: auto;
+    padding-left: 130px;
   }
   
   #txtsearch {
     background-image: url(img/search.png);
     background-position: left;
+    background-position: 8px;
     background-repeat: no-repeat;
     background-size: 20px;
-    padding-left: 25px;
-    width: 350px;
+    padding-left: 31px;
+    width: 358px;
     height: 40px;
-    border: black solid 1px;
+    border: black solid 2px;
+    border-radius: 3px;
   }
   
   #txtpin {
     background-image: url(img/pin.png);
     background-position: left;
+    background-position: 5px;
     background-repeat: no-repeat;
     background-size: 20px;
-    padding-left: 25px;
-    width: 300px;
+    padding-left: 27px;
+    width: 305px;
     height: 40px;
-    border: black solid 1px;
+    border: black solid 2px;
+    border-radius: 3px;
   }
   
   #txtcase{
     background-image: url(img/case.png);
     background-position: left;
+    background-position: 9px;
     background-repeat: no-repeat;
     background-size: 20px;
-    padding-left: 25px;
-    width: 240px;
+    padding-left: 29px;
+    width: 245px;
     height: 40px;
+    border-radius: 3px;
+    border: black solid 2px;
   }
+
+  #card-item{
+    background-blend-mode: difference;
+  }
+
 
   /*Admin*/
   .namaperusahaan{
