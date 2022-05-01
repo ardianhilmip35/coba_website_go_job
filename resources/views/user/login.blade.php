@@ -11,7 +11,7 @@
               <img src="/img/image_login.png" alt="img" class="img-fluid p-6 m-6">
             </div>
               <div class="col-lg-5 p-6">
-                <div class="container mt-4 ps-5 p-5 shadow m-auto" style="background-color:#ffff ;width:auto;">
+                <div class="container mt-4 ps-5 p-5 shadow m-auto" style="background-color:#ffff ;width:auto; border-radius:10px;">
                   <h4 class="text-center mb-4 " style="color: #021668;">Please Login Your Account</h4>
               <div class="form-group mb-3 ps-3 pe-3">
                 <!-- <label for="floatingInput" style="padding-left: 40px; color: #000;">Email</label> -->
