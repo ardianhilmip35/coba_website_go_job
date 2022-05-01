@@ -42,7 +42,7 @@
               <div class="d-flex justify-content-center">
                 <p style="font-size: 12px; color: #021668;">Very easy and fast. We will not upload anything without your permission</p>
               </div>
-                <p style="text-align: center; color: #021668;">Don’t have an account? <a href="" style="font-weight: bold;">Register!</a></p>
+                <p style="text-align: center; color: #021668;">Don’t have an account? <a href="#" style="font-weight: bold;">Register!</a></p>
               </div>
               </div>
               
