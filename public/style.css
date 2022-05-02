@@ -1,47 +1,48 @@
-  body {
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-  }
+body {
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+}
 
+:root{
+    --primary-color: #021668;
+}
 .container-background {
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
     padding: 10px;
 }
 
 .container-profil {
     padding: 10px;
     border: #021668 solid 1.5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 320px;
     height: 100px;
     display: flex;
     align-items: center;
 }
 
-.container-item{
+.container-item {
     padding: 10px;
     border: #021668 solid 1.5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 320px;
     height: 400px;
     display: flex;
-
 }
 
-.container-saran{
+.container-saran {
     padding: 10px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 800px;
     height: 100px;
     display: flex;
     align-items: center;
     margin-left: -200px;
-
 }
 
-.container-detail{
+.container-detail {
     padding: 30px;
     border: none;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 800px;
     height: 390px;
     margin-top: 10px;
@@ -49,24 +50,24 @@
     margin-bottom: 5rem;
 }
 
-#btnitem:hover{
+#btnitem:hover {
     background-color: #021668;
     opacity: 0.7;
     color: #021668;
     filter: alpha(opacity=70);
 }
 
-.wrapper{
-    max-height:400px;
+.wrapper {
+    max-height: 400px;
     display: flex;
     overflow: auto;
-  }
-  
-  .wrapper::-webkit-scrollbar {
+}
+
+.wrapper::-webkit-scrollbar {
     width: 0;
-  }
-  
-  .wrapper .card{
+}
+
+.wrapper .card {
     background-color: #021668;
     min-width: 380px;
     height: 250px;
@@ -76,70 +77,68 @@
     margin-bottom: 10px;
     margin-left: 10px;
     border-radius: 0%;
-  }
-  
-  .img-perusahaan {
+}
+
+.img-perusahaan {
     margin: auto;
     width: 360px;
     height: 210px;
     border-radius: 0%;
     margin-top: 8px;
-    
-  }
-  
-  .card-img {
+}
+
+.card-img {
     width: 380px;
     height: 250px;
     filter: opacity(60%);
     border-radius: 0%;
-  }
-  
-  .logo-img {
+}
+
+.logo-img {
     width: 120px;
     height: 70px;
     margin-top: -80px;
-  }
-  
-  .bookmarkbtn{
+}
+
+.bookmarkbtn {
     background-color: transparent;
-    margin-left: 330px; 
+    margin-left: 330px;
     margin-top: -70px;
     border: transparent;
     padding: 0px;
-    
-  }
+}
 
-  .bookmarkbtn:hover{
+.bookmarkbtn:hover {
     border-color: white;
     opacity: 0.2;
-  }
+}
 
-  .bookmarkbtn:focus{
+.bookmarkbtn:focus {
     background-color: #021668;
     border-color: #021668;
     opacity: 20.2;
-  }
+}
 
-  .namaformreg{
+.namaformreg {
     color: #000;
     margin-bottom: 4px;
     font-size: medium;
-  }
-  .namaformreg1{
+}
+.namaformreg1 {
     color: #fff;
     margin-bottom: 4px;
     font-size: medium;
-  }
+}
 
-  #container-search{
-    background-color: #D7E9F7;
+#container-search {
+    background-color: #d7e9f7;
     height: 290px;
     padding: 80px;
     width: auto;
     padding-left: 130px;
-  }
-  
-  #txtsearch {
+}
+
+#txtsearch {
     background-image: url(img/search.png);
     background-position: left;
     background-position: 8px;
@@ -150,9 +149,9 @@
     height: 40px;
     border: black solid 2px;
     border-radius: 3px;
-  }
-  
-  #txtpin {
+}
+
+#txtpin {
     background-image: url(img/pin.png);
     background-position: left;
     background-position: 5px;
@@ -163,9 +162,9 @@
     height: 40px;
     border: black solid 2px;
     border-radius: 3px;
-  }
-  
-  #txtcase{
+}
+
+#txtcase {
     background-image: url(img/case.png);
     background-position: left;
     background-position: 9px;
@@ -176,48 +175,118 @@
     height: 40px;
     border-radius: 3px;
     border: black solid 2px;
-  }
+}
 
-  #card-item{
+#card-item {
     background-blend-mode: difference;
-  }
+}
 
-
-  /*Admin*/
-  .namaperusahaan{
+/*Admin*/
+.namaperusahaan {
     font-weight: bold;
     text-align: end;
-  }
+}
 
-  .listmenu{
-    margin-left: auto;}
-  
-  .menu{
+.listmenu {
+    margin-left: auto;
+}
+
+.menu {
     color: #fff;
     text-decoration: none;
-  }
+}
 
-  .menu:focus{
+.menu:focus {
     color: #021668;
     background-color: #fff;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-  }
+}
 
-  .menulowo{
+.menulowo {
     color: #000;
     margin-right: 15px;
-  }
+}
 
-  .menulowo:focus{
+.menulowo:focus {
     border-bottom: #021668 solid 2px;
     margin-right: 15px;
-  }
+}
 
-  footer{
+footer {
     position: relative;
     bottom: 0px;
     width: 100%;
+}
+
+/* Iklan */
+.form-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+
+.form-step-active {
+    display: block;
+}
+
+/* Progress */
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 2rem 15rem 5rem 15rem;
   }
   
+  .progressbar::before,
+  .progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #F4F4F4;
+  }
+  
+  .progress {
+    background-color: var(--primary-color);
+    width: 0%;
+    transition: 0.3s;
+  }
+  
+  .progress-step {
+    width: 3rem;
+    height: 3rem;
+    background-color: #F4F4F4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  .progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+  }
+  
+  .progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: 0.85rem;
+    color: #000;
+    font-weight: bold;
+    font-size: smaller;
+  }
+  
+  .progress-step-active {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+

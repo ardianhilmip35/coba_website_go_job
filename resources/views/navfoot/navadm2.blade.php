@@ -12,6 +12,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
         <!-- custom css  -->
         <link rel="stylesheet" href="/style.css">
+
+        <!-- Script -->
+        <script src="/script.js" defer></script>
+
         <style>
             body {
                 font-family: 'Poppins', sans-serif;
@@ -57,7 +61,7 @@
 {{-- Akhir Navbar --}}
 
 {{-- Awal content --}}
-<div class="container-fluid mt-6" style="padding-bottom: 150px;">
+<div class="container-fluid mt-6" style="padding-bottom: 120px;">
     @yield('content')
 </div>
 {{-- Akhir content --}}
