@@ -54,7 +54,7 @@
 {{-- Akhir Navbar --}}
 
 {{-- Awal content --}}
-<div class="container mt-6">
+<div class="container-fluid mt-6" style=" margin-top: 90px; margin-bottom: 90px;">
     @yield('content')
 </div>
 {{-- Akhir content --}}
@@ -62,3 +62,6 @@
 {{-- awal footer --}}
     @include('navfoot.footer')
 {{-- Akhir Footer --}}
+
+</body>
+</html>

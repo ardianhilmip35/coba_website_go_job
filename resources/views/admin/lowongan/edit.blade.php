@@ -2,8 +2,7 @@
 
 @section('title', 'Edit Lowongan')
 @section('content') 
-    <section style="width:100%; position: relative;">
-        <div class="container ps-4 pt-4 pb-4 rounded-3" style="margin-top: 120px; background-color: #D7E9F7;">
+    <section style="margin-left: 50px; margin-right: 50px;  background-color: #D7E9F7; border-radius: 10px; padding: 30px;">
             <form action="#" class="form">
                 <h5 class="fw-bold">Edit data Lowongan</h5>
                 <p>Silahkan edit data lowongan jika ada kekeliruan pada data yang sudah diisi sebelumnya.</p>
@@ -212,6 +211,5 @@
             {{-- AKHIR SLIDE KETIGA    --}}
 
             </form>
-        </div>
     </section>
 @endsection

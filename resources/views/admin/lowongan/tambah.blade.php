@@ -2,8 +2,7 @@
 
 @section('title', 'Tambah Lowongan')
 @section('content') 
-    <section style="width:100%; position: relative;">
-        <div class="container ps-4 pt-4 pb-4 rounded-3" style="margin-top: 120px; background-color: #D7E9F7;">
+    <section style="margin-left: 100px; margin-right: 100px;  background-color: #D7E9F7; border-radius: 10px; padding: 30px;">
             <form action="#" class="form">
                 <h5 class="fw-bold">Tambah data Lowongan</h5>
                 <p>Isi data lowongan dengan lengkap dan jelas untuk diiklankan</p>
@@ -211,7 +210,6 @@
             </div>
             {{-- AKHIR SLIDE KETIGA    --}}
 
-            </form>
-        </div>
+        </form>
     </section>
 @endsection

@@ -2,11 +2,10 @@
 
 @section('title', 'Register Admin')
 @section('content')
-    <section id="form">
-        <form action="POST" action="">
-            <div class="container d-flex justify-content-center p-3" style="margin-top: 5rem; margin-bottom: 2rem;">
+    <section id="form" >
+        <form action="POST" action="" class="d-flex justify-content-center p-3">
                 <div class="col-lg-10 pt-3">
-                    <div class="container mt-2 p-4 shadow m-auto rounded" style="background-color:#ffff ; width:auto;">
+                    <div class="container-fluid mt-2 p-4 shadow m-auto rounded" style="background-color:#ffff ; width:auto;">
                         <img src="/img/logofull.png" alt="" width="160" class="mb-4 rounded mx-auto d-block">
                         <hr size="4" color="#000000" width=”500″  style="border: 2px solid black">
                         <div class="row">
@@ -53,7 +52,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </form>
     </section>
 @endsection

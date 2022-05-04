@@ -2,8 +2,7 @@
 
 @section('title', 'Iklan Lowongan')
 @section('content')    
-    <section style="width:100%; position: relative;">
-        <div class="container" style="margin-top: 100px;">
+    <section style=" margin-left: 50px; margin-right: 50px;">
             <div class="row">
                 <div class="container d-flex justify-content-between shadow rounded" style="background-color: #fff;">
                     <p class="fs-5 me-auto pt-3 ps-3">Iklan Lowongan</p>
@@ -26,6 +25,5 @@
                 </div>
             </div>
 
-        </div>
     </section>
 @endsection

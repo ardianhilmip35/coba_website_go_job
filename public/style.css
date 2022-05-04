@@ -215,10 +215,13 @@ body {
 }
 
 footer {
-    position: relative;
-    bottom: 0px;
-    width: 100%;
+    position:relative;
+    bottom:0;
+    width:100%;
+    background-color: #021668;
 }
+
+
 
 /* Iklan */
 .form-step {
@@ -237,7 +240,7 @@ footer {
     display: flex;
     justify-content: space-between;
     counter-reset: step;
-    margin: 2rem 15rem 5rem 15rem;
+    margin: 2rem 4rem 5rem 4rem;
   }
   
   .progressbar::before,
@@ -290,3 +293,4 @@ footer {
     color: #fff;
   }
 
+/* laporan */

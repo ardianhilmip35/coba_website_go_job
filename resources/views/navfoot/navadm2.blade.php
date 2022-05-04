@@ -38,10 +38,10 @@
                     <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="#">Pencarian Talent</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu"  aria-current="page" href="#">Laporan Lowongan</a>
+                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu"  aria-current="page" href="/admin/lowongan/laporan">Laporan Lowongan</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="#">Iklan Lowongan</a>
+                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="/admin/lowongan">Iklan Lowongan</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
@@ -61,7 +61,7 @@
 {{-- Akhir Navbar --}}
 
 {{-- Awal content --}}
-<div class="container-fluid mt-6" style="padding-bottom: 120px;">
+<div class="container-fluid" style=" margin-top: 130px; margin-bottom: 120px;">
     @yield('content')
 </div>
 {{-- Akhir content --}}
@@ -69,3 +69,6 @@
 {{-- awal footer --}}
     @include('navfoot.footer')
 {{-- Akhir Footer --}}
+
+</body>
+</html>

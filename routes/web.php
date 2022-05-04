@@ -38,7 +38,9 @@ Route::get('/admin/lowongan/tambah', function () {
 Route::get('/admin/lowongan/edit', function () {
     return view('admin.lowongan.edit');
 });
-
+Route::get('/admin/lowongan/laporan', function () {
+    return view('admin.lowongan.laporan');
+});
 // User
 Route::get('/', function () {
     return view('user.login');

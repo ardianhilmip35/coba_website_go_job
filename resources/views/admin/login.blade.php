@@ -3,10 +3,9 @@
 @section('title', 'Login Admin')
 @section('content')
     <section id="form">
-        <form action="POST" action="">
-            <div class="container d-flex justify-content-center p-3" style="margin-top: 5rem; margin-bottom: 2rem;">
-                <div class="col-lg-6 pt-3">
-                    <div class="container mt-2 p-4 shadow m-auto rounded" style="background-color:#ffff ;width:auto;">
+        <form action="POST" action="" class="d-flex justify-content-center p-3">
+                <div class="col-lg-6 pt-3 ">
+                    <div class="container-fluid mt-2 p-4" style="background-color:#ffff ;width:auto;">
                         <img src="/img/logofull.png" alt="" width="230" class="mb-4 rounded mx-auto d-block">
                         <h4 class="text-center pb-3 fw-bold" style="color: #021668;">Please Login Your Account</h4>
                         <div class="form-group mb-3 px-1">
@@ -31,7 +30,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </form>
     </section>
     

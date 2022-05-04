@@ -2,7 +2,7 @@
 
 @section('title', 'Profil Perusahaan')
 @section('content')   
-<section id="form">
+<section id="form" style="margin-left: 50px; margin-right: 50px;">
     <h2 class="pb-2 border-bottom" style="font-size: 30px; margin-top: 100px; color: #021668;"><b>Edit Profil Perusahaan</b></h2>
         <a class="nav-link"  style="color: #021668;" aria-current="page" href="#"><b>Informasi Perusahaan</b></a>
      
