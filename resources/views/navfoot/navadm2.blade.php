@@ -61,7 +61,7 @@
 {{-- Akhir Navbar --}}
 
 {{-- Awal content --}}
-<div class="container-fluid" style="margin-bottom: 120px;">
+<div class="container-fluid">
     @yield('content')
 </div>
 {{-- Akhir content --}}

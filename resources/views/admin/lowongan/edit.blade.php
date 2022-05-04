@@ -2,7 +2,7 @@
 
 @section('title', 'Edit Lowongan')
 @section('content') 
-    <section style=" margin-top: 130px; margin-left: 50px; margin-right: 50px;  background-color: #D7E9F7; border-radius: 10px; padding: 30px;">
+    <section style=" margin-top: 130px; margin-left: 50px; margin-bottom: 120px; margin-right: 50px;  background-color: #D7E9F7; border-radius: 10px; padding: 30px;">
             <form action="#" class="form">
                 <h5 class="fw-bold">Edit data Lowongan</h5>
                 <p>Silahkan edit data lowongan jika ada kekeliruan pada data yang sudah diisi sebelumnya.</p>
