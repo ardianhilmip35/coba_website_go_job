@@ -1,7 +1,7 @@
 @extends('navfoot.navadm2')
 @section('title', 'Profil Perusahaan')
 @section('content')   
-<section id="form" style="margin-left: 70px; margin-right: 80px;">
+<section id="form" style=" margin-top: 130px; margin-left: 70px; margin-right: 80px;">
     <h2 class="pb-2 mx-3 border-bottom" style="font-size: 30px; margin-top: 100px; color: #021668;"><b>Profil Perusahan</b></h2>
         <a class="nav-link"  style="color: #021668;" aria-current="page" href="#"><b>Informasi Perusahaan</b></a>
      

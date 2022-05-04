@@ -2,7 +2,7 @@
 
 @section('title', 'Tambah Lowongan')
 @section('content') 
-    <section style="margin-left: 100px; margin-right: 100px;  background-color: #D7E9F7; border-radius: 10px; padding: 30px;">
+    <section style=" margin-top: 130px; margin-left: 100px; margin-right: 100px;  background-color: #D7E9F7; border-radius: 10px; padding: 30px;">
             <form action="#" class="form">
                 <h5 class="fw-bold">Tambah data Lowongan</h5>
                 <p>Isi data lowongan dengan lengkap dan jelas untuk diiklankan</p>
