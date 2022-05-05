@@ -54,7 +54,7 @@
               <div class="d-flex justify-content-center">
                 <p style="font-size: 12px; color: #021668;">Very easy and fast. We will not upload anything without your permission</p>
               </div>
-                <p style="text-align: center; color: #021668;">You have an account? <a href="#" style="font-weight: bold;">Login!</a></p>
+                <p style="text-align: center; color: #021668;">You have an account? <a href="/" style="font-weight: bold;">Login!</a></p>
               </div>
               
               
