@@ -48,12 +48,6 @@ Route::get('/', function () {
 Route::get('/user/register1', function () {
     return view('user.register1');
 });
-Route::get('/user/register1', function () {
-    return view('user.register2');
-});
-Route::get('/user/register1', function () {
-    return view('user.register1');
-});
 Route::get('/user/register2', function () {
     return view('user.register2');
 });
