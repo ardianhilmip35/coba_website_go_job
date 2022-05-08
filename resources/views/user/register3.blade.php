@@ -44,14 +44,14 @@
             <div class="container px-5 py-3  m-auto" style="width:auto;">
 
             <div class="row px-3 mt-3">
-                <div class=" container border col-lg-5 col-sm-9 px-3 py-2 text-center" style="background-color:#D7E9F7">
+                <div class=" container col-lg-5 col-sm-9 px-3 py-2 text-center" style="border: 3px solid #021668;">
                   <a href="/user/register2"><Strong>Memiliki Pengalaman Kerja</Strong></a>
                 
                 </div>
                 <div class="container col-lg-2 col-sm-9 px-3 py-2 text-center" style="color: #021668;">
                     <Strong>Atau</Strong>
                 </div>
-                <div class="container col-lg-5 col-sm-9 px-3 py-2 text-center" style="border: 3px solid #021668;">
+                <div class="container border col-lg-5 col-sm-9 px-3 py-2 text-center" style="background-color:#D7E9F7">
                   <a href="/user/register3"><Strong>Mahasiswa/Baru Lulus</Strong></a>
                 
                 </div>
@@ -61,8 +61,8 @@
             <div class="row mt-3">
                 <div class="container col-lg-5 ms-4">
                     <div class="form-group mb-4 ps-4 pe-1">
-                    <label for="floatingInput" style="color: #000;">Pernah Bekerja Di</label>
-                    <input type="text" name="Pernah Bekerja Di" class="form-control" id="floatingInput" placeholder="Pengalaman Bekerja" style="color: #021668; background-color: #f1f1f1" />
+                    <label for="floatingInput" style="color: #000;">Universitas/Institusi</label>
+                    <input type="text" name="universitas" class="form-control" id="floatingInput" placeholder="Universitas" style="color: #021668; background-color: #f1f1f1" />
                     </div>
                 </div>
                 <div class="container col-lg-5 me-4">
@@ -76,8 +76,8 @@
             <div class="row mt-2">
                 <div class="container col-lg-5 ms-4">
                     <div class="form-group mb-4 ps-4 pe-1">
-                    <label for="floatingInput" style="color: #000;">Posisi</label>
-                    <input type="text" name="Posisi" class="form-control" id="floatingInput" placeholder="Bekerja Sebagai" style="color: #021668; background-color: #f1f1f1" />
+                    <label for="floatingInput" style="color: #000;">Jurusan</label>
+                    <input type="text" name="Jurusan" class="form-control" id="floatingInput" placeholder="Jurusan/Fakultas" style="color: #021668; background-color: #f1f1f1" />
                     </div>
                 </div>
                 <div class="container col-lg-5 me-4">
@@ -91,8 +91,8 @@
             <div class="row mt-2">
               <div class="container col-lg-5 ms-4">
                   <div class="form-group mb-4 ps-4 pe-1">
-                  <label for="floatingInput" style="color: #000;">Perusahaan</label>
-                  <input type="text" name="Perusahaan" class="form-control" id="floatingInput" placeholder="Nama perusahaan sebelumnya" style="color: #021668; background-color: #f1f1f1" />
+                  <label for="floatingInput" style="color: #000;">Program Studi</label>
+                  <input type="text" name="Prodi" class="form-control" id="floatingInput" placeholder="Program Studi" style="color: #021668; background-color: #f1f1f1" />
                   </div>
               </div>
               <div class="container col-lg-5 me-4">
@@ -106,8 +106,8 @@
           <div class="row mt-2">
             <div class="container col-lg-5 ms-4">
                 <div class="form-group mb-4 ps-4 pe-1">
-                <label for="floatingInput" style="color: #000;">Berhenti Kerja</label>
-                <input type="date" name="Perusahaan" class="form-control" id="floatingInput" placeholder="Nama perusahaan sebelumnya" style="color: #021668; background-color: #f1f1f1" />
+                <label for="floatingInput" style="color: #000;">Tahun Lulus</label>
+                <input type="date" name="Tahun Lulus" class="form-control" id="floatingInput" placeholder="Tahun Lulus" style="color: #021668; background-color: #f1f1f1" />
                 </div>
             </div>
             <div class="container col-lg-5 me-4">

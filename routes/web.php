@@ -51,6 +51,9 @@ Route::get('/user/register1', function () {
 Route::get('/user/register2', function () {
     return view('user.register2');
 });
+Route::get('/user/register3', function () {
+    return view('user.register3');
+});
 
 Route::get('/dashboard', function () {
     return view('user.dashboard');
