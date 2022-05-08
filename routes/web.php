@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -88,3 +89,5 @@ Route::get('/detaillowonganuser', function () {
     return view('user.detail_lowongan_user');
 });
 
+route::get('/login',[LoginController::class,'login'])->name('login');
+route::get('/register1',[LoginController::class,'register1'])->name('register1');
