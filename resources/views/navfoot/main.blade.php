@@ -61,7 +61,7 @@
 <!-- akhir navbar -->
 
 {{-- Awal content --}}
-<div class="container mt-6">
+<div class="container-fluid mt-6 px-5">
     @yield('content')
 </div>
 {{-- Akhir content --}}
