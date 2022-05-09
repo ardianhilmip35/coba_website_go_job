@@ -44,17 +44,17 @@
                     </div>
                 </div>
 
-                {{-- TINGKAT JABATAN --}}
+                {{-- KATEGORI JABATAN --}}
                 <div class="row" style="padding-left: 10px; margin-bottom: 40px;">
                     <label for="tingkatjabatan" class="text-center fw-bold col-sm-2 col-form-label align-self-center" style="background-color: #F1F1F1; border: 1px solid #000;">Tingkat Jabatan</label>
                     <div class="col-sm-10">
                         <select class="form-select" placeholder="Pilih Jabatan" style="background-color:#fff;" id="tingkatjabatan">
                             <option selected>Pilih Jabatan</option>
-                            <option value="1">CEO/Direktu/Manajer Senior</option>
-                            <option value="2">Asisten Manajer</option>
-                            <option value="3">Supervisor</option>
-                            <option value="4">Pegawai</option>
-                            <option value="5">Lulusan Baru/Pengalaman Kurang dari 1 tahun</option>
+                            <option value="CEO/Direktur/Manajer Senior">CEO/Direktur/Manajer Senior</option>
+                            <option value="Asisten Manajer">Asisten Manajer</option>
+                            <option value="Supervisor">Supervisor</option>
+                            <option value="Pegawai">Pegawai</option>
+                            <option value="Lulusan Baru/Pengalaman Kurang dari 1 tahun">Lulusan Baru/Pengalaman Kurang dari 1 tahun</option>
                         </select>
                     </div>
                 </div>
@@ -75,16 +75,16 @@
                     <div class="col-sm-10">
                         <select class="form-select" placeholder="Pilih Spesialis" style="background-color:#fff;" id="spesialis">
                             <option selected>Pilih Spesialis Pekerjaan</option>
-                            <option value="1">Arsitek</option>
-                            <option value="2">Biomedis</option>
-                            <option value="3">Bioteknologi</option>
-                            <option value="4">Staf Admin</option>
-                            <option value="5">Customer Service</option>
-                            <option value="6">Digital Marketing</option>
-                            <option value="7">E-commerce</option>
-                            <option value="8">Mobile Developer</option>
-                            <option value="9">Sistem Analis</option>
-                            <option value="10">Web Developer</option>
+                            <option value="Arsitek">Arsitek</option>
+                            <option value="Biomedis">Biomedis</option>
+                            <option value="Bioteknologi">Bioteknologi</option>
+                            <option value="Staff Admin">Staff Admin</option>
+                            <option value="Customer Service">Customer Service</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="E-commerce">E-commerce</option>
+                            <option value="Mobile Developer">Mobile Developer</option>
+                            <option value="Sistem Analis">Sistem Analis</option>
+                            <option value="Web Developer">Web Developer</option>
                         </select>
                     </div>
                 </div>
@@ -109,18 +109,22 @@
                     <div class="col-sm-10">
                         <select class="form-select" placeholder="Pilih Spesialis" style="background-color:#fff;" id="pengalaman">
                             <option selected>Pilih Pengalaman Kerja</option>
-                            <option value="1">Tidak ada</option>
-                            <option value="2">1 tahun</option>
-                            <option value="3">2 tahun</option>
-                            <option value="4">3 tahun</option>
-                            <option value="5">4 tahun</option>
-                            <option value="6">5 tahun</option>
-                            <option value="7">Lebih dari 5 tahun</option>
+                            <option value="Tidak ada">Tidak ada</option>
+                            <option value="1 Tahun">1 Tahun</option>
+                            <option value="2 Tahun">2 Tahun</option>
+                            <option value="3 Tahun">3 Tahun</option>
+                            <option value="4 Tahun">4 Tahun</option>
+                            <option value="5 Tahun">5 Tahun</option>
+                            <option value="6 Tahun">6 Tahun</option>
+                            <option value="7 Tahun">7 Tahun</option>
+                            <option value="8 Tahun">8 Tahun</option>
+                            <option value="9 Tahun">9 Tahun</option>
+                            <option value="10 Tahun">10 Tahun</option>
                         </select>
                     </div>
                 </div>
 
-                {{-- DESKRIPSI PEKERJAAAN --}}
+                {{-- DESKRIPSI PEKERJAAN --}}
                 <div class="row " style="padding-left: 10px; margin-bottom: 40px;">
                     <label for="deskripsipekerjaan" class="text-center fw-bold col-sm-2 col-form-label align-self-start" style="background-color: #F1F1F1; border: 1px solid #000;">Deskripsi Pekerjaan</label>
                     <div class="col-sm-10">
@@ -165,11 +169,10 @@
                     <div class="col-sm-10">
                         <select class="form-select" placeholder="Pilih Tingkat Pendidikan" style="background-color:#fff;" id="tingkatpendidikan">
                             <option selected>Pilih Tingkat Pendidikan</option>
-                            <option value="1">SMA</option>
-                            <option value="2">DIPLOMA</option>
-                            <option value="3">GELAR SARJANA</option>
-                            <option value="4">GELAR PASCA SARJANA</option>
-                            <option value="5">GELAR DOKTOR</option>
+                            <option value="SMA">SMA</option>
+                            <option value="DIPLOMA/SARJANA">DIPLOMA/SARJANA</option>
+                            <option value="PASCA SARJANA">PASCA SARJANA</option>
+                            <option value="DOKTOR">DOKTOR</option>
                         </select>
                     </div>
                 </div>
