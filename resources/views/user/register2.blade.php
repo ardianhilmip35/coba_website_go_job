@@ -85,18 +85,19 @@
                 <input type="text" name="gaji" class="form-control" id="floatingInput" placeholder="Ekspektasi gaji" style="color: #021668; background-color: #f1f1f1" />
                 </div>
             </div>
-        </div>
+          </div>
+          <div class="container-fluid px-5 m-auto mb-4 mt-4">
+            <div class="d-flex justify-content-center">
+                <button class="btn fw-bold fs-5" style="background-color: #021668; color:#ffff; width:100%" type="submit" name="simpan">SIMPAN</button>
+            </div>
+          </div>
 
 
-              
               
             </div>
           </div>
        </div>
     </form>
-    <div class="container mt-4 mb-4 text-end">
-    <button type="button" class="btn btn-sm " style="background-color: #021668; color:#ffff; width: 200px;">SIMPAN</button>
-    </div>
     </section>
     @endsection
     <!-- Akhir Login -->
