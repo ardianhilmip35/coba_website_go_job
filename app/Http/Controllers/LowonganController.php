@@ -12,9 +12,9 @@ class LowonganController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function lowongan()
     {
-        //
+        return view('admin.lowongan');
     }
 
     /**

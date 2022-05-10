@@ -12,9 +12,9 @@ class MahasiswaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function mahasiswa()
     {
-        //
+        return view('user.register3');
     }
 
     /**
