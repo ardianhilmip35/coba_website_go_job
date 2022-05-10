@@ -1,47 +1,16 @@
 @extends('navfoot.main')
 
- <!-- Navbar -->
- <!-- <nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background-color: #021668">
-      <div class="container-fluid">
-        <img src="/img/LOGO TOK 1.png" alt="" width="75px" class="d-inline-block align-text-top pe-3 ps-2 mb-1" />
-        <div class="navbar-nav me-auto">
-          <ul class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#" style="text-decoration: none; font-size: 30px; margin-left: ; color: #fff; font-weight: bold; letter-spacing: 1px">Go Job</a>
-            <li class="nav-item">
-                <a class="nav-link" style="text-decoration: none; font-size: 20px; margin-left: 25px; margin-top: 10px; color: #fff; font-weight: normal; letter-spacing: 1px">Beranda</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" style="text-decoration: none; font-size: 20px; margin-left: 20px; margin-top: 10px; 5px; color: #fff; font-weight: normal; letter-spacing: 1px">Profil Perusahaan</a>
-            </ul>
-            <li class="nav-item">
-                <a class="nav-link" href="#" style="text-decoration: none; font-size: 20px; margin-left: 500px; margin-top: 10px; 5px; color: #fff; font-weight: normal; letter-spacing: 1px">Masuk</a>
-            </ul>
-            <li class="nav-item">
-                <a class="nav-link" style="text-decoration: none; font-size: 20px; margin-left: 3px; margin-top: 10px; 5px; color: #fff; font-weight: normal; letter-spacing: 1px">|</a>
-            </ul>
-            <li class="nav-item">
-                <a class="nav-link" style="text-decoration: none; font-size: 20px; margin-left: 3px; margin-top: 10px; 5px; color: #fff; font-weight: normal; letter-spacing: 1px">Mendaftar</a>
-            </ul>
-            <li class="nav-item">
-                <a class="nav-link" style=" background:white; text-decoration: none; font-size: 20px; margin-left: 3px; margin-top: 10px; 5px; color: black; font-weight: bold; letter-spacing: 1px">Untuk Perusahaan</a>
-            </ul>
-        </div>
-      </div>
-    </nav> -->
-    <!-- Akhir Navbar -->
-
-    <!-- Login-->
     @section('content')
 
     <section id="form">
       <form method="POST" action="" class="mt-4" style=" background-color:#ffff ;border: 4px solid #021668; border: radius 25px;">
           <div class="row">
-              <div class="col-lg-12">
-                <div class="container  p-2 shadow m-auto" style="background-color:#021668 ;width:auto;">
+              <div class="col-lg-12 mb-4">
+                <div class="container-fluid p-2 shadow m-auto" style="background-color:#021668 ;width:auto;">
                   <h4 class="text-center mb-4 fw-bold " style="color: #ffff;">Isikan Pengalaman Kerjamu</h4>
                   <h5 class="text-center mb-4" style="color: #ffff;">Find Your job With Go Job</h5>
                 </div>
-            <div class="container px-5 py-3  m-auto" style="width:auto;">
+            <div class="container-fluid px-5 py-3 px-4  m-auto" style="width:auto;">
 
             <div class="row px-3 mt-3">
                 <div class=" container col-lg-5 col-sm-9 px-3 py-2 text-center" style="border: 3px solid #021668;">
@@ -53,81 +22,63 @@
                 </div>
                 <div class="container border col-lg-5 col-sm-9 px-3 py-2 text-center" style="background-color:#D7E9F7">
                   <a href="/user/register3"><Strong>Mahasiswa/Baru Lulus</Strong></a>
-                
                 </div>
             </div>
+            </div>
+
+            <div class="row mt-3 ">
+                <div class="col">
+                    <div class="form-group mb-3 px-3">
+                        <label for="floatingInput1" style="color: #000;">Universitas/Institusi</label>
+                        <input type="text" name="Pernah Bekerja Di" class="form-control" id="floatingInput1" placeholder="Universitas" style="border: 1px solid #021668; color: #021668; background-color: #f1f1f1" />
+                    </div>
+                    <div class="form-group mb-3 px-3">
+                        <label for="floatingInput2" style="color: #000;">Jurusan</label>
+                        <input type="text" name="Posisi" class="form-control" id="floatingInput2" placeholder="Jurusan/Fakultas" style="border: 1px solid #021668; color: #021668; background-color: #f1f1f1" />
+                    </div>
+                    <div class="form-group mb-3 px-3">
+                        <label for="floatingInput3" style="color: #000;">Program Studi</label>
+                        <input type="text" name="Perusahaan" class="form-control" id="floatingInput3" placeholder="Program Studi" style="border: 1px solid #021668; color: #021668; background-color: #f1f1f1" />
+                    </div>
+                    <div class="form-group mb-3 px-3">
+                        <label for="floatingInput4" style="color: #000;">Tahun Lulus</label>
+                        <input type="date" name="Perusahaan" class="form-control" id="floatingInput4" placeholder="Tahun Lulus" style="border: 1px solid #021668; color: #021668; background-color: #f1f1f1" />
+                    </div>
+                    
+                </div>
+                <div class="col">
+                    <div class="form-group mb-3 px-3">
+                        <label for="floatingInput5" style="color: #000;">Spesialis Anda</label>
+                        <input type="text" name="Spesialis Anda" class="form-control" id="floatingInput5" placeholder="Spesifikasi" style="border: 1px solid #021668; color: #021668; background-color: #f1f1f1" />
+                    </div>
+                    <div class="form-group mb-3 px-3">
+                        <label for="floatingInput6" style="color: #000;">Alamat</label>
+                        <input type="text" name="Alamat" class="form-control" id="floatingInput6" placeholder="Masukkan domisili anda" style="border: 1px solid #021668; color: #021668; background-color: #f1f1f1" />
+                    </div>
+                    <div class="form-group mb-3 px-3">
+                        <label for="floatingInput7" style="color: #000;">Lokasi Kerja Yang Diinginkan</label>
+                        <input type="text" name="Lokasi" class="form-control" id="floatingInput7" placeholder="Tempat kerja yang diinginkan" style="border: 1px solid #021668; color: #021668; background-color: #f1f1f1" />
+                    </div>
+                    <div class="form-group mb-3 px-3">
+                        <label for="floatingInput8" style="color: #000;">Ekspektasi Yang Diinginkan</label>
+                        <input type="text" name="gaji" class="form-control" id="floatingInput8" placeholder="Ekspektasi gaji" style="border: 1px solid #021668; color: #021668; background-color: #f1f1f1" />
+                    </div>
+                    
+                </div>
             </div>
             
-            <div class="row mt-3">
-                <div class="container col-lg-5 ms-4">
-                    <div class="form-group mb-4 ps-4 pe-1">
-                    <label for="floatingInput" style="color: #000;">Universitas/Institusi</label>
-                    <input type="text" name="universitas" class="form-control" id="floatingInput" placeholder="Universitas" style="color: #021668; background-color: #f1f1f1" />
-                    </div>
-                </div>
-                <div class="container col-lg-5 me-4">
-                    <div class="form-group mb-4 ps-1 pe-4">
-                    <label for="floatingInput" style="color: #000;">Spesialis Anda</label>
-                    <input type="text" name="Spesialis Anda" class="form-control" id="floatingInput" placeholder="Spesifikasi" style="color: #021668; background-color: #f1f1f1" />
-                    </div>
-                </div>
+          <div class="container-fluid px-5 m-auto mb-3 mt-4">
+            <div class="d-flex justify-content-center">
+                <button class="btn fw-bold fs-5" style="background-color: #021668; color:#ffff; width:100%" type="submit" name="simpan">SIMPAN</button>
             </div>
-
-            <div class="row mt-2">
-                <div class="container col-lg-5 ms-4">
-                    <div class="form-group mb-4 ps-4 pe-1">
-                    <label for="floatingInput" style="color: #000;">Jurusan</label>
-                    <input type="text" name="Jurusan" class="form-control" id="floatingInput" placeholder="Jurusan/Fakultas" style="color: #021668; background-color: #f1f1f1" />
-                    </div>
-                </div>
-                <div class="container col-lg-5 me-4">
-                    <div class="form-group mb-4 ps-1 pe-4">
-                    <label for="floatingInput" style="color: #000;">Alamat</label>
-                    <input type="text" name="Alamat" class="form-control" id="floatingInput" placeholder="Masukkan domisili anda" style="color: #021668; background-color: #f1f1f1" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-2">
-              <div class="container col-lg-5 ms-4">
-                  <div class="form-group mb-4 ps-4 pe-1">
-                  <label for="floatingInput" style="color: #000;">Program Studi</label>
-                  <input type="text" name="Prodi" class="form-control" id="floatingInput" placeholder="Program Studi" style="color: #021668; background-color: #f1f1f1" />
-                  </div>
-              </div>
-              <div class="container col-lg-5 me-4">
-                  <div class="form-group mb-4 ps-1 pe-4">
-                  <label for="floatingInput" style="color: #000;">Lokasi Kerja Yang Diinginkan</label>
-                  <input type="text" name="Lokasi" class="form-control" id="floatingInput" placeholder="Tempat kerja yang diinginkan" style="color: #021668; background-color: #f1f1f1" />
-                  </div>
-              </div>
           </div>
 
-          <div class="row mt-2">
-            <div class="container col-lg-5 ms-4">
-                <div class="form-group mb-4 ps-4 pe-1">
-                <label for="floatingInput" style="color: #000;">Tahun Lulus</label>
-                <input type="date" name="Tahun Lulus" class="form-control" id="floatingInput" placeholder="Tahun Lulus" style="color: #021668; background-color: #f1f1f1" />
-                </div>
-            </div>
-            <div class="container col-lg-5 me-4">
-                <div class="form-group mb-4 ps-1 pe-4">
-                <label for="floatingInput" style="color: #000;">Ekspektasi Yang Diinginkan</label>
-                <input type="text" name="gaji" class="form-control" id="floatingInput" placeholder="Ekspektasi gaji" style="color: #021668; background-color: #f1f1f1" />
-                </div>
-            </div>
-        </div>
 
-
-              
               
             </div>
           </div>
        </div>
     </form>
-    <div class="container mt-4 mb-4 text-end">
-    <button type="button" class="btn btn-sm " style="background-color: #021668; color:#ffff; width: 200px;">SIMPAN</button>
-    </div>
     </section>
     @endsection
     <!-- Akhir Login -->
