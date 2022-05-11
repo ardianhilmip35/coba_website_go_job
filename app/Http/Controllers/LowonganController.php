@@ -14,7 +14,7 @@ class LowonganController extends Controller
      */
     public function lowongan()
     {
-        return view('admin.lowongan');
+        return view('admin.lowongan.iklan');
     }
 
     /**

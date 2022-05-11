@@ -1,6 +1,15 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LoginAdminController;
+use App\Http\Controllers\RegisterAdminController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LamaranController;
+use App\Http\Controllers\LowonganController;
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\PekerjaController;
+use App\Http\Controllers\PerusahaanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,19 +25,19 @@ use Illuminate\Support\Facades\Route;
 
 
 // AdminLoginRegister
-Route::get('/admin/login', function () {
-    return view('admin.login');
-});
-Route::get('/admin/register', function () {
-    return view('admin.register');
-});
+// Route::get('/admin/login', function () {
+//     return view('admin.login');
+// });
+// Route::get('/admin/register', function () {
+//     return view('admin.register');
+// });
 //Profil Admin
-Route::get('/admin/profil', function () {
-    return view('admin.profil_perusahaan.profil');
-});
-Route::get('/admin/profil/edit', function () {
-    return view('admin.profil_perusahaan.edit');
-});
+// Route::get('/admin/profil', function () {
+//     return view('admin.profil_perusahaan.profil');
+// });
+// Route::get('/admin/profil/edit', function () {
+//     return view('admin.profil_perusahaan.edit');
+// });
 
 //Lowongan Admin
 
@@ -79,5 +88,19 @@ Route::get('/admin/profil/edit', function () {
 //     return view('user.detail_lowongan_user');
 // });
 
-route::get('/login', [LoginController::class, 'login'])->name('login');
-route::get('/register1', [LoginController::class, 'register1'])->name('register1');
+
+
+
+
+//User Login & Register
+route::get('/', [LoginController::class, 'login']);
+route::get('/register', [RegisterController::class, 'register']);
+
+//Admin Login & Register
+route::get('/admin/login', [LoginAdminController::class, 'loginadm']);
+route::get('/admin/register', [RegisterAdminController::class, 'registeradm']);
+
+//Dashboard user & admin
+route::get('/user/beranda', [DashboardController::class, 'dashboarduser']);
+route::get('/admin/beranda', [DashboardController::class, 'dashboardadm']);
+route::get('/beranda', [DashboardController::class, 'dashboard']);

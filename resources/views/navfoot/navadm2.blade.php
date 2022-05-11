@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-5 mb-lg-0 listmenu">
                 <li class="nav-item">
-                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="#">Pencarian Talent</a>
+                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="/admin/beranda">Beranda</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link d-grid gap-2 d-flex justify-content-center menu"  aria-current="page" href="/admin/lowongan/laporan">Laporan Lowongan</a>
