@@ -40,7 +40,7 @@
             </div>
             <div class="col-lg-8">
               <div class="card-body" style="background-color: #fff;color:#021668;height:230px;border: 3px solid #021668;">
-                <p class="text-muted mb-2"><small>Informasi Pengalaman Kerja Anda </small></p>
+                <p class="text-muted mb-2">Informasi Pengalaman Kerja Anda</p>
               </div>
               <div class="container-fluid p-2 mt-4" style="background-color:#021668;color:#fff">
                 <label for="file">Curriculum Vitae</label><br><br>
