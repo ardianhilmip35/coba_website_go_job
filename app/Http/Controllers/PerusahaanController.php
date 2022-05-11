@@ -57,7 +57,7 @@ class PerusahaanController extends Controller
      */
     public function edit(perusahaan $perusahaan)
     {
-        //
+        return view('admin.profil_perusahaan.edit');
     }
 
     /**

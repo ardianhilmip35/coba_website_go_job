@@ -2,14 +2,14 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\LoginAdminController;
-use App\Http\Controllers\RegisterAdminController;
+use App\Http\Controllers\LoginRegisAdmController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LamaranController;
 use App\Http\Controllers\LowonganController;
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\PekerjaController;
 use App\Http\Controllers\PerusahaanController;
+use App\Http\Controllers\LaporanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,19 +48,19 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/user/register1', function () {
 //     return view('user.register1');
 // });
- Route::get('/user/register2', function () {
-     return view('user.register2');
- });
+//  Route::get('/user/register2', function () {
+//      return view('user.register2');
+//  });
 // Route::get('/user/register3', function () {
 //     return view('user.register3');
 // });
 
-Route::get('/dashboard', function () {
-     return view('user.dashboard');
-});
-Route::get('/lamar_lowongan', function () {
-     return view('user.lamar_lowongan');
-});
+// Route::get('/dashboard', function () {
+//      return view('user.dashboard');
+// });
+// Route::get('/lamar_lowongan', function () {
+//      return view('user.lamar_lowongan');
+// });
 // Route::get('/profil', function () {
 //     return view('user.profil');
 // });
@@ -100,10 +100,24 @@ route::get('/', [LoginController::class, 'login']);
 route::get('/register', [RegisterController::class, 'register']);
 
 //Admin Login & Register
-route::get('/admin/login', [LoginAdminController::class, 'loginadm']);
-route::get('/admin/register', [RegisterAdminController::class, 'registeradm']);
+route::get('/admin/login', [LoginRegisAdmController::class, 'loginadm']);
+route::get('/admin/register', [LoginRegisAdmController::class, 'registeradm']);
 
 //Dashboard user & admin
 route::get('/user/beranda', [DashboardController::class, 'dashboarduser']);
 route::get('/admin/beranda', [DashboardController::class, 'dashboardadm']);
 route::get('/beranda', [DashboardController::class, 'dashboard']);
+
+//Data Lowongan Admin
+route::get('/admin/lowongan', [LowonganController::class, 'lowongan']);
+route::get('/admin/lowongan/tambah', [LowonganController::class, 'create']);
+route::get('/admin/lowongan/ubah', [LowonganController::class, 'edit']);
+
+
+//Laporan Lowongan Admin
+route::get('/admin/lowongan/laporan', [LaporanController::class, 'laporan']);
+
+
+//Profil Perusahaan Admin
+route::get('/admin/profil', [PerusahaanController::class, 'perusahaan']);
+route::get('/admin/profil/edit', [PerusahaanController::class, 'edit']);

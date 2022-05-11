@@ -4,16 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class RegisterAdminController extends Controller
+class LaporanController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function registeradm()
+    public function laporan()
     {
-        return view('admin.register');
+        return view('admin.lowongan.laporan');
     }
 
     /**

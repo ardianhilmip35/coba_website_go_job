@@ -8,7 +8,7 @@
                     <p class="fs-5 me-auto pt-3 ps-3">Iklan Lowongan</p>
                     <a href="#" class="text-decoration-none text-dark menulowo" style="padding-top: 19px;">Lowongan yang ditayangkan</a>
                     <a href="#" class="text-decoration-none text-dark menulowo" style="padding-top: 19px;">Draf Tersimpan</a>
-                    <button type="button" class="btn btn-warning btn-sm fs-6 me-3" style="margin-top:12px; margin-bottom: 12px">Buat Iklan Lowongan</button>
+                    <a href="/admin/lowongan/tambah"><button type="button" class="btn btn-warning btn-sm fs-6 me-3" style="margin-top:12px; margin-bottom: 12px">Buat Iklan Lowongan</button></a>
                 </div>
             </div>
 
@@ -18,7 +18,7 @@
                         <p class="me-auto pt-3 ps-3 fw-bold"  style="font-size:20px;">Nama Lowongan</p>   
                         <p class="me-auto ps-3" style="margin-top: -12px; font-size:15px">Terakhir diperbarui 5 April 2022 at 8:58 AM</p>
                         <div class="d-flex justify-content-start ps-3  pb-2">
-                            <button type="button" class="btn btn-success btn-sm fs-6 me-3" style="margin-top:12px; margin-bottom: 12px">Ubah</button>
+                            <a href="/admin/lowongan/ubah"><button type="button" class="btn btn-success btn-sm fs-6 me-3" style="margin-top:12px; margin-bottom: 12px">Ubah</button></a>
                             <button type="button" class="btn btn-danger btn-sm fs-6 me-3" style="margin-top:12px; margin-bottom: 12px">Hapus</button>
                         </div>
                     </div>

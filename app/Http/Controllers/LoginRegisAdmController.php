@@ -2,10 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\perusahaan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Hash;
+use function GuzzleHttp\Promise\all;
 
-class LoginAdminController extends Controller
+class LoginRegisAdmController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -29,13 +33,13 @@ class LoginAdminController extends Controller
             'email' => ['required', 'email'],
             'password' => ['required'],
         ]);
- 
+
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
- 
+
             return redirect()->intended('dashboard');
         }
- 
+
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
         ]);
@@ -63,9 +67,9 @@ class LoginAdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function registeradm()
     {
-        //
+        return view('admin.register');
     }
 
     /**
@@ -76,7 +80,21 @@ class LoginAdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validateData = $request->validate([
+            'nama_admin' => 'required|max:255',
+            'nama_startup' => 'required|min:3|max:20|unique:users',
+            'telp_startup' => 'required|email:dns|unique:users',
+            'password' => 'required|min:8|max:20'
+
+        ]);
+
+        $validateData['password'] = Hash::make($validateData['password']);
+
+        perusahaan::create($validateData);
+
+        $request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
+
+        return redirect('/login');
     }
 
     /**

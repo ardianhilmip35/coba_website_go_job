@@ -11,7 +11,7 @@
                 <div style="color: #021668;">
                     <ul class="d-flex list-unstyled" style="margin-left: 10px">
                         <li><label style="font-size: 15px; margin-top: 10px"><b>Nama Profil</b></label><br></li>
-                        <li style="margin-left: 85%; margin-top: 10px"><a href="#"><i class="fas fa-edit fa-2x"></i></a><br></li>
+                        <li style="margin-left: 85%; margin-top: 10px"><a href="/admin/profil/edit"><i class="fas fa-edit fa-2x"></i></a><br></li>
                     </ul>
                         <label class="" style="font-size: 15px; margin-top: -30px; margin-left: 10px">Dibuat : </label><br>
                         <label class="mt-4" style="font-size: 15px; margin-left: 10px" ><b>Nama Perusahaan</b></label><br>
