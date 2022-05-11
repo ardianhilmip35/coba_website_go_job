@@ -39,16 +39,19 @@ Route::get('/admin/profil/edit', function () {
 // Route::get('/user/register1', function () {
 //     return view('user.register1');
 // });
-// Route::get('/user/register2', function () {
-//     return view('user.register2');
-// });
+ Route::get('/user/register2', function () {
+     return view('user.register2');
+ });
 // Route::get('/user/register3', function () {
 //     return view('user.register3');
 // });
 
-// Route::get('/dashboard', function () {
-//     return view('user.dashboard');
-// });
+Route::get('/dashboard', function () {
+     return view('user.dashboard');
+});
+Route::get('/lamar_lowongan', function () {
+     return view('user.lamar_lowongan');
+});
 // Route::get('/profil', function () {
 //     return view('user.profil');
 // });
