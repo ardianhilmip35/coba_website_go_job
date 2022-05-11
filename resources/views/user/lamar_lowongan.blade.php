@@ -1,4 +1,4 @@
-@extends('navfoot.main')
+@extends('navfoot.main2')
 
     @section('content')
 
@@ -6,7 +6,7 @@
       <form method="POST" action="" class="mt-4">
         <div class="row">
           <div class="col-lg-4 mb-4">
-            <div class="container-fluid">
+            <div class="container-fluid" style="margin-top: 5rem;">
               
               <div class="card-header text-center" style="background-color: #021668; color:#fff">
                 <img src="" alt="">
@@ -38,7 +38,7 @@
               </div>
 
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 pe-4" style="margin-top: 5rem">
               <div class="card-body" style="background-color: #fff;color:#021668;height:230px;border: 3px solid #021668;">
                 <p class="text-muted mb-2">Informasi Pengalaman Kerja Anda</p>
               </div>
