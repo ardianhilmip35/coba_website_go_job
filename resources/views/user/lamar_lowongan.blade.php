@@ -42,11 +42,9 @@
               <div class="card-body" style="background-color: #fff;color:#021668;height:230px;border: 3px solid #021668;">
                 <p class="text-muted mb-2"><small>Informasi Pengalaman Kerja Anda </small></p>
               </div>
-              <div class="container p-2 mt-4" style="background-color:#021668;color:#fff">
-                <label for="file">Curriculum Vitae</label>
-                <div class="d-flex justify-content-end">
-                  <input type="file" name="" id="">
-                  </div>
+              <div class="container-fluid p-2 mt-4" style="background-color:#021668;color:#fff">
+                <label for="file">Curriculum Vitae</label><br><br>
+                <input type="file">
               </div>
             </div>
           </div>
