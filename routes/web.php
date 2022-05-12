@@ -96,28 +96,28 @@ use Illuminate\Support\Facades\Route;
 
 
 //User Login & Register
-route::get('/', [LoginController::class, 'login']);
-route::get('/register', [RegisterController::class, 'register']);
+route::get('/', [LoginController::class, 'login'])->name('login');
+route::get('/register', [RegisterController::class, 'register'])->name('register');
 
 //Admin Login & Register
-route::get('/admin/login', [LoginRegisAdmController::class, 'loginadm']);
-route::get('/admin/register', [LoginRegisAdmController::class, 'registeradm']);
+route::get('/admin/login', [LoginRegisAdmController::class, 'loginadm'])->name('loginadm');
+route::get('/admin/register', [LoginRegisAdmController::class, 'registeradm'])->name('registeradm');
 
 //Dashboard user & admin
-route::get('/user/beranda', [DashboardController::class, 'dashboarduser']);
-route::get('/admin/beranda', [DashboardController::class, 'dashboardadm']);
-route::get('/beranda', [DashboardController::class, 'dashboard']);
+route::get('/user/beranda', [DashboardController::class, 'dashboarduser'])->name('dashboarduser');
+route::get('/admin/beranda', [DashboardController::class, 'dashboardadm'])->name('dashboardadmin');
+route::get('/beranda', [DashboardController::class, 'dashboard'])->name('dashboard');
 
 //Data Lowongan Admin
-route::get('/admin/lowongan', [LowonganController::class, 'lowongan']);
-route::get('/admin/lowongan/tambah', [LowonganController::class, 'create']);
-route::get('/admin/lowongan/ubah', [LowonganController::class, 'edit']);
+route::get('/admin/lowongan', [LowonganController::class, 'lowongan'])->name('lowongan');
+route::get('/admin/lowongan/tambah', [LowonganController::class, 'create'])->name('tambahlowongan');
+route::get('/admin/lowongan/ubah', [LowonganController::class, 'edit'])->name('editlowongan');
 
 
 //Laporan Lowongan Admin
-route::get('/admin/lowongan/laporan', [LaporanController::class, 'laporan']);
+route::get('/admin/lowongan/laporan', [LaporanController::class, 'laporan'])->name('laporan');
 
 
 //Profil Perusahaan Admin
-route::get('/admin/profil', [PerusahaanController::class, 'perusahaan']);
-route::get('/admin/profil/edit', [PerusahaanController::class, 'edit']);
+route::get('/admin/profil', [PerusahaanController::class, 'perusahaan'])->name('profilperusahaan');
+route::get('/admin/profil/edit', [PerusahaanController::class, 'edit'])->name('editperusahaan');
