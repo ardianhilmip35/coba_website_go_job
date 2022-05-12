@@ -1,4 +1,4 @@
-@extends('navfoot.navadm2')
+@extends('layouts.navadm2')
 @section('title', 'Profil Perusahaan')
 @section('content')   
 <section id="form" style=" margin-top: 130px; margin-bottom: 120px; margin-left: 70px; margin-right: 80px;">

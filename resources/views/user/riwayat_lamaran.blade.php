@@ -1,4 +1,4 @@
-@extends('navfoot.main2')
+@extends('layouts.main2')
     @section('content')
     <section id="form">
         <div class="container">

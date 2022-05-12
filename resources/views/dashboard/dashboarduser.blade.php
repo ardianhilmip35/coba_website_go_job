@@ -1,4 +1,4 @@
-@extends('navfoot.main2')
+@extends('layouts.main2')
 @section('title', 'Dashboard')
 <div class="container-fluid" id="container-search">
 	<div>

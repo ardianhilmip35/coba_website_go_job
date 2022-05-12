@@ -1,4 +1,4 @@
-@extends('navfoot.main2')
+@extends('layouts.main2')
 
 @section('title', 'Profil Pelamar')
 @section('content')

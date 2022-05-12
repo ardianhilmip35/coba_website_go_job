@@ -1,4 +1,4 @@
-@extends('navfoot.main2')
+@extends('layouts.main2')
 
     <!-- Tentang Anda -->
     @section('title', 'Lowongan Kerja Pelamar')

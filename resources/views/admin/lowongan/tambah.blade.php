@@ -1,4 +1,4 @@
-@extends('navfoot.navadm2')
+@extends('layouts.navadm2')
 
 @section('title', 'Tambah Lowongan')
 @section('content') 

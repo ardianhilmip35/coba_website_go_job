@@ -1,4 +1,4 @@
-@extends('navfoot.main')
+@extends('layouts.main')
 
 @section('title', 'Register Gojob')
 @section('content')

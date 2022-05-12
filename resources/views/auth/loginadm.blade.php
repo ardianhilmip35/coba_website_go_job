@@ -1,4 +1,4 @@
-@extends('navfoot.navadm1')
+@extends('layouts.navadm1')
 
 @section('title', 'Login Admin')
 @section('content')
