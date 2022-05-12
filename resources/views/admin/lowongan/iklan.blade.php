@@ -8,7 +8,7 @@
                     <p class="fs-5 me-auto pt-3 ps-3">Iklan Lowongan</p>
                     <a href="#" class="text-decoration-none text-dark menulowo" style="padding-top: 19px;">Lowongan yang ditayangkan</a>
                     <a href="#" class="text-decoration-none text-dark menulowo" style="padding-top: 19px;">Draf Tersimpan</a>
-                    <a href="/admin/lowongan/tambah"><button type="button" class="btn btn-warning btn-sm fs-6 me-3" style="margin-top:12px; margin-bottom: 12px">Buat Iklan Lowongan</button></a>
+                    <a href="{{ route('tambahlowongan') }}"><button type="button" class="btn btn-warning btn-sm fs-6 me-3" style="margin-top:12px; margin-bottom: 12px">Buat Iklan Lowongan</button></a>
                 </div>
             </div>
 
