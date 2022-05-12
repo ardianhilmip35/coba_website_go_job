@@ -44,6 +44,6 @@ class CreatePekerjaTable extends Migration
      */
     public function down()
     {
-        Schema::drop('tb_pekerja');
+        Schema::dropIfExists('tb_pekerja');
     }
 }
