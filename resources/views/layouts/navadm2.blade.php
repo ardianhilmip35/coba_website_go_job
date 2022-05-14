@@ -35,13 +35,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-5 mb-lg-0 listmenu">
                 <li class="nav-item">
-                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="{{ route('dashboardadmin') }}">Beranda</a>
+                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="#">Beranda</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu"  aria-current="page" href="{{ route('laporan') }}">Laporan Lowongan</a>
+                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu"  aria-current="page" href="#">Laporan Lowongan</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="{{ route('lowongan') }}">Iklan Lowongan</a>
+                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="#">Iklan Lowongan</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
@@ -50,7 +50,7 @@
                     Nama Perusahaan
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item text-dark" href="{{ route('profilperusahaan') }}">Profil Perusahaan</a></li>
+                        <li><a class="dropdown-item text-dark" href="#">Profil Perusahaan</a></li>
                         <li><a class="dropdown-item text-dark" href="#">Keluar</a></li>
                     </ul>
                 </li>
@@ -67,7 +67,7 @@
 {{-- Akhir content --}}
 
 {{-- awal footer --}}
-    @include('navfoot.footer')
+    @include('layouts.footer')
 {{-- Akhir Footer --}}
 
 </body>

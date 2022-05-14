@@ -71,5 +71,5 @@
 
 <script src="/js/bootstrap.js"></script>
 {{-- Awal footer --}}
-    @include('navfoot.footer')
+    @include('layouts.footer')
 {{-- Akhir Footer --}}

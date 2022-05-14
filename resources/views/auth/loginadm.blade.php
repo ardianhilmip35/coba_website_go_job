@@ -3,7 +3,7 @@
 @section('title', 'Login Admin')
 @section('content')
     <section id="form">
-        <form action="POST" action="" class="d-flex justify-content-center p-3">
+        <form method="POST" action="" class="d-flex justify-content-center p-3">
                 <div class="col-lg-6 pt-3 ">
                     <div class="container-fluid mt-2 p-4" style="background-color:#ffff ;width:auto;">
                         <img src="/img/logofull.png" alt="" width="230" class="mb-4 rounded mx-auto d-block">

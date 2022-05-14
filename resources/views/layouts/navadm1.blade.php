@@ -31,19 +31,19 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
             {{-- <a class="nav-link active fw-bold m-1 rounded text-center"  style="background-color: #D7E9F7; color:#000;" aria-current="page" href="#">Masuk</a> --}}
-                <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="{{ route('loginadm') }}" style="text-decoration: none">
+                <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="{{ route('login') }}" style="text-decoration: none">
                     <button class="btn me-md-2 fw-bold m-1" type="button" style="background-color: #D7E9F7; color:#000;">Masuk</button>
                 </a>
             </li>
             <li class="nav-item">
             {{-- <a class="nav-link active fw-bold m-1 rounded text-center btn-outline-success"  style="background-color: #C81F1F; color:#ffff" aria-current="page" href="#">Mendaftar</a> --}}
-                <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="{{ route('registeradm') }}" style="text-decoration: none">
+                <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="{{ route('register') }}" style="text-decoration: none">
                     <button class="btn me-md-2 fw-bold m-1" type="button" style="background-color: #C81F1F; color:#ffff; ">Mendaftar</button>
                 </a>
             </li>
             <li class="nav-item">
             {{-- <a class="nav-link active fw-bold m-1 text-center rounded"  style="background-color: #ffff; color:#000" aria-current="page" href="#">Untuk Kandidat</a> --}}
-                <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="{{ route('login') }}" style="text-decoration: none">
+                <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="#" style="text-decoration: none">
                     <button class="btn me-md-2 fw-bold m-1" type="button" style="background-color: #ffff; color:#000;">Untuk Kandidat</button>
                 </a>
             </li>
@@ -60,7 +60,7 @@
 {{-- Akhir content --}}
 
 {{-- awal footer --}}
-    @include('navfoot.footer')
+    @include('layouts.footer')
 {{-- Akhir Footer --}}
 
 </body>
