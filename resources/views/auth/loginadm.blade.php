@@ -3,8 +3,12 @@
 @section('title', 'Login Admin')
 @section('content')
     <section id="form">
+<<<<<<< HEAD
         <form method="POST" action="{{ route('login') }}" class="d-flex justify-content-center p-3">
             @csrf
+=======
+        <form method="POST" action="" class="d-flex justify-content-center p-3">
+>>>>>>> 1c6faca1f051d35f6e6abf0b86ab3c754b905121
                 <div class="col-lg-6 pt-3 ">
                     <div class="container-fluid mt-2 p-4" style="background-color:#ffff ;width:auto;">
                         <img src="/img/logofull.png" alt="" width="230" class="mb-4 rounded mx-auto d-block">
