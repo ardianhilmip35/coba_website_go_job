@@ -51,7 +51,6 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item text-dark" href="#">Profil Perusahaan</a></li>
-<<<<<<< HEAD
                         <li>
                             <a class="dropdown-item text-dark"  href="{{ route('logout') }}"
                             onclick="event.preventDefault();
@@ -60,9 +59,6 @@
                                 @csrf
                             </form>
                         </li>
-=======
-                        <li><a class="dropdown-item text-dark" href="#">Keluar</a></li>
->>>>>>> 1c6faca1f051d35f6e6abf0b86ab3c754b905121
                     </ul>
                 </li>
             </ul>
