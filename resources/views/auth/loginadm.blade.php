@@ -3,16 +3,31 @@
 @section('title', 'Login Admin')
 @section('content')
     <section id="form">
-        <form action="POST" action="" class="d-flex justify-content-center p-3">
+        <form method="POST" action="{{ route('login') }}" class="d-flex justify-content-center p-3">
+            @csrf
                 <div class="col-lg-6 pt-3 ">
                     <div class="container-fluid mt-2 p-4" style="background-color:#ffff ;width:auto;">
                         <img src="/img/logofull.png" alt="" width="230" class="mb-4 rounded mx-auto d-block">
                         <h4 class="text-center pb-3 fw-bold" style="color: #021668;">Please Login Your Account</h4>
+                        
+                        {{-- EMAIL --}}
                         <div class="form-group mb-3 px-1">
-                            <input type="email" name="user" class="form-control" id="floatingInput" placeholder="Email" style="border: 1px solid #021668; background-color: #f1f1f1" />
+                            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="Email" style="border: 1px solid #021668; background-color: #f1f1f1" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus/>
+                            @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                            @enderror
                         </div>
+
+                        {{-- PASSWORD --}}
                         <div class="form-group mb-3 px-1">
-                            <input type="password" name="pass" class="form-control" id="floatingPassword" placeholder="Password" style="border: 1px solid #021668; background-color: #f1f1f1" />
+                            <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="floatingPassword" placeholder="Password" style="border: 1px solid #021668; background-color: #f1f1f1" required autocomplete="current-password"/>
+                            @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                            @enderror
                         </div>
                         <div class="d-flex justify-content-between px-1">
                             <div class="form-check">

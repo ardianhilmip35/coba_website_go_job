@@ -1,0 +1,38 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateLamarkerjaTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('lamarkerja', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('lowongan_id')->unique();
+            $table->foreignId('pelamar_id')->unique();
+            $table->text('deskripsi_lamaran');
+            $table->string('portofolio_pelamar');
+            $table->timestamps();
+
+            $table->foreign('pelamar_id')->references('id')->on('pelamar');
+            $table->foreign('lowongan_id')->references('id')->on('lowongan');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('lamarkerja');
+    }
+}

@@ -93,5 +93,5 @@
 {{-- Akhir content --}}
 
 {{-- awal footer --}}
-    @include('navfoot.footer')
+    @include('layouts.footer')
 {{-- Akhir Footer --}}
