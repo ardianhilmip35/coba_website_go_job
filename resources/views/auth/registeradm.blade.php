@@ -99,11 +99,25 @@
                         
                         <div class="container px-1 m-auto mt-4">
                             <div class="d-flex justify-content-center">
-                                <button class="btn fw-bold fs-5" style="background-color: #021668; color:#ffff; width:100%" type="submit" name="register">Register</button>
+                                <button class="btn fw-bold fs-5" style="background-color: #021668; color:#ffff; width:100%" type="submit" name="register" id="btnSubmit">Register</button>
                             </div>
                         </div>
                     </div>
                 </div>
         </form>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#btnSubmit").click(function () {
+                    var password = $("#password").val();
+                    var confirmPassword = $("#konfirmasipassword").val();
+                    if (password != confirmPassword) {
+                        alert("Passwords anda tidak sama, coba ulangi lagi!");
+                        return false;
+                    }
+                    return true;
+                });
+            });
+        </script>
     </section>
 @endsection

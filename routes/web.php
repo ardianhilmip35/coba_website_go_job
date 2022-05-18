@@ -18,16 +18,6 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-//Login Admin
-Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
-// tambahi route gae post login
-
-//Register Admin
-Route::get('/register', [RegisterController::class, 'index'])->name('register')->middleware('guest');
-Route::post('/register', [RegisterController::class, 'store']);
-
-//Dashboard Admin
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
-
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+

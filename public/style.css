@@ -2,7 +2,7 @@ body {
     @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 }
 
-:root{
+:root {
     --primary-color: #021668;
 }
 .container-background {
@@ -215,13 +215,11 @@ body {
 }
 
 footer {
-    position:relative;
-    bottom:0;
-    width:100%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
     background-color: #021668;
 }
-
-
 
 /* Iklan */
 .form-step {
@@ -241,29 +239,29 @@ footer {
     justify-content: space-between;
     counter-reset: step;
     margin: 2rem 4rem 5rem 4rem;
-  }
-  
-  .progressbar::before,
-  .progress {
+}
+
+.progressbar::before,
+.progress {
     content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     height: 4px;
     width: 100%;
-    background-color: #F4F4F4;
-  }
-  
-  .progress {
+    background-color: #f4f4f4;
+}
+
+.progress {
     background-color: var(--primary-color);
     width: 0%;
     transition: 0.3s;
-  }
-  
-  .progress-step {
+}
+
+.progress-step {
     width: 3rem;
     height: 3rem;
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -271,14 +269,14 @@ footer {
     color: #000;
     font-weight: bold;
     z-index: 1;
-  }
-  
-  .progress-step::before {
+}
+
+.progress-step::before {
     counter-increment: step;
     content: counter(step);
-  }
-  
-  .progress-step::after {
+}
+
+.progress-step::after {
     content: attr(data-title);
     position: absolute;
     top: calc(100% + 0.5rem);
@@ -286,11 +284,11 @@ footer {
     color: #000;
     font-weight: bold;
     font-size: smaller;
-  }
-  
-  .progress-step-active {
+}
+
+.progress-step-active {
     background-color: var(--primary-color);
     color: #fff;
-  }
+}
 
-/* laporan */
+/* Dashboard */
