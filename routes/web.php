@@ -20,14 +20,4 @@ use App\Http\Controllers\HomeController;
 
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/profil', function(){
-    return view('admin.profil_perusahaan.index');
-});
-
-Route::get('/lowongan', function(){
-    return view('admin.lowongan.tambah');
-});
-
-Route::get('/edit', function(){
-    return view('admin.profil_perusahaan.edit');
-});
+// Route::resource('/lowongan', WisataController::class);

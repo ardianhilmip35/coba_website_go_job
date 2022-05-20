@@ -15,8 +15,8 @@ class CreateLowonganTable extends Migration
     {
         Schema::create('lowongan', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('users_id')->unique();
-            $table->string('nama_lowongan');
+            $table->foreignId('users_id');
+            $table->foreign('users_id')->references('id')->on('users')->cascadeOnDelete();
             $table->string('namalowongan', 50);
             $table->string('jenispekerjaan', 50);
             $table->enum('tingkatjabatan', ['CEO/Direktur/Manajer Senior', 'Asisten Manajer', 'Supervisor', 'Pegawai', 'Lulusan Baru/Pengalaman Kurang dari 1 tahun']);
@@ -32,7 +32,7 @@ class CreateLowonganTable extends Migration
             $table->string('gedung');
             $table->timestamps();
 
-            $table->foreign('users_id')->references('id')->on('users');
+            
 
         });
     }

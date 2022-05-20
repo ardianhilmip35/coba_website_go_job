@@ -17,8 +17,10 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    protected $table = "users";
+    
     protected $fillable = [
-        'id_admin',
+        'id',
         'nama_admin',
         'nama_perusahaan',
         'deskripsi_perusahaan',
@@ -30,6 +32,13 @@ class User extends Authenticatable
         'email',
         'password',
     ];
+
+    protected $primaryKey = "id";
+
+    public function lowongan()
+    {
+        return $this->hasMany(lowongan::class);
+    }
 
     /**
      * The attributes that should be hidden for serialization.
