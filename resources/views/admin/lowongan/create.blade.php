@@ -26,7 +26,7 @@
                 <div class="row " style="padding-left: 10px; margin-bottom: 40px;">
                     <label for="namalowongan" class="text-center fw-bold col-sm-2 col-form-label align-self-center" style="background-color: #F1F1F1; border: 1px solid #000;">Nama Lowongan</label>
                     <div class="col-sm-10">
-                        <input type="text" readonly class="form-control" id="namalowongan" placeholder="Masukkan Nama Lowongan" style="background-color: #fff">
+                        <input type="text" class="form-control" id="namalowongan" placeholder="Masukkan Nama Lowongan" style="background-color: #fff">
                     </div>
                 </div>
 
@@ -161,7 +161,7 @@
             {{-- AKHIR SLIDE KEDUA --}}
 
             {{-- SLIDE KETIGA --}}
-            <div class="form-step mt-2">
+            <div class="cmt-2">
 
                 {{-- TINGKAT PENDIDIKAN --}}
                 <div class="row" style="padding-left: 10px; margin-bottom: 40px;">
@@ -214,5 +214,7 @@
             {{-- AKHIR SLIDE KETIGA    --}}
 
         </form>
+        <!-- Script -->
+        <script src="/script.js" defer></script>
     </section>
 @endsection

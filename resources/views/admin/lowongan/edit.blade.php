@@ -211,5 +211,6 @@
             {{-- AKHIR SLIDE KETIGA    --}}
 
             </form>
+            <script src="/script.js" defer></script>
     </section>
 @endsection

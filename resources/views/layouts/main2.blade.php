@@ -10,7 +10,7 @@
         
         {{-- Fonts --}}
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+        <script src="https://kit.fontawesome.com/a1124f2922.js" crossorigin="anonymous"></script>
         
         {{-- Custom CSS  --}}
         <link rel="stylesheet" href="/style.css">
@@ -42,7 +42,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link active"  style="color: #ffff;" aria-current="page" href="{{ route('dashboarduser') }}">Beranda</a>
+                <a class="nav-link active"  style="color: #ffff;" aria-current="page" href="#">Beranda</a>
             </li>
             <li class="nav-item dropdown">
                     <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

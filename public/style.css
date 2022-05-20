@@ -268,7 +268,7 @@ footer {
     align-items: center;
     color: #000;
     font-weight: bold;
-    z-index: 1;
+    z-index: 0;
 }
 
 .progress-step::before {
@@ -292,3 +292,12 @@ footer {
 }
 
 /* Dashboard */
+.info-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+
+.info-step-active {
+    display: block;
+}
