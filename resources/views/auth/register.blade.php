@@ -64,21 +64,5 @@
     </form>
     </section>
     @endsection
-    <!-- Akhir Login -->
-    
-    <!-- footer -->
-    <!-- <footer class="text-center text-white" style="background-color: #021668">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="lead">Produced by Newbie Team. Since @2022 <span style="color: #021668">Go Job</span></p>
-                </div>
-            </div>
-        </div> -->
-    <!-- Copyright -->
-    <!-- </footer> -->
-    
-    <!-- Copyright -->
-        <!-- akhir footer -->
 </body>
 </html>
