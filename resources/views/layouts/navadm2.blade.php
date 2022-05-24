@@ -50,7 +50,7 @@
                     <a class="nav-link d-grid gap-2 d-flex justify-content-center menu"  aria-current="page" href="#">Laporan Lowongan</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="#">Iklan Lowongan</a>
+                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="/lowongan">Iklan Lowongan</a>
                 </li>
             </ul>
             <ul class="navbar-nav">

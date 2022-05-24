@@ -19,7 +19,14 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
     public function update($user, array $input)
     {
         Validator::make($input, [
-            'name' => ['required', 'string', 'max:255'],
+            'nama_admin' => ['required', 'string', 'max:50'],
+            'nama_perusahaan' => ['required', 'string', 'max:50'],
+            'telp_perusahaan' => ['required', 'string', 'max:15'],
+            'alamat_perusahaan' => ['required', 'string', 'max:255'],
+            'deskripsi_perusahaan' => ['required', 'string', 'max:255'],
+            'website_perusahaan' => ['required', 'string', 'max:255'],
+            'logo' => ['required', 'image', 'max:5120', 'file'],
+            'gedung' => ['required', 'image', 'max:5120', 'file'],
 
             'email' => [
                 'required',
@@ -35,7 +42,14 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             $this->updateVerifiedUser($user, $input);
         } else {
             $user->forceFill([
-                'name' => $input['name'],
+                'nama_admin' => $input['nama_admin'],
+                'nama_perusahaan' => $input['nama_perusahaan'],
+                'telp_perusahaan' => $input['telp_perusahaan'],
+                'alamat_perusahaan' => $input['alamat_perusahaan'],
+                'deskripsi_perusahaan' => $input['deskripsi_perusahaan'],
+                'website_perusahaan' => $input['website_perusahaan'],
+                'logo' => $input['logo']->move('img/lowongan/', $input['logo']->getClientOriginalName()),
+                'gedung' => $input['gedung']->move('img/lowongan/', $input['gedung']->getClientOriginalName()),
                 'email' => $input['email'],
             ])->save();
         }
@@ -51,7 +65,14 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
     protected function updateVerifiedUser($user, array $input)
     {
         $user->forceFill([
-            'name' => $input['name'],
+            'nama_admin' => $input['nama_admin'],
+            'nama_perusahaan' => $input['nama_perusahaan'],
+            'telp_perusahaan' => $input['telp_perusahaan'],
+            'alamat_perusahaan' => $input['alamat_perusahaan'],
+            'deskripsi_perusahaan' => $input['deskripsi_perusahaan'],
+            'website_perusahaan' => $input['website_perusahaan'],
+            'logo' => $input['logo']->move('img/lowongan/', $input['logo']->getClientOriginalName()),
+            'gedung' => $input['gedung']->move('img/lowongan/', $input['gedung']->getClientOriginalName()),
             'email' => $input['email'],
             'email_verified_at' => null,
         ])->save();

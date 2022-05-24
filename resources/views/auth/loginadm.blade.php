@@ -35,7 +35,7 @@
                                 <label class="form-check-label" style="color: #021668;" for="flexCheckChecked">Remember Me </label>
                             </div>
                             <div class="">
-                                <a href="#" style="color: #021668;">Forgot Password?</a>
+                                <a href="{{ route('password.request') }}" style="color: #021668;">Forgot Password?</a>
                             </div>
                         </div>
                         <div class="container px-1 mx-auto mt-4">

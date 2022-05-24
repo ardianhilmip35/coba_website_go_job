@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LowonganController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
@@ -20,4 +20,6 @@ use App\Http\Controllers\HomeController;
 
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-// Route::resource('/lowongan', WisataController::class);
+Route::resource('/lowongan', LowonganController::class);
+Route::get('/profilperusahaan')->middleware('auth');
+

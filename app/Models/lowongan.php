@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Auth;
 use Laravel\Sanctum\Contracts\HasApiTokens;
 
 class lowongan extends Model
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasFactory;
 
     protected $table = 'lowongan';
     protected $fillable = [
@@ -22,10 +23,10 @@ class lowongan extends Model
         'spesialis',
         'pengalaman',
         'deskripsipekerjaan',
-        'namastartup',
-        'deskripsistartup',
+        'namaperusahaan',
+        'deskripsiperusahaan',
         'pendidikan',
-        'alamatstartup',
+        'alamatperusahaan',
         'logo',
         'gedung'
     ];
