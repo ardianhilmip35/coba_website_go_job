@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('nama_admin', 50);
             $table->string('nama_perusahaan', 50);
-            $table->string('deskripsi_perusahaan', 50)->nullable();
+            $table->text('deskripsi_perusahaan')->nullable();
             $table->string('telp_perusahaan', 15);
             $table->text('alamat_perusahaan');
             $table->string('logo')->nullable();
