@@ -119,8 +119,8 @@ class LowonganController extends Controller
             'deskripsiperusahaan' => 'required',
             'pendidikan' => 'required',
             'alamatperusahaan' => 'required',
-            'logo' => 'required|image|file|max:5120',
-            'gedung' => 'required|image|file|max:5120',
+            'logo' => 'image|file|max:5120',
+            'gedung' => 'image|file|max:5120',
         ]);
 
         //logo
