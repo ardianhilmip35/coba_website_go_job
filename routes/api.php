@@ -1,8 +1,9 @@
 <?php
 
+use App\Models\UserMobile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\UserMobileController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,11 @@ use App\Http\UserMobileController;
 |
 */
 
-Route::get('pelamar',[UserMobileController::class ,'index']);
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::get('items', function(){
+    return UserMobile::all();
 });
