@@ -72,7 +72,7 @@ class LowonganController extends Controller
         lowongan::create($validate);
         
 
-        return redirect()->route('admin.lowongan.index')->with('success', 'Data berhasil ditambahkan');
+        return redirect()->route('lowongan.index')->with('success', 'Data berhasil ditambahkan');
     }
 
     /**
@@ -119,8 +119,8 @@ class LowonganController extends Controller
             'deskripsiperusahaan' => 'required',
             'pendidikan' => 'required',
             'alamatperusahaan' => 'required',
-            'logo' => 'required|image|file|max:5120',
-            'gedung' => 'required|image|file|max:5120',
+            'logo' => 'image|file|max:5120',
+            'gedung' => 'image|file|max:5120',
         ]);
 
         //logo
@@ -200,13 +200,13 @@ class LowonganController extends Controller
      */
     public function destroy($id)
     {
-        $validate = lowongan::find($id);
+        $validate = lowongan::FindOrFail($id);
         Storage::delete([
             $validate->logo,
             $validate->gedung
         ]);
 
         $validate->delete();
-        return redirect('/lowongan')->with('success', 'Data lowongan berhasil dihapus');
+        return back()->with('toast_success', 'Data lowongan berhasil dihapus');
     }
 }

@@ -190,7 +190,7 @@
                     <div class="row " style="padding-left: 10px; margin-bottom: 40px;">
                         <label for="logo" class="text-center fw-bold col-sm-2 col-form-label align-self-center" style="background-color: #F1F1F1; border: 1px solid #000;">Logo Perusahaan</label>
                         <div class="col-sm-10">
-                            <input class="form-control" type="file" id="logo" name="logo" required value="{{ $iklan->logo }}">
+                            <input class="form-control" type="file" id="logo" name="logo" value="{{ $iklan->logo }}">
                         </div>
                     </div>
     
@@ -198,7 +198,7 @@
                     <div class="row " style="padding-left: 10px; margin-bottom: 50px;">
                         <label for="gedung" class="text-center fw-bold col-sm-2 col-form-label align-self-center" style="background-color: #F1F1F1; border: 1px solid #000;">Gedung Perusahaan</label>
                         <div class="col-sm-10">
-                            <input class="form-control" type="file" id="gedung" name="gedung" required value="{{ $iklan->gedung }}">
+                            <input class="form-control" type="file" id="gedung" name="gedung" value="{{ $iklan->gedung }}">
                         </div>
                     </div>
     

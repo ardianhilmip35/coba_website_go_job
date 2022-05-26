@@ -59,7 +59,7 @@
                         {{ Auth::user()->nama_admin }} 
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item text-dark" href="#">Profil Perusahaan</a></li>
+                        <li><a class="dropdown-item text-dark" href="{{ route('perusahaan') }}">Profil Perusahaan</a></li>
                         <li>
                             <a class="dropdown-item text-dark" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
