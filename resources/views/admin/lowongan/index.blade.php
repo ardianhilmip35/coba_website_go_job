@@ -21,7 +21,8 @@
                                 <p class="me-auto ps-3" style="margin-top: -12px; font-size:15px">Terakhir diperbarui {{ $iklan->created_at }}</p>
                                 <div class="d-flex justify-content-start ps-3  pb-2">
                                     <a href="{{ url('lowongan/' . $iklan->id . '/edit') }}"><button type="button" class="btn btn-success btn-sm fs-6 me-3" style="margin-top:12px; margin-bottom: 12px">Ubah</button></a>
-                                    <a  href="lowongan/delete/{{ $iklan->id }}"><button type="button" class="btn btn-danger btn-sm fs-6 me-3" style="margin-top:12px; margin-bottom: 12px" data-id-lowongan="{{ $iklan->id }}">Hapus</button></a>
+                                    <a onclick="return confirm('Apakah Anda Yakin Menghapus Data?')"
+                                        href="{{ route('lowongan.delete-lowongan', $iklan->id) }}"><button type="button" class="btn btn-danger btn-sm fs-6 me-3" style="margin-top:12px; margin-bottom: 12px" >Hapus</button></a>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +35,5 @@
                     </div>
                 </div>
             @endif
-            
-
     </section>
 @endsection

@@ -19,6 +19,7 @@ use App\Http\Controllers\UpdateProfilController;
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::resource('/lowongan', LowonganController::class);
+Route::get('/lowongan/delete-lowongan/{id}', [LowonganController::class, 'destroy'])->name('lowongan.delete-lowongan');
 Route::get('/perusahaan', [UpdateProfilController::class, 'index'])->name('perusahaan');
 Route::get('/perusahaan/edit', [UpdateProfilController::class, 'edit'])->name('perusahaan.edit');
 Route::put('/perusahaan/edit', [UpdateProfilController::class, 'update'])->name('perusahaan.update');
