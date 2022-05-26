@@ -15,7 +15,7 @@ use App\Http\UserMobileController;
 |
 */
 
-Route::get('pelamar',[UserMobileController::class ,'index']);
+Route::get('/pelamar',[UserMobileController::class ,'index']);
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
