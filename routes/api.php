@@ -15,12 +15,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
-<<<<<<< HEAD
 Route::get('/pelamar',[UserMobileController::class ,'index']);
-=======
 
->>>>>>> 980b6790e4d9c98ced6743f401df6c1318493a60
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
