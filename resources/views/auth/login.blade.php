@@ -3,7 +3,7 @@
 @section('title', 'Login Gojob')
 @section('content')
 <section id="form" style=" margin-top: 100px; margin-left: 50px; margin-right: 50px; margin-bottom: 50px;">
-      <form method="POST" action="#">
+      <form method="POST" action="{{ url('/loginuser') }}">
         <div class="container mt-6">
           <div class="row">
             <div class="col-lg-7">

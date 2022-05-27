@@ -43,7 +43,7 @@
             </li>
             <li class="nav-item">
             {{-- <a class="nav-link active fw-bold m-1 text-center rounded"  style="background-color: #ffff; color:#000" aria-current="page" href="#">Untuk Kandidat</a> --}}
-                <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="" style="text-decoration: none">
+                <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="/loginuser" style="text-decoration: none">
                     <button class="btn me-md-2 fw-bold m-1" type="button" style="background-color: #ffff; color:#000;">Untuk Kandidat</button>
                 </a>
             </li>

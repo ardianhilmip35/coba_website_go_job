@@ -4,6 +4,7 @@ use App\Http\Controllers\LowonganController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UpdateProfilController;
+use App\Http\Controllers\LoginUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +25,6 @@ Route::get('/perusahaan', [UpdateProfilController::class, 'index'])->name('perus
 Route::get('/perusahaan/edit', [UpdateProfilController::class, 'edit'])->name('perusahaan.edit');
 Route::put('/perusahaan/edit', [UpdateProfilController::class, 'update'])->name('perusahaan.update');
 
-
+//Route User
+Route::get('/loginuser', [LoginUserController::class, 'index'])->name('loginuser');
+Route::get('/registeruser', [LoginUserController::class, 'indexx'])->name('registeruser');

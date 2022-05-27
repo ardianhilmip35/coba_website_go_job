@@ -41,7 +41,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-white"  href="{{ route('dashboard') }}">Beranda</a>
+          <a class="nav-link text-white"  href="#">Beranda</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white"  href="#">Profil Perusahaan</a>
@@ -49,13 +49,13 @@
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-white"  href="{{ route('login') }}">Masuk</a>
+          <a class="nav-link text-white"  href="/loginuser">Masuk</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white"  href="{{ route('register') }}">Mendaftar</a>
+          <a class="nav-link text-white"  href="/registeruser">Mendaftar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link "  style="background-color: #ffff; color:#1a202c"  href="{{ route('loginadm') }}">Untuk Perusahaan</a>
+          <a class="nav-link "  style="background-color: #ffff; color:#1a202c"  href="{{ route('login') }}">Untuk Perusahaan</a>
         </li>
       </ul>
     </div>
