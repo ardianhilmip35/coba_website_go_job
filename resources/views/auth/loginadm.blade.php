@@ -29,21 +29,17 @@
                                     </span>
                             @enderror
                         </div>
-                        <div class="d-flex justify-content-between px-1">
-                            <div class="form-check">
-                                <input class="form-check-input" style="border: 2px solid #021668;" type="checkbox" value="" id="flexCheckChecked" name="remember"/>
-                                <label class="form-check-label" style="color: #021668;" for="flexCheckChecked">Remember Me </label>
+                        <div class="container px-1 mx-auto mt-4">
+                            <div class="d-flex justify-content-center">
+                                <button class="btn fw-bold fs-5" style="background-color: #021668; color:#ffff; width:100%" type="submit" name="login">Login</button>
                             </div>
+                        </div>
+                        <div class="d-flex justify-content-center pt-1">
                             @if (Route::has('password.request'))
                                 <div class="">
                                     <a class="btn btn-link" href="{{ route('password.request') }}" style="color: #021668;">{{ 'Forgot Password?' }}</a>
                                 </div>
                             @endif
-                        </div>
-                        <div class="container px-1 mx-auto mt-4">
-                            <div class="d-flex justify-content-center">
-                                <button class="btn fw-bold fs-5" style="background-color: #021668; color:#ffff; width:100%" type="submit" name="login">Login</button>
-                            </div>
                         </div>
                     </div>
                 </div>
