@@ -26,7 +26,7 @@ class CreateMahasiswaTable extends Migration
             $table->timestamps();
 
 
-            $table->foreign('pelamar_id')->references('id')->on('pelamar');
+            $table->foreign('pelamar_id')->references('id')->on('pelamar')->cascadeOnDelete()->cascadeOnUpdate();
         });
 
     }

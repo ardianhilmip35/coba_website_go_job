@@ -16,7 +16,7 @@ class CreateLowonganTable extends Migration
         Schema::create('lowongan', function (Blueprint $table) {
             $table->id();
             $table->foreignId('users_id')->nullable();
-            $table->foreign('users_id')->references('id')->on('users')->cascadeOnDelete();
+            $table->foreign('users_id')->references('id')->on('users')->cascadeOnDelete()->cascadeOnUpdate();
             $table->string('namalowongan', 50)->nullable();
             $table->enum('jenispekerjaan', ['Penuh', 'Paruh Waktu', 'Kontrak', 'Magang'])->nullable();
             $table->enum('tingkatjabatan', ['CEO/Direktur/Manajer Senior', 'Asisten Manajer', 'Supervisor', 'Pegawai', 'Lulusan Baru/Pengalaman Kurang dari 1 tahun'])->nullable();

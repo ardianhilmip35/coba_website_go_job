@@ -21,8 +21,8 @@ class CreateLamarkerjaTable extends Migration
             $table->string('portofolio_pelamar');
             $table->timestamps();
 
-            $table->foreign('pelamar_id')->references('id')->on('pelamar');
-            $table->foreign('lowongan_id')->references('id')->on('lowongan');
+            $table->foreign('pelamar_id')->references('id')->on('pelamar')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreign('lowongan_id')->references('id')->on('lowongan')->cascadeOnDelete()->cascadeOnUpdate();
         });
     }
 
