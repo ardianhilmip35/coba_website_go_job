@@ -21,8 +21,13 @@
                         </div>
 
                         {{-- PASSWORD --}}
-                        <div class="form-group mb-3 px-1">
-                            <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="floatingPassword" placeholder="Password" style="border: 1px solid #021668; background-color: #f1f1f1" required autocomplete="current-password"/>
+                        <div class="input-group mb-3 px-1">
+                            <input id="password-field1" type="password" name="password" class="form-control @error('password') is-invalid @enderror"  placeholder="Password" style="border: 1px solid #021668; background-color: #f1f1f1" required autocomplete="current-password"/>
+                            <div class="input-group-prepend">
+                                <button class="btn rounded-end btn-outline-primary" type="button">
+                                    <h6 toggle="#password-field1" class="fa fa-eye fa-lg show-hide"></h6>
+                                </button>
+                            </div>
                             @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
