@@ -34,9 +34,11 @@
                                 <input class="form-check-input" style="border: 2px solid #021668;" type="checkbox" value="" id="flexCheckChecked" name="remember"/>
                                 <label class="form-check-label" style="color: #021668;" for="flexCheckChecked">Remember Me </label>
                             </div>
-                            <div class="">
-                                <a href="{{ route('password.request') }}" style="color: #021668;">Forgot Password?</a>
-                            </div>
+                            @if (Route::has('password.request'))
+                                <div class="">
+                                    <a class="btn btn-link" href="{{ route('password.request') }}" style="color: #021668;">{{ 'Forgot Password?' }}</a>
+                                </div>
+                            @endif
                         </div>
                         <div class="container px-1 mx-auto mt-4">
                             <div class="d-flex justify-content-center">
