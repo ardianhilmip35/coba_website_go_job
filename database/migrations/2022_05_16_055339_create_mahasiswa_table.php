@@ -16,13 +16,13 @@ class CreateMahasiswaTable extends Migration
         Schema::create('mahasiswa', function (Blueprint $table) {
             $table->id();
             $table->foreignId('pelamar_id')->unique();
-            $table->string('universitas', 50);
-            $table->string('jurusan', 50);
-            $table->string('prodi', 50);
-            $table->string('lulus', 4);
-            $table->string('spesialis', 50);
-            $table->text('lokasi');
-            $table->string('gaji');
+            $table->string('universitas', 50)->nullable();
+            $table->string('jurusan', 50)->nullable();
+            $table->string('prodi', 50)->nullable();
+            $table->string('lulus', 4)->nullable();
+            $table->string('spesialis', 50)->nullable();
+            $table->text('lokasi')->nullable();
+            $table->string('gaji')->nullable();
             $table->timestamps();
 
 

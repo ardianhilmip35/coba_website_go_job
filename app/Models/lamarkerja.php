@@ -8,4 +8,26 @@ use Illuminate\Database\Eloquent\Model;
 class lamarkerja extends Model
 {
     use HasFactory;
+
+    protected $table = 'lamarkerja';
+
+    protected $fillable = [
+        'id',
+        'lowongan_id',
+        'pelamar_id',
+        'deskripsi_lamaran',
+        'portofolio_pelamar'
+    ];
+
+    protected $primaryKey = 'id';
+
+    public function lowongan()
+    {
+        return $this->belongsTo(lowongan::class);
+    }
+
+    public function pelamar()
+    {
+        return $this->belongsTo(pelamar::class);
+    }
 }

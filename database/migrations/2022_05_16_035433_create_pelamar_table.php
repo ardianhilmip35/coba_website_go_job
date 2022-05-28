@@ -17,6 +17,10 @@ class CreatePelamarTable extends Migration
             $table->id();
             $table->string('nama_pelamar', 50);
             $table->string('telp_pelamar', 15);
+            $table->date('tanggal_lahir')->nullable();
+            $table->enum('jenis_kelamin', ['Laki - Laki', 'Perempuan'])->nullable();
+            $table->enum('agama', ['Islam', 'Protestan', 'Katolik', 'Hindu', 'Buddha', 'Khonghucu'])->nullable();
+            $table->string('foto')->nullable();
             $table->text('alamat_pelamar')->nullable();
             $table->string('cv_pelamar')->nullable();
             $table->string('email', 100)->unique();

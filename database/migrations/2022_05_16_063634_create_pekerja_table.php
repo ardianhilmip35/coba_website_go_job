@@ -16,13 +16,13 @@ class CreatePekerjaTable extends Migration
         Schema::create('pekerja', function (Blueprint $table) {
             $table->id();
             $table->foreignId('pelamar_id')->unique();
-            $table->string('pengalaman', 50);
-            $table->string('posisi', 50);
-            $table->string('perusahaan', 50);
-            $table->string('lulus', 4);
-            $table->string('spesialis', 50);
-            $table->text('lokasi');
-            $table->string('gaji');
+            $table->string('pengalaman', 50)->nullable();
+            $table->string('posisi', 50)->nullable();
+            $table->string('perusahaan', 50)->nullable();
+            $table->string('lulus', 4)->nullable();
+            $table->string('spesialis', 50)->nullable();
+            $table->text('lokasi')->nullable();
+            $table->string('gaji')->nullable();
             $table->timestamps();
 
             $table->foreign('pelamar_id')->references('id')->on('pelamar')->cascadeOnDelete()->cascadeOnUpdate();

@@ -29,4 +29,6 @@ class pekerja extends Model
     {
         return $this->belongsTo(pelamar::class);
     }
+    
 }
+

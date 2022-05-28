@@ -67,8 +67,8 @@ class LowonganController extends Controller
             'gedung' => 'required|image|file|max:5120',
         ]);
 
-        $validate['logo'] = $request->file('logo')->move('img/lowongan/', $request->file('logo')->getClientOriginalName());
-        $validate['gedung'] = $request->file('gedung')->move('img/lowongan/', $request->file('gedung')->getClientOriginalName());
+        $validate['logo'] = $request->file('logo')->move('img/uploads/lowongan/', $request->file('logo')->getClientOriginalName());
+        $validate['gedung'] = $request->file('gedung')->move('img/uploads/lowongan/', $request->file('gedung')->getClientOriginalName());
         lowongan::create($validate);
         
 
@@ -152,7 +152,7 @@ class LowonganController extends Controller
                 'deskripsipekerjaan' => $request->deskripsipekerjaan,
                 'pendidikan' => $request->pendidikan,
                 'alamatperusahaan' => $request->alamatperusahaan,
-                'logo' => $request->file('logo')->move('img/lowongan/', $request->file('logo')->getClientOriginalName())
+                'logo' => $request->file('logo')->move('img/uploads/lowongan/', $request->file('logo')->getClientOriginalName())
             ]);
         }
 
@@ -185,7 +185,7 @@ class LowonganController extends Controller
                 'deskripsipekerjaan' => $request->deskripsipekerjaan,
                 'pendidikan' => $request->pendidikan,
                 'alamatperusahaan' => $request->alamatperusahaan,
-                'gedung' => $request->file('gedung')->move('img/lowongan/', $request->file('gedung')->getClientOriginalName())
+                'gedung' => $request->file('gedung')->move('img/uploads/lowongan/', $request->file('gedung')->getClientOriginalName())
             ]);
         }
 

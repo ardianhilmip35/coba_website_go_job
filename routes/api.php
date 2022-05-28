@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\API\LoginMobileController;
-use App\Http\Controllers\API\RegisterMobileController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\API\PerusahaanController;
+use App\Http\Controllers\API\LowonganController;
+use App\Http\Controllers\API\AuthMobileController;
+use App\Http\Controllers\API\ProfileMobileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,8 +23,23 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//API route for register new user
-Route::post('/register', [RegisterMobileController::class, 'register']);
+//API route untuk regirter pelamar baru
+Route::post('/register', [AuthMobileController::class, 'register']);
 
-//API route for login user
-Route::post('/login', [LoginMobileController::class, 'login']);
+//API route untuk login pelamar
+Route::post('/login', [AuthMobileController::class, 'login']);
+
+//API route untuk melengkapi data pelamar bagi yang sudah berpengalaman kerja
+
+//API route untuk melengkapi data pelamar bagi fresh graduate
+
+//API route untuk update data pelamar
+Route::post('/editprofil', [ProfileMobileController::class, 'update_profile']);
+
+//API route untuk menampilkan data perusahaan
+Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
+
+//API route untuk menampilkan iklan lowongan
+Route::get('/lowongan', [LowonganController::class, 'lihatlowongan']);
+
+//API route untuk melamar pekerjaan

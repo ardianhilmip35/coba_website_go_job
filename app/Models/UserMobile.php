@@ -10,8 +10,6 @@ use Laravel\Sanctum\HasApiTokens;
 
 class UserMobile extends Authenticatable
 {
-    use HasApiTokens, HasFactory;
-
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
@@ -24,6 +22,10 @@ class UserMobile extends Authenticatable
         'id',
         'nama_pelamar',
         'telp_pelamar',
+        'tanggal_lahir',
+        'jenis_kelamin',
+        'agama',
+        'foto',
         'alamat_pelamar',
         'cv_pelamar',
         'email',
@@ -31,6 +33,21 @@ class UserMobile extends Authenticatable
     ];
     protected $primaryKey = "id";
 
+    public function pekerja()
+    {
+        return $this->hasOne(pekerja::class);
+    }
+
+    public function mahasiswa()
+    {
+        return $this->hasOne(mahasiswa::class);
+    }
+
+    public function lamarkerja()
+    {
+        return $this->hasMany(lamarkerja::class);
+    }
+    
     /**
      * The attributes that should be hidden for serialization.
      *

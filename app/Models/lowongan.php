@@ -28,7 +28,8 @@ class lowongan extends Model
         'pendidikan',
         'alamatperusahaan',
         'logo',
-        'gedung'
+        'gedung',
+        'created_at'
     ];
 
     protected $primaryKey = 'id';
@@ -36,6 +37,11 @@ class lowongan extends Model
     public function user ()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function lamarkerja ()
+    {
+        return $this->hasMany(lamarkerja::class);
     }
 
 }
