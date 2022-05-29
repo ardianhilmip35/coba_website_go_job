@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UpdateProfilController;
 use App\Http\Controllers\LoginUserController;
+use App\Http\Controllers\RegisterUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +28,8 @@ Route::put('/perusahaan/edit', [UpdateProfilController::class, 'update'])->name(
 
 //Route User
 Route::get('/loginuser', [LoginUserController::class, 'index'])->name('loginuser');
-Route::get('/registeruser', [LoginUserController::class, 'indexx'])->name('registeruser');
+Route::post('/login', [LoginUserController::class, 'store'])->name('login');
+Route::get('/registeruser', [RegisterUserController::class, 'index'])->name('registeruser');
+Route::post('/register', [RegisterUserController::class, 'store'])->name('register');
+
+Route::get('/dashboard', [HomeController::class, 'indexuser'])->name('dashboard');

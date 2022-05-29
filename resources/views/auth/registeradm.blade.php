@@ -91,7 +91,8 @@
                                 {{-- Konfirmasi Password --}}
                                 <div class="form-group mb-2 px-1">
                                     <p class="namaformreg">Konfirmasi Password</p>
-                                    <input type="password" name="konfirmasipassword" class="form-control @error('konfirmasipassword') is-invalid @enderror" id="konfirmasipassword" placeholder="Konfirmasi password anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
+                                    <input type="password" name="konfirmasipassword" class="form-control @error('konfirmasipassword') is-invalid @enderror" 
+                                        id="konfirmasipassword" placeholder="Konfirmasi password anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
                                     <div class="input-group-prepend">
                                         <button class="btn rounded-end btn-outline-primary" type="button">
                                             <h6 toggle="#konfirmasipassword" class="fa fa-eye fa-lg show-hide"></h6>

@@ -3,7 +3,8 @@
 @section('title', 'Login Gojob')
 @section('content')
 <section id="form" style=" margin-top: 100px; margin-left: 50px; margin-right: 50px; margin-bottom: 50px;">
-      <form method="POST" action="{{ url('/loginuser') }}">
+      <form method="POST" action="/login">
+      @csrf
         <div class="container mt-6">
           <div class="row">
             <div class="col-lg-7">
@@ -14,10 +15,10 @@
                   <h4 class="text-center mb-4 " style="color: #021668;">Please Login Your Account</h4>
               <div class="form-group mb-3 ps-3 pe-3">
                 <!-- <label for="floatingInput" style="padding-left: 40px; color: #000;">Email</label> -->
-                <input type="email" name="user" class="form-control" id="floatingInput" placeholder="Email" style="border: 3px solid #021668; background-color: #f1f1f1" />
+                <input type="email" value="{{ old('email') }}" name="email" class="form-control" id="floatingInput" placeholder="Email" style="border: 3px solid #021668; background-color: #f1f1f1" />
               </div>
               <div class="form-group mb-2 ps-3 pe-3">
-                <input type="password" name="pass" class="form-control" id="floatingPassword" placeholder="Password" style="border: 3px solid #021668; background-color: #f1f1f1" />
+                <input type="password" value="{{ old('password') }}" name="password" class="form-control" id="floatingPassword" placeholder="Password" style="border: 3px solid #021668; background-color: #f1f1f1" />
                 <!-- <label for="floatingPassword" style="padding-left: 40px; color: #000">Password</label> -->
               </div>
               <div class="d-flex justify-content-between ps-3 pe-3">
@@ -41,7 +42,7 @@
               <div class="d-flex justify-content-center">
                 <p style="font-size: 12px; color: #021668;">Very easy and fast. We will not upload anything without your permission</p>
               </div>
-                <p style="text-align: center; color: #021668;">Don’t have an account? <a href="/user/register1" style="font-weight: bold;">Register!</a></p>
+                <p style="text-align: center; color: #021668;">Don’t have an account? <a href="/registeruser" style="font-weight: bold;">Register!</a></p>
               </div>
               </div>
               

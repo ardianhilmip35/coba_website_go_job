@@ -16,7 +16,7 @@ class CreatePelamarTable extends Migration
         Schema::create('pelamar', function (Blueprint $table) {
             $table->id();
             $table->string('nama_pelamar', 50);
-            $table->string('telp_pelamar', 15);
+            $table->string('telp_pelamar', 15)->nullable();
             $table->date('tanggal_lahir')->nullable();
             $table->enum('jenis_kelamin', ['Laki - Laki', 'Perempuan'])->nullable();
             $table->enum('agama', ['Islam', 'Protestan', 'Katolik', 'Hindu', 'Buddha', 'Khonghucu'])->nullable();

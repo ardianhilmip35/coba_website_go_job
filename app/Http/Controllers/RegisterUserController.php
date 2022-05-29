@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\UserWebsite;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
-class LoginUserController extends Controller
+class RegisterUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +15,8 @@ class LoginUserController extends Controller
      */
     public function index()
     {
-        return view('auth.login');
+        return view('auth.register');
     }
-    
 
     /**
      * Show the form for creating a new resource.
@@ -36,11 +36,14 @@ class LoginUserController extends Controller
      */
     public function store(Request $request)
     {
-        if(Auth::attempt($request->only('email','password'))){
-            return redirect('/dashboard');
-        } else {
-            return redirect('/loginuser');
-        }
+        UserWebsite::create([
+            'nama_pelamar' => $request['first_name'].' '.$request['last_name'],
+            'email' => $request->email,
+            'password' => bcrypt($request->password),
+            'remember_token' => Str::random(60),
+        ]);
+
+        return redirect('/loginuser')->with('Success', 'Registrasi berhasil');
     }
 
     /**

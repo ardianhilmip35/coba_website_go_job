@@ -4,7 +4,8 @@
 @section('content')
 
     <section id="form" style=" margin-top: 100px; margin-left: 50px; margin-right: 50px; margin-bottom: 50px;">
-      <form method="POST" action="">
+      <form method="POST" action="/register">
+      @csrf
         <div class="container mt-6">
           <div class="row">
             <div class="col-lg-6">
@@ -16,29 +17,29 @@
 
             <div class="d-flex justify-content-between ps-6 pe-6">
                 <div class="form-group mb-4 ps-3 pe-3">
-                <input type="text" name="first_name" class="form-control" id="floatingInput" placeholder="First name" style="border: 3px solid #021668; color: #021668; background-color: #f1f1f1" />
+                <input type="text" name="first_name" value="{{ old('nama_pelamar') }}" class="form-control" id="floatingInput" placeholder="First name" style="border: 3px solid #021668; color: #021668; background-color: #f1f1f1" />
               </div>
               <div class="form-group mb-4 ps-3 pe-3">
-                <input type="text" name="last_name" class="form-control" id="floatingInput" placeholder="Last name" style="border: 3px solid #021668; color: #021668; background-color: #f1f1f1" />
+                <input type="text" name="last_name" value="{{ old('nama_pelamar') }}" class="form-control" id="floatingInput" placeholder="Last name" style="border: 3px solid #021668; color: #021668; background-color: #f1f1f1" />
               </div>
             </div>
 
               <div class="form-group mb-4 ps-3 pe-3">
-                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="Email" style="border: 3px solid #021668; color: #021668; background-color: #f1f1f1" />
+                <input type="email" name="email" value="{{ old('email') }}" class="form-control" id="floatingInput" placeholder="Email" style="border: 3px solid #021668; color: #021668; background-color: #f1f1f1" />
               </div>
 
               <div class="form-group mb-4 ps-3 pe-3">
-                <input type="password" name="pass" class="form-control" id="floatingPassword" placeholder="Password" style="border: 3px solid #021668; color: #021668; background-color: #f1f1f1" />
+                <input type="password" name="pass" value="{{ old('password') }}" class="form-control" id="floatingPassword" placeholder="Password" style="border: 3px solid #021668; color: #021668; background-color: #f1f1f1" />
               </div>
 
               <div class="form-group mb-3 ps-3 pe-3">
-                <input type="password" name="confirm_pass" class="form-control" id="floatingPassword" placeholder="Konfirmasi Password" style="border: 3px solid #021668; color: #021668; background-color: #f1f1f1" />
+                <input type="password" name="confirm_pass" value="{{ old('password') }}" class="form-control" id="floatingPassword" placeholder="Konfirmasi Password" style="border: 3px solid #021668; color: #021668; background-color: #f1f1f1" />
               </div>
 
               <div class="d-flex justify-content-between ps-3 pe-3 mb-1">
               <div class="form-check">
                 <input class="form-check-input" style="border: 2px solid #021668; color: #021668;" type="checkbox" value="" id="flexCheckChecked" name="remember"/>
-                <label class="form-check-label" style="color: #021668;" for="flexCheckChecked">I Agreement</label>
+                <label class="form-check-label" style="color: #021668;" for="flexCheckChecked">I Agree</label>
               </div>
               </div>
               
@@ -54,10 +55,8 @@
               <div class="d-flex justify-content-center">
                 <p style="font-size: 12px; color: #021668;">Very easy and fast. We will not upload anything without your permission</p>
               </div>
-                <p style="text-align: center; color: #021668;">You have an account? <a href="/" style="font-weight: bold;">Login!</a></p>
+                <p style="text-align: center; color: #021668;">You have an account? <a href="/loginuser" style="font-weight: bold;">Login!</a></p>
               </div>
-              
-              
             </div>
           </div>
        </div>
