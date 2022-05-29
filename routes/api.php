@@ -34,7 +34,10 @@ Route::post('/login', [AuthMobileController::class, 'login']);
 //API route untuk melengkapi data pelamar bagi fresh graduate
 
 //API route untuk update data pelamar
-Route::post('/editprofil', [ProfileMobileController::class, 'update_profile']);
+Route::post('/profil/edit', [ProfileMobileController::class, 'edit_profil']);
+
+//API route untuk tampil data pelamar
+Route::get('/profil', [ProfileMobileController::class, 'tampil_profil']);
 
 //API route untuk menampilkan data perusahaan
 Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
