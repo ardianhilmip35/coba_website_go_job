@@ -73,14 +73,9 @@
                                 </div>
 
                                 {{-- Password --}}
-                                <div class="input-group mb-2 ps-1">
+                                <div class="form-group mb-2 ps-1">
                                     <p class="namaformreg">Password</p>
                                     <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" value="{{ old('password') }}" id="password" placeholder="Masukkan password anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
-                                    <div class="input-group-prepend">
-                                        <button class="btn rounded-end btn-outline-primary" type="button">
-                                            <h6 toggle="#password" class="fa fa-eye fa-lg show-hide"></h6>
-                                        </button>
-                                    </div>
                                     @error('password')
                                         <div class="alert alert-danger mt-2">
                                             {{ $message }}
@@ -93,11 +88,6 @@
                                     <p class="namaformreg">Konfirmasi Password</p>
                                     <input type="password" name="konfirmasipassword" class="form-control @error('konfirmasipassword') is-invalid @enderror" 
                                         id="konfirmasipassword" placeholder="Konfirmasi password anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
-                                    <div class="input-group-prepend">
-                                        <button class="btn rounded-end btn-outline-primary" type="button">
-                                            <h6 toggle="#konfirmasipassword" class="fa fa-eye fa-lg show-hide"></h6>
-                                        </button>
-                                    </div>
                                     @error('konfirmasipassword')
                                         <div class="alert alert-danger mt-2">
                                             {{ $message }}
