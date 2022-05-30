@@ -20,6 +20,7 @@ class UserMobile extends Authenticatable
     protected $table = "pelamar";
     protected $fillable = [
         'id',
+        'level_id',
         'nama_pelamar',
         'telp_pelamar',
         'tanggal_lahir',
@@ -28,6 +29,16 @@ class UserMobile extends Authenticatable
         'foto',
         'alamat_pelamar',
         'cv_pelamar',
+        'universitas',
+        'jurusan',
+        'prodi',
+        'pengalaman',
+        'posisi',
+        'perusahaan',
+        'tahun',
+        'spesialis',
+        'lokasi',
+        'gaji',
         'email',
         'password',
     ];
