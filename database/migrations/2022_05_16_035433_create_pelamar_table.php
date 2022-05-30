@@ -15,6 +15,7 @@ class CreatePelamarTable extends Migration
     {
         Schema::create('pelamar', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('level_id')->unique()->nullable();
             $table->string('nama_pelamar', 50);
             $table->string('telp_pelamar', 15)->nullable();
             $table->date('tanggal_lahir')->nullable();
@@ -38,6 +39,8 @@ class CreatePelamarTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+
+            $table->foreign('level_id')->references('id')->on('level')->cascadeOnDelete()->cascadeOnUpdate();
         });
 
         

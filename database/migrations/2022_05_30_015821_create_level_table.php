@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class DropTabelPekerja extends Migration
+class CreateLevelTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,11 @@ class DropTabelPekerja extends Migration
      */
     public function up()
     {
-        Schema::drop('pekerja');
+        Schema::create('level', function (Blueprint $table) {
+            $table->id();
+            $table->string('level')->nullable();
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +27,6 @@ class DropTabelPekerja extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('level');
     }
 }
