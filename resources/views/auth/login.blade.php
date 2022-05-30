@@ -15,10 +15,15 @@
                   <h4 class="text-center mb-4 " style="color: #021668;">Please Login Your Account</h4>
               <div class="form-group mb-3 ps-3 pe-3">
                 <!-- <label for="floatingInput" style="padding-left: 40px; color: #000;">Email</label> -->
-                <input type="email" value="{{ old('email') }}" name="email" class="form-control" id="floatingInput" placeholder="Email" style="border: 3px solid #021668; background-color: #f1f1f1" />
+                <input type="email" value="{{ old('email') }}" name="email" class="form-control" id="floatingInput" placeholder="Email" style="border: 2px solid #021668; background-color: #f1f1f1" />
               </div>
-              <div class="form-group mb-2 ps-3 pe-3">
-                <input type="password" value="{{ old('password') }}" name="password" class="form-control" id="floatingPassword" placeholder="Password" style="border: 3px solid #021668; background-color: #f1f1f1" />
+              <div class="input-group mb-2 ps-3 pe-3">
+                <input type="password" value="{{ old('password') }}" name="password" class="form-control" id="password-field1" placeholder="Password" style="border: 2px solid #021668; background-color: #f1f1f1" />
+                <div class="input-group-prepend">
+                  <button class="btn rounded-end btn-outline-primary" type="button" style="border: 2px solid #021668;height: 42px">
+                      <h6 toggle="#password-field1" class="fa fa-eye fa-lg show-hide"></h6>
+                  </button>
+              </div>
                 <!-- <label for="floatingPassword" style="padding-left: 40px; color: #000">Password</label> -->
               </div>
               <div class="d-flex justify-content-between ps-3 pe-3">
