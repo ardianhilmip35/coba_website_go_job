@@ -29,10 +29,6 @@ Route::post('/register', [AuthMobileController::class, 'register']);
 //API route untuk login pelamar
 Route::post('/login', [AuthMobileController::class, 'login']);
 
-//API route untuk melengkapi data pelamar bagi yang sudah berpengalaman kerja
-
-//API route untuk melengkapi data pelamar bagi fresh graduate
-
 //API route untuk update data pelamar
 Route::post('/profil/edit', [ProfileMobileController::class, 'edit_profil']);
 
@@ -46,3 +42,4 @@ Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
 Route::get('/lowongan', [LowonganController::class, 'lihatlowongan']);
 
 //API route untuk melamar pekerjaan
+Route::post('/lowongan/lamar', [LowonganController::class, 'lamar']);
