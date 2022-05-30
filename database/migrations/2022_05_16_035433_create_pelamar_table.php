@@ -23,6 +23,16 @@ class CreatePelamarTable extends Migration
             $table->string('foto')->nullable();
             $table->text('alamat_pelamar')->nullable();
             $table->string('cv_pelamar')->nullable();
+            $table->string('universitas', 50)->nullable();
+            $table->string('jurusan', 50)->nullable();
+            $table->string('prodi', 50)->nullable();
+            $table->string('pengalaman', 50)->nullable();
+            $table->string('posisi', 50)->nullable();
+            $table->string('perusahaan', 50)->nullable();
+            $table->string('tahun', 4)->nullable();
+            $table->string('spesialis', 50)->nullable();
+            $table->text('lokasi')->nullable();
+            $table->string('gaji')->nullable();
             $table->string('email', 100)->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
