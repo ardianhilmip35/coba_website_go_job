@@ -27,9 +27,9 @@ Route::get('/perusahaan/edit', [UpdateProfilController::class, 'edit'])->name('p
 Route::put('/perusahaan/edit', [UpdateProfilController::class, 'update'])->name('perusahaan.update');
 
 //Route User
-// Route::get('/loginuser', [LoginUserController::class, 'index'])->name('loginuser');
-// Route::post('/loginuser', [LoginUserController::class, 'store'])->name('login');
-// Route::get('/registeruser', [RegisterUserController::class, 'index'])->name('registeruser');
-// Route::post('/registeruser/create', [RegisterUserController::class, 'store'])->name('register');
+Route::get('/loginuser', [LoginUserController::class, 'index'])->name('loginuser');
+Route::post('/login/user', [LoginUserController::class, 'store'])->name('login/user');
+Route::get('/registeruser', [RegisterUserController::class, 'index'])->name('registeruser');
+Route::post('/register/user', [RegisterUserController::class, 'store'])->name('register/user');
 
 Route::get('/dashboard', [HomeController::class, 'indexuser'])->name('dashboarduser');
