@@ -60,4 +60,5 @@ class AuthMobileController extends Controller
         return response()
             ->json(['data' => $user,'access_token' => $token, 'token_type' => 'Bearer', ]);
     }
+
 }
