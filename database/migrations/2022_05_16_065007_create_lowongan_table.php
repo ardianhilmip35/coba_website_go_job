@@ -20,7 +20,7 @@ class CreateLowonganTable extends Migration
             $table->string('namalowongan', 50)->nullable();
             $table->enum('jenispekerjaan', ['Penuh', 'Paruh Waktu', 'Kontrak', 'Magang'])->nullable();
             $table->enum('tingkatjabatan', ['CEO/Direktur/Manajer Senior', 'Asisten Manajer', 'Supervisor', 'Pegawai', 'Lulusan Baru/Pengalaman Kurang dari 1 tahun'])->nullable();
-            $table->string('gajipekerjaan', 50);
+            $table->string('gajipekerjaan', 50)->nullable();
             $table->enum('spesialis', ['Arsitek', 'Biomedis', 'Bioteknologi', 'Staff Admin', 'Customer Service', 'Digital Marketing', 'E-commerce', 'Mobile Developer', 'Sistem Analis', 'Web Developer' ])->nullable();
             $table->enum('pengalaman', ['Tidak ada','1 Tahun', '2 Tahun', '3 Tahun', '4 Tahun', '5 Tahun', '6 Tahun', '7 Tahun', '8 Tahun', '9 Tahun', '10 Tahun'])->nullable();
             $table->text('deskripsipekerjaan')->nullable();

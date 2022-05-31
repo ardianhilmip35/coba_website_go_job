@@ -30,36 +30,12 @@
                                     </div>
                                 </div>
                                 <div class="card-body mb-0" style="background-color: #fff">
-                                    <a href="" style="font-size: 20px; text-decoration:none;">More Info <i class="fa-solid fa-circle-right"></i></a>
+                                    <a href="{{ url('lowongan') }}" style="font-size: 20px; text-decoration:none;">More Info <i class="fa-solid fa-circle-right"></i></a>
                                 </div>
                             </div>
                         </div>
 
                         {{-- Card 2 --}}
-                        <div class="col-sm-4">
-                            <div class="card mb-3 shadow">
-                                <div class="card-header bg-warning">
-                                    <div class="row">
-                                        <div class="col mt-0">
-                                            <h4 class="card-title text-light">Draf</h4>
-                                        </div>
-
-                                        <div class="col-auto shadow-lg p-2 body rounded me-2 bg-light">
-                                                <img src="img/draft.png" alt="" width="40" >
-                                        </div>
-                                    </div>
-                                    <h1 class="mb-3 fw-bold text-light" style="margin-top: -10px">5</h1>
-                                    <div class="mb-0">
-                                        <span class="text-light">Lowongan Tersimpan di Draf</span>
-                                    </div>
-                                </div>
-                                <div class="card-body mb-0" style="background-color: #fff">
-                                    <a href="" style="font-size: 20px; text-decoration:none;">More Info <i class="fa-solid fa-circle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        {{-- Card 3 --}}
                         <div class="col-sm-4">
                             <div class="card mb-3 shadow">
                                 <div class="card-header bg-danger">

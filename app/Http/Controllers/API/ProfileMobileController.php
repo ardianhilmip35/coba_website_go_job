@@ -38,7 +38,17 @@ class ProfileMobileController extends Controller
             'agama' => 'nullable|max:50|min:3',
             'alamat_pelamar' => 'nullable|max:255|min:3',
             'foto' => 'image|mimes:jpeg,png,jpg,gif,svg',
-            'cv_pelamar' => 'nullable|mimes:pdf'
+            'cv_pelamar' => 'nullable|mimes:pdf',
+            'universitas' => 'nullable',
+            'jurusan' => 'nullable',
+            'prodi' => 'nullable',
+            'pengalaman' => 'nullable',
+            'posisi' => 'nullable',
+            'perusahaan' => 'nullable',
+            'tahun' => 'nullable',
+            'spesialis' => 'nullable',
+            'lokasi' => 'nullable',
+            'gaji' => 'nullable'
         ]);
 
         
@@ -51,7 +61,17 @@ class ProfileMobileController extends Controller
                 'tanggal_lahir' => $request->tanggal_lahir,
                 'jenis_kelamin' => $request->jenis_kelamin,
                 'agama' => $request->agama,
-                'alamat_pelamar' => $request->alamat_pelamar
+                'alamat_pelamar' => $request->alamat_pelamar,
+                'universitas' =>  $request->universitas,
+                'jurusan' =>  $request->jurusan,
+                'prodi' =>  $request->prodi,
+                'pengalaman' =>  $request->pengalaman,
+                'posisi' =>  $request->posisi,
+                'perusahaan' =>  $request->perusahaan,
+                'tahun' =>  $request->tahun,
+                'spesialis' =>  $request->spesialis,
+                'lokasi' =>  $request->lokasi,
+                'gaji' =>  $request->gaji
             ]);
             
         } else {
@@ -64,6 +84,16 @@ class ProfileMobileController extends Controller
                 'jenis_kelamin' => $request->jenis_kelamin,
                 'agama' => $request->agama,
                 'alamat_pelamar' => $request->alamat_pelamar,
+                'universitas' =>  $request->universitas,
+                'jurusan' =>  $request->jurusan,
+                'prodi' =>  $request->prodi,
+                'pengalaman' =>  $request->pengalaman,
+                'posisi' =>  $request->posisi,
+                'perusahaan' =>  $request->perusahaan,
+                'tahun' =>  $request->tahun,
+                'spesialis' =>  $request->spesialis,
+                'lokasi' =>  $request->lokasi,
+                'gaji' =>  $request->gaji,
                 'foto' => $request->file('foto')->move('img/uploads/foto_profil', $request->file('foto')->getClientOriginalName())
             ]);
         }
@@ -77,7 +107,17 @@ class ProfileMobileController extends Controller
                 'tanggal_lahir' => $request->tanggal_lahir,
                 'jenis_kelamin' => $request->jenis_kelamin,
                 'agama' => $request->agama,
-                'alamat_pelamar' => $request->alamat_pelamar
+                'alamat_pelamar' => $request->alamat_pelamar,
+                'universitas' =>  $request->universitas,
+                'jurusan' =>  $request->jurusan,
+                'prodi' =>  $request->prodi,
+                'pengalaman' =>  $request->pengalaman,
+                'posisi' =>  $request->posisi,
+                'perusahaan' =>  $request->perusahaan,
+                'tahun' =>  $request->tahun,
+                'spesialis' =>  $request->spesialis,
+                'lokasi' =>  $request->lokasi,
+                'gaji' =>  $request->gaji
             ]);
             
         } else {
@@ -90,6 +130,16 @@ class ProfileMobileController extends Controller
                 'jenis_kelamin' => $request->jenis_kelamin,
                 'agama' => $request->agama,
                 'alamat_pelamar' => $request->alamat_pelamar,
+                'universitas' =>  $request->universitas,
+                'jurusan' =>  $request->jurusan,
+                'prodi' =>  $request->prodi,
+                'pengalaman' =>  $request->pengalaman,
+                'posisi' =>  $request->posisi,
+                'perusahaan' =>  $request->perusahaan,
+                'tahun' =>  $request->tahun,
+                'spesialis' =>  $request->spesialis,
+                'lokasi' =>  $request->lokasi,
+                'gaji' =>  $request->gaji,
                 'cv_pelamar' => $request->file('cv_pelamar')->move('img/uploads/cv_pelamar', $request->file('cv_pelamar')->getClientOriginalName())
             ]);
         }
