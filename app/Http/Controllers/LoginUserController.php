@@ -13,7 +13,8 @@ class LoginUserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    {   
+        
         return view('auth.login');
     }
     
@@ -37,9 +38,9 @@ class LoginUserController extends Controller
     public function store(Request $request)
     {
         if(Auth::attempt($request->only('email','password'))){
-            return redirect('/dashboard');
+            return redirect('/dashboard/user');
         } else {
-            return redirect('/loginuser');
+            return redirect('/login/user');
         }
     }
 

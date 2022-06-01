@@ -2,7 +2,7 @@
 
 @section('title', 'Iklan Lowongan')
 @section('content')    
-    <section style=" margin-top: 135px; margin-left: 50px; margin-right: 50px; margin-bottom: 120px;">
+    <section style=" margin-top: 135px; margin-left: 50px; margin-right: 50px; padding-bottom: 195px;">
             <div class="row">
                 <div class="container d-flex justify-content-between shadow rounded" style="background-color: #fff;">
                     <p class="fs-5 me-auto pt-3 ps-3">Iklan Lowongan</p>

@@ -43,7 +43,7 @@ class RegisterUserController extends Controller
             'remember_token' => Str::random(60),
         ]);
 
-        return redirect('/loginuser')->with('Success', 'Registrasi berhasil');
+        return redirect('/')->with('Success', 'Registrasi berhasil');
     }
 
     /**

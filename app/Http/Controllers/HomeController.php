@@ -25,10 +25,10 @@ class HomeController extends Controller
     {
         return view('dashboard.dashboardadm');
     }
-    // public function indexuser()
-    // {
-    //     return view('dashboard.dashboarduser');
-    // }
+    public function indexuser()
+    {
+        return view('dashboard.dashboarduser');
+    }
 
     
 }

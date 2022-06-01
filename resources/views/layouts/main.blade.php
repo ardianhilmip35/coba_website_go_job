@@ -29,7 +29,7 @@
       integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
       crossorigin="anonymous" />
     </head>
-<body style="background-color: #F1F1F1">
+<body style="background-color: #f1f1f1">
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" style="background-color: #021668;">
@@ -49,13 +49,17 @@
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-white"  href="/loginuser">Masuk</a>
+          <a class="mt-1 nav-link text-white"  href="{{ route('login.user') }}">Masuk</a>
         </li>
+        
         <li class="nav-item">
-          <a class="nav-link text-white"  href="/registeruser">Mendaftar</a>
+          <a class="mt-1 nav-link text-white"  href="{{ route('register.user') }}">Mendaftar</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link "  style="background-color: #ffff; color:#1a202c"  href="{{ route('login') }}">Untuk Perusahaan</a>
+          <a class="d-grid gap-2 d-md-flex justify-content-md-end" href="{{ route('login') }}" style="text-decoration: none">
+            <button class="btn me-md-2 fw-bold m-1" type="button" style="background-color: #ffff; color:#000;">Untuk Perusahaan</button>
+          </a>
         </li>
       </ul>
     </div>

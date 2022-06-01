@@ -47,7 +47,7 @@
                     <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="{{ route('home') }}">Beranda</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu"  aria-current="page" href="#">Laporan Lowongan</a>
+                    <a class="nav-link d-grid gap-2 d-flex justify-content-center menu"  aria-current="page" href="/laporan">Laporan Lowongan</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="/lowongan">Iklan Lowongan</a>
