@@ -23,23 +23,25 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//API route untuk regirter pelamar baru
-Route::post('/register', [AuthMobileController::class, 'register']);
+Route::group(['middleware'=>['auth:sanctum']], function (){
+    //API route untuk regirter pelamar baru
+    Route::post('/register', [AuthMobileController::class, 'register']);
 
-//API route untuk login pelamar
-Route::post('/login', [AuthMobileController::class, 'login']);
+    //API route untuk login pelamar
+    Route::post('/login', [AuthMobileController::class, 'login']);
 
-//API route untuk update data pelamar
-Route::post('/profil/edit', [ProfileMobileController::class, 'edit_profil']);
+    //API route untuk update data pelamar
+    Route::post('/profil/edit', [ProfileMobileController::class, 'edit_profil']);
 
-//API route untuk tampil data pelamar
-Route::get('/profil', [ProfileMobileController::class, 'tampil_profil']);
+    //API route untuk tampil data pelamar
+    Route::get('/profil', [ProfileMobileController::class, 'tampil_profil']);
 
-//API route untuk menampilkan data perusahaan
-Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
+    //API route untuk menampilkan data perusahaan
+    Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
 
-//API route untuk menampilkan iklan lowongan
-Route::get('/lowongan', [LowonganController::class, 'lihatlowongan']);
+    //API route untuk menampilkan iklan lowongan
+    Route::get('/lowongan', [LowonganController::class, 'lihatlowongan']);
 
-//API route untuk melamar pekerjaan
-Route::post('/lowongan/lamar', [LowonganController::class, 'lamar']);
+    //API route untuk melamar pekerjaan
+    Route::post('/lowongan/lamar', [LowonganController::class, 'lamar']);
+});
