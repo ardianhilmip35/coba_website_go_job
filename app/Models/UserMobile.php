@@ -20,7 +20,6 @@ class UserMobile extends Authenticatable
     protected $table = "pelamar";
     protected $fillable = [
         'id',
-        'level_id',
         'nama_pelamar',
         'telp_pelamar',
         'tanggal_lahir',
@@ -43,16 +42,6 @@ class UserMobile extends Authenticatable
         'password',
     ];
     protected $primaryKey = "id";
-
-    public function pekerja()
-    {
-        return $this->hasOne(pekerja::class);
-    }
-
-    public function mahasiswa()
-    {
-        return $this->hasOne(mahasiswa::class);
-    }
 
     public function lamarkerja()
     {

@@ -4,7 +4,7 @@
 @section('content')
 
     <section id="form" style=" margin-top: 100px; margin-left: 50px; margin-right: 50px; margin-bottom: 50px;">
-      <form method="POST" action="{{ route('userregister') }}">
+      <form method="POST" action="{{ route('registeruser') }}">
       @csrf
       <div class="row py-2">
         <div class="row py-4 ">

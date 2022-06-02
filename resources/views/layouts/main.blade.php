@@ -49,11 +49,11 @@
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="mt-1 nav-link text-white"  href="{{ route('login.user') }}">Masuk</a>
+          <a class="mt-1 nav-link text-white"  href="{{ route('masuklogin') }}">Masuk</a>
         </li>
         
         <li class="nav-item">
-          <a class="mt-1 nav-link text-white"  href="{{ route('register.user') }}">Mendaftar</a>
+          <a class="mt-1 nav-link text-white"  href="{{ route('masukregis') }}">Mendaftar</a>
         </li>
 
         <li class="nav-item">
