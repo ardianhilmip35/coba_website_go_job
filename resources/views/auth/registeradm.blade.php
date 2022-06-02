@@ -76,6 +76,12 @@
                                 <div class="form-group mb-2 ps-1">
                                     <p class="namaformreg">Password</p>
                                     <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" value="{{ old('password') }}" id="password" placeholder="Masukkan password anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
+                                    <span toggle="#password-field" class="fa fa-fw fa-eye show-hide" style=" float: right;
+                                    margin-left: -27px;
+                                    margin-top: -27px;
+                                    position: relative;
+                                    padding-right:30px;
+                                    z-index: 2;" onclick="myFunction()"></span>
                                     @error('password')
                                         <div class="alert alert-danger mt-2">
                                             {{ $message }}
@@ -87,8 +93,14 @@
                                 <div class="form-group mb-2 px-1">
                                     <p class="namaformreg">Konfirmasi Password</p>
                                     <input type="password" name="konfirmasipassword" class="form-control @error('konfirmasipassword') is-invalid @enderror" 
-                                        id="konfirmasipassword" placeholder="Konfirmasi password anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
-                                    @error('konfirmasipassword')
+                                    id="konfirmasipassword" placeholder="Konfirmasi password anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
+                                    <span toggle="#password-field" class="fa fa-fw fa-eye show-hide" style=" float: right;
+                                    margin-left: -27px;
+                                    margin-top: -27px;
+                                    position: relative;
+                                    padding-right:30px;
+                                    z-index: 2;" onclick="myFunction2()"></span>
+                                        @error('konfirmasipassword')
                                         <div class="alert alert-danger mt-2">
                                             {{ $message }}
                                         </div>    
@@ -120,5 +132,26 @@
                 });
             });
         </script>
+        <script>
+            function myFunction2() {
+              var x = document.getElementById("konfirmasipassword");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+          </script>
+    
+          <script>
+            function myFunction() {
+              var x = document.getElementById("password");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+          </script>
     </section>
 @endsection

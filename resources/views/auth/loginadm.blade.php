@@ -21,13 +21,19 @@
                         </div>
 
                         {{-- PASSWORD --}}
-                        <div class="input-group mb-3 px-1">
+                        <div class="form-group mb-3 px-1">
                             <input id="password-field1" type="password" name="password" class="form-control @error('password') is-invalid @enderror"  placeholder="Password" style="border: 1px solid #021668; background-color: #f1f1f1" required autocomplete="current-password"/>
-                            <div class="input-group-prepend">
+                            {{-- <div class="input-group-prepend">
                                 <button class="btn rounded-end btn-outline-primary" type="button">
                                     <h6 toggle="#password-field1" class="fa fa-eye fa-lg show-hide"></h6>
                                 </button>
-                            </div>
+                            </div> --}}
+                            <span toggle="#password-field" class="fa fa-fw fa-eye show-hide" style=" float: right;
+                                    margin-left: -27px;
+                                    margin-top: -27px;
+                                    position: relative;
+                                    padding-right:30px;
+                                    z-index: 2;" onclick="myFunction()"></span>
                             @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -49,6 +55,17 @@
                     </div>
                 </div>
         </form>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("password-field1");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+          </script>
     </section>
     
 @endsection
