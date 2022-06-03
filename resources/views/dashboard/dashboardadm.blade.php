@@ -24,7 +24,7 @@
                                                 <img src="img/iklan.png" alt="" width="40" >
                                         </div>
                                     </div>
-                                    <h1 class="mb-3 fw-bold text-light" style="margin-top: -10px">100</h1>
+                                    <h1 class="mb-3 fw-bold text-light" style="margin-top: -10px">Auth</h1>
                                     <div class="mb-0">
                                         <span class="text-light">Lowongan Sudah Diiklankan</span>
                                     </div>

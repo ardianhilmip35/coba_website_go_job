@@ -39,7 +39,6 @@ class AuthMobileController extends Controller
     {
         $validator = Validator::make($request->all(),[
             'nama_pelamar' => 'required|string|max:50',
-            'telp_pelamar' => 'required|string|max:15',
             'email' => 'required|string|email',
             'password' => 'required|string|min:8'
         ]);
@@ -50,7 +49,6 @@ class AuthMobileController extends Controller
 
         $user = UserMobile::create([
             'nama_pelamar' => $request->nama_pelamar,
-            'telp_pelamar' => $request->telp_pelamar,
             'email' => $request->email,
             'password' => Hash::make($request->password)
         ]);
@@ -61,4 +59,14 @@ class AuthMobileController extends Controller
             ->json(['data' => $user,'access_token' => $token, 'token_type' => 'Bearer', ]);
     }
 
+    // method for user logout and delete token
+    public function logout()
+    {
+        auth()->user()->tokens()->delete();
+
+        return [
+            'message' => 'You have successfully logged out and the token was successfully deleted'
+        ];
+    }
+    
 }

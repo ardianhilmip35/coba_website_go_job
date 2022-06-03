@@ -2,18 +2,26 @@
 
 @section('title', 'Register Admin')
 @section('content')
-    <section id="form" >
-        <form method="POST" action="{{ route('register') }}" class="d-flex justify-content-center p-3">
+    <section id="form" style=" margin-top: 100px; margin-left: 50px; margin-right: 50px; margin-bottom: -50px;">
+        <form method="POST" action="{{ route('register') }}">
                 @csrf
-                <div class="col-lg-10 pt-3">
-                    <div class="container-fluid mt-2 p-4 shadow m-auto rounded" style="background-color:#ffff ; width:auto;">
-                        <img src="/img/logofull.png" alt="" width="160" class="mb-4 rounded mx-auto d-block">
-                        <hr size="4" color="#000000" width=”500″  style="border: 2px solid black">
-                        <div class="row">
-                            <div class="col">
 
-                                {{-- Admin --}}
-                                <div class="form-group mb-2 px-1">
+                <div class="row py-4">
+                    <div class="col-md-6">
+                        <img src="/img/register2.png"  class="img-fluid" style="margin-top: -20px">
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="container bg-light shadow-lg rounded mt-3">
+
+                            <div class="pt-4 fw-bold fs-3 pb-4 text-center">
+                                <h4 class="text-center fw-bold" style="color: #021668;">Please Create Your Account</h4>
+                            </div>
+
+                            {{-- SLIDE PERTAMA --}}
+                            <div class="form-step form-step-active">
+
+                                <div class="form-group mb-2 px-4 pt-2">
                                     <p class="namaformreg">Nama Lengkap</p>
                                     <input type="text" name="nama_admin" class="form-control @error('nama_admin') is-invalid @enderror" value="{{ old('nama_admin') }}" id="nama_admin" placeholder="Masukkan nama anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
                                     @error('nama_admin')
@@ -22,9 +30,9 @@
                                         </div>    
                                     @enderror
                                 </div>
-
+    
                                 {{-- Perusahaan --}}
-                                <div class="form-group mb-2 px-1">
+                                <div class="form-group mb-2 px-4 pt-2">
                                     <p class="namaformreg">Nama Perusahaan</p>
                                     <input type="text" name="nama_perusahaan" class="form-control @error('nama_perusahaan') is-invalid @enderror" value="{{ old('nama_perusahaan') }}" id="nama_perusahaan" placeholder="Masukkan nama bisnis anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
                                     @error('nama_perusahaan')
@@ -33,9 +41,9 @@
                                         </div>    
                                     @enderror
                                 </div>
-
+    
                                 {{-- Telepon --}}
-                                <div class="form-group mb-2 px-1">
+                                <div class="form-group mb-2 px-4 pt-2">
                                     <p class="namaformreg">Nomor Telepon</p>
                                     <input type="text" name="telp_perusahaan" class="form-control @error('telp_perusahaan') is-invalid @enderror" value="{{ old('telp_perusahaan') }}" id="telp_perusahaan" placeholder="Masukkan nomor telpon anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
                                     @error('telp_perusahaan')
@@ -44,9 +52,9 @@
                                         </div>    
                                     @enderror
                                 </div>
-
+    
                                 {{-- Alamat --}}
-                                <div class="form-group mb-2 px-1">
+                                <div class="form-group mb-2 px-4 pt-2 pb-4">
                                     <p class="namaformreg">Alamat Kantor</p>
                                     <input type="text" name="alamat_perusahaan" class="form-control @error('alamat_perusahaan') is-invalid @enderror" value="{{ old('alamat_perusahaan') }}" id="alamat_perusahaan" placeholder="Masukkan alamat kantor anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
                                     @error('alamat_perusahaan')
@@ -55,14 +63,22 @@
                                         </div>    
                                     @enderror
                                 </div>
-                                
-                            </div>
 
-                            
-                            <div class="col">
+                                {{-- Button --}}
+                                <div class="row pb-4 pe-1">
+                                    <div class="col-sm-12 d-flex justify-content-end pe-4">
+                                        <a href="#" style="text-decoration: none; color:#fff;" class="fw-bold pe-6 align-self-center px-2 text-center py-2 rounded me-2 btn-next bg-success">Selanjutnya</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            {{-- AKHIR SLIDE PERTAMA --}}
+
+                            {{-- SLIDE KEDUA --}}
+                            <div class="form-step">
 
                                 {{-- Email --}}
-                                <div class="form-group mb-2 px-1">
+                                <div class="form-group mb-2 px-4 pt-2">
                                     <p class="namaformreg">Email</p>
                                     <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" id="email" placeholder="Masukkan email anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
                                     @error('email')
@@ -73,7 +89,7 @@
                                 </div>
 
                                 {{-- Password --}}
-                                <div class="form-group mb-2 ps-1">
+                                <div class="form-group mb-2 px-4 pt-2">
                                     <p class="namaformreg">Password</p>
                                     <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" value="{{ old('password') }}" id="password" placeholder="Masukkan password anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
                                     <span toggle="#password-field" class="fa fa-fw fa-eye show-hide" style=" float: right;
@@ -90,7 +106,7 @@
                                 </div>
 
                                 {{-- Konfirmasi Password --}}
-                                <div class="form-group mb-2 px-1">
+                                <div class="form-group mb-2 px-4 pt-2 pb-4">
                                     <p class="namaformreg">Konfirmasi Password</p>
                                     <input type="password" name="konfirmasipassword" class="form-control @error('konfirmasipassword') is-invalid @enderror" 
                                     id="konfirmasipassword" placeholder="Konfirmasi password anda" style="border: 1px solid #021668; background-color: #f1f1f1" required/>
@@ -106,18 +122,30 @@
                                         </div>    
                                     @enderror
                                 </div>
+
+
+                                {{-- Button --}}
+                                <div class="row pe-1 pt-2" style="padding-left: 7px">
+                                    <div class="col-sm-12 d-flex justify-content-between pe-4">
+                                        <a href="#" style="text-decoration: none; color:#fff; " class="fw-bold pe-6 align-self-center px-2 text-center py-2 ms-3 rounded btn-prev bg-danger">Sebelumnya</a>
+                                        <button class="btn fw-bold fs-6 me-2 ms-3" style="background-color: #021668; color:#ffff; width:75%" type="submit" name="register" id="btnSubmit">Register</button>
+                                    </div>
+                                </div>
+
+                                <div class="text-center px-4 pt-3 pb-5">
+                                    <span>
+                                        Log in With your account <a href="{{ route('login') }}" style="color: #021668;">here</a>
+                                    </span>
+                                </div>
                                 
                             </div>
-                        </div>
-                        
-                        <div class="container px-1 m-auto mt-4">
-                            <div class="d-flex justify-content-center">
-                                <button class="btn fw-bold fs-5" style="background-color: #021668; color:#ffff; width:100%" type="submit" name="register" id="btnSubmit">Register</button>
-                            </div>
+                            {{-- AKHIR SLIDE KEDUA    --}}
                         </div>
                     </div>
                 </div>
         </form>
+
+        <script src="/script.js" defer></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script type="text/javascript">
             $(function () {
@@ -134,24 +162,24 @@
         </script>
         <script>
             function myFunction2() {
-              var x = document.getElementById("konfirmasipassword");
-              if (x.type === "password") {
+                var x = document.getElementById("konfirmasipassword");
+                if (x.type === "password") {
                 x.type = "text";
-              } else {
+                } else {
                 x.type = "password";
-              }
+                }
             }
-          </script>
+        </script>
     
-          <script>
+        <script>
             function myFunction() {
-              var x = document.getElementById("password");
-              if (x.type === "password") {
-                x.type = "text";
-              } else {
-                x.type = "password";
-              }
-            }
-          </script>
+                var x = document.getElementById("password");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+                }
+        </script>
     </section>
 @endsection

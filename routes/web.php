@@ -29,24 +29,3 @@ Route::get('/perusahaan/edit', [UpdateProfilController::class, 'edit'])->name('p
 Route::put('/perusahaan/edit', [UpdateProfilController::class, 'update'])->name('perusahaan.update');
 Route::get('/laporan', [LaporanController::class, 'laporan'])->name('laporan');
 
-//Route User
-Route::get('/user/register', [RegisterController::class, 'masukregis'])->name('masukregis')->middleware('guest');
-Route::post('/user/register', [RegisterController::class, 'registeruser'])->name('registeruser');
-
-Route::get('/user/login', [LoginController::class, 'masuklogin'])->name('masuklogin')->middleware('guest');
-Route::post('/user/login', [LoginController::class, 'loginuser'])->name('loginuser');
-
-Route::get('/dashboard', [DashboardController::class, 'masukdashboard'])->name('masukdashboard');
-
-
-
-
-
-
-
-
-// Route::get('/', [LoginUserController::class, 'index'])->name('login.user');
-// Route::post('/login/user', [LoginUserController::class, 'store'])->name('userlogin');
-// Route::get('/register/user', [RegisterUserController::class, 'index'])->name('register.user');
-// Route::post('/register/user', [RegisterUserController::class, 'store'])->name('userregister');
-// Route::get('/dashboard/user', [HomeController::class, 'indexuser'])->name('userdashboard');

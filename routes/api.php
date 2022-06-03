@@ -36,7 +36,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     Route::post('/profil/edit', [ProfileMobileController::class, 'edit_profil']);
 
     //API route untuk tampil data pelamar
-    Route::get('/profil', [ProfileMobileController::class, 'tampil_profil']);
+    Route::get('/profile', function(Request $request) {
+        return auth()->user();
+    });
 
     //API route untuk menampilkan data perusahaan
     Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
@@ -46,6 +48,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
     //API route untuk melamar pekerjaan
     Route::post('/lowongan/lamar', [LowonganController::class, 'lamar']);
+
+    // API route for logout user
+    Route::post('/logout', [AuthMobileController::class, 'logout']);
     
     });
 
