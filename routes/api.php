@@ -33,7 +33,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     Route::group(['middleware'=>['auth:sanctum']], function (){
 
     //API route untuk update data pelamar
-    Route::post('/profil/edit', [ProfileMobileController::class, 'edit_profil']);
+    Route::post('/profile/update-profile',[ProfileMobileController::class,'update_profile']);
 
     //API route untuk tampil data pelamar
     Route::get('/profile', function(Request $request) {
