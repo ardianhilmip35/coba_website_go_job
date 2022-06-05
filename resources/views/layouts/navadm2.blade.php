@@ -38,10 +38,10 @@
 <nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background-color: #021668;">
     <div class="container-fluid">
     <img src="/img/LOGO 1.png" alt="" width="160px" class="d-inline-block align-text-top pe-3 ps-2 mb-1" />
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mb-5 mb-lg-0 listmenu">
                 <li class="nav-item">
                     <a class="nav-link d-grid gap-2 d-flex justify-content-center menu" aria-current="page" href="{{ route('home') }}">Beranda</a>

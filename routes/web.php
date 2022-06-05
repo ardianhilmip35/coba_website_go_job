@@ -29,3 +29,6 @@ Route::get('/perusahaan/edit', [UpdateProfilController::class, 'edit'])->name('p
 Route::put('/perusahaan/edit', [UpdateProfilController::class, 'update'])->name('perusahaan.update');
 Route::get('/laporan', [LaporanController::class, 'laporan'])->name('laporan');
 
+Route::get('/', function () {
+    return view('index');
+});
