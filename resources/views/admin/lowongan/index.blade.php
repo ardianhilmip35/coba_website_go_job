@@ -12,6 +12,7 @@
 
             @if ($lowongan->count() > 0)
                 @foreach ($lowongan as $iklan)
+                @if ($iklan->users_id == Auth::user()->id)
                     <div class="row mt-4 mb-2">
                         <div class="container d-flex justify-content-between shadow-sm rounded" style="background-color: #fff;">   
                             <div class="col">
@@ -24,7 +25,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
+                @endif
                 @endforeach
             @else
                 <div class="row mt-5 mb-2">

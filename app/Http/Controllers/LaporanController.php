@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\lamarkerja;
 
 class LaporanController extends Controller
 {
@@ -23,6 +24,7 @@ class LaporanController extends Controller
      */
     public function laporan()
     {
-        return view('admin.lowongan.laporan');
+        $dtLaporan = lamarkerja::with('pelamar', 'lowongan')->paginate(5);
+        return view('admin.lowongan.laporan', compact('dtLaporan'));
     }
 }

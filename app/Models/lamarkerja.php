@@ -16,7 +16,8 @@ class lamarkerja extends Model
         'lowongan_id',
         'pelamar_id',
         'deskripsi_lamaran',
-        'portofolio_pelamar'
+        'portofolio_pelamar',
+        'created_at'
     ];
 
     protected $primaryKey = 'id';
@@ -28,6 +29,6 @@ class lamarkerja extends Model
 
     public function pelamar()
     {
-        return $this->belongsTo(pelamar::class);
+        return $this->belongsTo(UserMobile::class);
     }
 }

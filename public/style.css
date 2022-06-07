@@ -298,6 +298,30 @@ footer {
     animation: animate 0.5s;
 }
 
+.docs-table tbody i{
+
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+
+    
+}
+
 .info-step-active {
     display: block;
+}
+
+/* Landing Page */
+#project{
+    background-color: #d7e9f7;
+    background-size: 100%;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+#testi{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
 }

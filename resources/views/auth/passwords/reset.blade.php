@@ -73,7 +73,7 @@
                 <div class="col-md-6 ps-4">
                     <div class="pt-3 text-start offset-md-2">
                         <h2 class="fw-bold" style="color: #021668;">RESET PASSWORD</h2>
-                        <p style="color: #021668; letter-spacing: 1px;" class="fs-5" >Reset your email and password</p>
+                        <p style="color: #021668; letter-spacing: 1px;" class="fs-5" >Reset your new password</p>
                     </div>
                     @if (session('status'))
                         <div class="alert alert-success offset-md-2" role="alert">
@@ -100,6 +100,12 @@
                         <div class="form-floating offset-md-2 mt-4">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" style="margin-top: 5px">
                                 <label for="floatingInput">{{ __('Password') }}</label>
+                                <span toggle="#password-field" class="fa fa-fw fa-eye show-hide" style=" float: right;
+                                    margin-left: -27px;
+                                    margin-top: -27px;
+                                    position: relative;
+                                    padding-right:30px;
+                                    z-index: 2;" onclick="myFunction()"></span>
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -111,6 +117,12 @@
                         <div class="form-floating offset-md-2 mt-4">
                             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             <label for="floatingInput">{{ __('Confirm Password') }}</label>
+                            <span toggle="#password-field" class="fa fa-fw fa-eye show-hide" style=" float: right;
+                                    margin-left: -27px;
+                                    margin-top: -27px;
+                                    position: relative;
+                                    padding-right:30px;
+                                    z-index: 2;" onclick="myFunction2()"></span>
                         </div>
                         
                         <div class="form-group mt-3 pb-2">
@@ -124,5 +136,26 @@
                 </div>
         </div>
 
+        <script>
+            function myFunction2() {
+                var x = document.getElementById("password-confirm");
+                if (x.type === "password") {
+                x.type = "text";
+                } else {
+                x.type = "password";
+                }
+            }
+        </script>
+    
+        <script>
+            function myFunction() {
+                var x = document.getElementById("password");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+                }
+        </script>
     </section>
 @endsection
