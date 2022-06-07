@@ -25,7 +25,7 @@ class LaporanController extends Controller
      */
     public function laporan()
     {
-        $dtLaporan = lamarkerja::with('pelamar', 'lowongan')->paginate(5);
+        $dtLaporan = lamarkerja::with('pelamar', 'lowongan')->paginate(2);
         return view('admin.lowongan.laporan', compact('dtLaporan'));
     }
 
