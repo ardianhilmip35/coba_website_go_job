@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\lowongan;
 
 use Illuminate\Http\Request;
 
@@ -23,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard.dashboardadm');
+        $jumlah_lowongan = lowongan::all()->count();
+        return view('dashboard.dashboardadm')->with('jumlah_lowongan', $jumlah_lowongan);
     }
 }
