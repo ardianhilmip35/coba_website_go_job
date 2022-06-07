@@ -48,7 +48,7 @@
                                                 <img src="img/employee.png" alt="" width="40" >
                                         </div>
                                     </div>
-                                    <h1 class="mb-3 fw-bold text-light" style="margin-top: -10px">30.000</h1>
+                                    <h1 class="mb-3 fw-bold text-light" style="margin-top: -10px">{{ $jumlah_lamarkerja }}</h1>
                                     <div class="mb-0">
                                         <span class="text-light">Orang yang Terdaftar</span>
                                     </div>

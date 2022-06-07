@@ -113,7 +113,7 @@ class UpdateProfilController extends Controller
                 'telp_perusahaan' => $request->telp_perusahaan,
                 'alamat_perusahaan' => $request->alamat_perusahaan,
                 'website_perusahaan' => $request->website_perusahaan,
-                'logo' => $request->file('logo')->move('img/lowongan/', $request->file('logo')->getClientOriginalName())
+                'logo' => $request->file('logo')->move('img/lowongan/', time().rand(100,900) . '.' .$request->file('logo')->getClientOriginalName())
             ]);
             }
 
@@ -140,7 +140,7 @@ class UpdateProfilController extends Controller
                 'telp_perusahaan' => $request->telp_perusahaan,
                 'alamat_perusahaan' => $request->alamat_perusahaan,
                 'website_perusahaan' => $request->website_perusahaan,
-                'gedung' => $request->file('gedung')->move('img/lowongan/', $request->file('gedung')->getClientOriginalName())
+                'gedung' => $request->file('gedung')->move('img/lowongan/', time().rand(100,900) . '.' .$request->file('gedung')->getClientOriginalName())
             ]);
             
         }
