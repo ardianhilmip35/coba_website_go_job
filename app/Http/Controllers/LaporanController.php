@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\lamarkerja;
+use Illuminate\Support\Facades\Storage;
 
 class LaporanController extends Controller
 {
@@ -27,4 +28,6 @@ class LaporanController extends Controller
         $dtLaporan = lamarkerja::with('pelamar', 'lowongan')->paginate(5);
         return view('admin.lowongan.laporan', compact('dtLaporan'));
     }
+
+    
 }

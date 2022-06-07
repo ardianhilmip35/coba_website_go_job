@@ -25,6 +25,7 @@
                       </thead>
                       <tbody>
                         @foreach ($dtLaporan as $item)
+                        @if ($item->lowongan->users_id == Auth::user()->id)
                           <tr>
                             <th scope="row">{{ $loop->iteration }}</th>
                             <td>{{ $item->pelamar->nama_pelamar }}</td>
@@ -33,8 +34,9 @@
                             <td>{{ $item->lowongan->tingkatjabatan }}</td>
                             <td>{{ $item->pelamar->email }}</td>
                             <td>{{ $item->created_at }}</td>
-                          <td><a href="img/uploads/lamaran/{{ $item->portofolio_pelamar }}"><button type="button" class="btn btn-primary btn-sm">Lihat</button></a></td>
+                          <td><a href="{{$item->portofolio_pelamar }}"><button type="button" class="btn btn-primary btn-sm">Lihat</button></a></td>
                           </tr>
+                        @endif
                         @endforeach
                       </tbody>
                 </table>
