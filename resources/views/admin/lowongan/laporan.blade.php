@@ -30,7 +30,7 @@
                             <td>{{ $item->pelamar->nama_pelamar }}</td>
                             <td>{{ $item->lowongan->namalowongan }}</td>
                             <td>{{ $item->lowongan->spesialis }}</td>
-                            <td>{{ $item->lowongan->tidngkatjabatan }}</td>
+                            <td>{{ $item->lowongan->tingkatjabatan }}</td>
                             <td>{{ $item->pelamar->email }}</td>
                             <td>{{ $item->created_at }}</td>
                           <td><a href="img/uploads/lamaran/{{ $item->portofolio_pelamar }}"><button type="button" class="btn btn-primary btn-sm">Lihat</button></a></td>
