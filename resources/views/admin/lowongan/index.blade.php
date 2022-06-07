@@ -35,5 +35,7 @@
                     </div>
                 </div>
             @endif
-    </section>
+            {{-- pagination --}}
+            {{ $lowongan->links() }}
+        </section>
 @endsection
