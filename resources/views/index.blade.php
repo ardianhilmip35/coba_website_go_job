@@ -25,7 +25,7 @@
           <div class="row">
                 <div class="row">
                     <div class="col-lg-12 col-md-10 col-12">
-                          <h2 class="mb-4" data-aos="fade-up"> Best <strong>Website For Searching Job</strong> in Jember</h2>
+                          <h2 class="mb-4" data-aos="fade-up"> Best <strong style="color:#021668; ">Website For Searching Job</strong> in Jember</h2>
                           <p class="mb-0 lh-lg fs-5" data-aos="fade-up">Sebuah aplikasi tentang aplikasi pencarian lowongan pekerjaan yang berbasis mobile maupun website. Pada website go job, nanti akan digunakan admin untuk melayangkan sebuah iklan lowongan pekerjaan pada aplikasi GO JOB ini. Dalam websitenya juga bisa digunakan user/client yang nantinya akan mencari sebuah lowongan pekerjaan dari perusahaan - perusahaan yang sudah bergabung pada aplikasi ini. 
                           <br><br>
                           <p class="mb-0 lh-lg fs-5" data-aos="fade-up">
@@ -52,7 +52,7 @@
 
                   <h2 class="mb-5 text-center" data-aos="fade-up">
                       Perusahaan Yang Bekerja Sama
-                      <strong>Dengan Kami</strong>
+                      <strong style="color:#021668; ">Dengan Kami</strong>
                   </h2>
 
               </div>
@@ -109,7 +109,7 @@
         <div class="col-lg-12 col-12">
     
           <h2 class="mb-5 text-center" data-aos="fade-up">
-              <Strong>Testimonials</Strong>
+              <Strong style="color:#021668; ">Testimonials</Strong>
           </h2>
     
         </div>
