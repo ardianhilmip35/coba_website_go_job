@@ -54,7 +54,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body mb-0" style="background-color: #fff">
-                                    <a href="" style="font-size: 20px; text-decoration:none;">More Info <i class="fa-solid fa-circle-right"></i></a>
+                                    <a href="{{ url('laporan') }}" style="font-size: 20px; text-decoration:none;">More Info <i class="fa-solid fa-circle-right"></i></a>
                                 </div>
                             </div>
                         </div>
