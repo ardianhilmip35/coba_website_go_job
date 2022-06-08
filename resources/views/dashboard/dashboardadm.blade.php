@@ -112,7 +112,7 @@
             },
             series: [
                 {
-                name: 'Jumlah Pendaftar',
+                name: 'Bulan',
                 data: jumlah
 
             }
