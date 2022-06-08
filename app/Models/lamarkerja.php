@@ -31,5 +31,17 @@ class lamarkerja extends Model
     {
         return $this->belongsTo(UserMobile::class);
     }
+
+    static function getlowongan(){
+        $return = DB::table('lamarkerja')
+        ->join('lowongan',  'lamarkerja.lowongan_id','=','lowongan.id');
+        return $return;
+    }
+
+    static function getpelamar(){
+        $return = DB::table('lamarkerja')
+        ->join('pelamar',  'lamarkerja.pelamar_id','=','pelamar.id');
+        return $return;
+    }
 }
 
