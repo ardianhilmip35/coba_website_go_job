@@ -30,7 +30,7 @@ class AuthMobileController extends Controller
         $token = $user->createToken('auth_token')->plainTextToken;
 
         return response()
-            ->json(['message' => 'Selamat Datang '.$user->nama_pelamar.', di Aplikasi Go Job','access_token' => $token, 'token_type' => 'Bearer', ]);
+            ->json(['message' => 'Selamat Datang '.$user->nama_pelamar.', di Aplikasi Go Job','access_token' => $token, 'token_type' => 'Bearer', 'data'=> $user->id]);
 
     }
 

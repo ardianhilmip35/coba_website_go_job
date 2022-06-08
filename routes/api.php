@@ -22,7 +22,8 @@ use App\Http\Controllers\API\ProfileMobileController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
+//API route untuk melamar pekerjaan
+Route::post('/lowongan/lamar', [LowonganController::class, 'lamar']);
 
     //API route untuk regirter pelamar baru
     Route::post('/register', [AuthMobileController::class, 'register']);
@@ -30,10 +31,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     //API route untuk login pelamar
     Route::post('/login', [AuthMobileController::class, 'login']);
 
-    
-    //API route untuk melamar pekerjaan
-    Route::post('/lowongan/lamar', [LowonganController::class, 'lamar']);
-    
     Route::group(['middleware'=>['auth:sanctum']], function (){
 
     //API route untuk update data pelamar
@@ -43,6 +40,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     Route::get('/profile', function(Request $request) {
         return auth()->user();
     });
+
+    
+
+    //API route untuk lihat lamar pekerjaan
+    Route::get('/lowongan/lihat', [LowonganController::class, 'lihatlamar']);
 
     //API route untuk menampilkan data perusahaan
     Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
