@@ -27,7 +27,15 @@ class HomeController extends Controller
     public function index()
     {
         $jumlah_lowongan = lowongan::where('users_id', Auth::user()->id)->count();
+<<<<<<< HEAD
         $jumlah_lamarkerja = lamarkerja::where('pelamar_id', Auth::user()->id)->count();
+=======
+        $jumlah_lamarkerja = lamarkerja::where('pelamar_id', Auth::user()->id)->get();
+        $jumlah_lamarkerja = $jumlah_lamarkerja->map(function($item){
+            $item->lowongan = lowongan::where('id', $item->lowongan_id)->count();
+            return $item;
+        });
+>>>>>>> f531bb93a3dab2c9897748b367b85aa5d12d9d45
 
         $total_pelamar = lamarkerja::select(DB::raw("CAST(SUM(id) as int) as id"))
         ->GroupBy(DB::raw("MONTH(created_at)"))
