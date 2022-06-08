@@ -22,8 +22,8 @@ use App\Http\Controllers\API\ProfileMobileController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-//API route untuk melamar pekerjaan
-Route::post('/lowongan/lamar', [LowonganController::class, 'lamar']);
+    //API route untuk melamar pekerjaan
+    Route::post('/lowongan/lamar', [LowonganController::class, 'lamar']);
 
     //API route untuk regirter pelamar baru
     Route::post('/register', [AuthMobileController::class, 'register']);
