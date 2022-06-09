@@ -31,15 +31,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     //API route untuk login pelamar
     Route::post('/login', [AuthMobileController::class, 'login']);
 
-    Route::group(['middleware'=>['auth:sanctum']], function (){
+    
 
         //API route untuk update data pelamar
         Route::post('/profile/update-profile',[ProfileMobileController::class,'update_profile']);
 
         //API route untuk tampil data pelamar
-        Route::get('/profile', function(Request $request) {
-            return auth()->user();
-        });
+        Route::get('/profile', [ProfileMobileController::class,'tampil_profil']);
 
         
 
@@ -52,7 +50,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
         //API route untuk menampilkan iklan lowongan
         Route::get('/lowongan', [LowonganController::class, 'lihatlowongan']);
 
-
+    Route::group(['middleware'=>['auth:sanctum']], function (){
         // API route for logout user
         Route::post('/logout', [AuthMobileController::class, 'logout']);
     

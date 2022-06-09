@@ -17,6 +17,7 @@ class ProfileMobileController extends Controller
 
     public function tampil_profil(Request $request)
     {
+        // $user = UserMobile::where('id', Auth::user()->id)->first();   
         $user = UserMobile::where('id', $request->id)->first();
         if (is_null($user)) {
             return $this->sendError('Server sedang error, silahkan coba lagi nanti');
