@@ -15,8 +15,8 @@ class CreateLamarkerjaTable extends Migration
     {
         Schema::create('lamarkerja', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('lowongan_id')->unique();
-            $table->foreignId('pelamar_id')->unique();
+            $table->foreignId('lowongan_id');
+            $table->foreignId('pelamar_id');
             $table->text('deskripsi_lamaran');
             $table->string('portofolio_pelamar');
             $table->timestamps();

@@ -22,7 +22,8 @@ use App\Http\Controllers\API\ProfileMobileController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
+    //API route untuk melamar pekerjaan
+    Route::post('/lowongan/lamar', [LowonganController::class, 'lamar']);
 
     //API route untuk regirter pelamar baru
     Route::post('/register', [AuthMobileController::class, 'register']);
@@ -35,21 +36,30 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     Route::post('/lowongan/lamar', [LowonganController::class, 'lamar']);
     
 
-    //API route untuk update data pelamar
-    Route::post('/profile/update-profile',[ProfileMobileController::class,'update_profile']);
+        //API route untuk update data pelamar
+        Route::post('/profile/update-profile',[ProfileMobileController::class,'update_profile']);
 
     //API route untuk tampil data pelamar
     Route::get('/profile', [ProfileMobileController::class, 'tampil_profil']);
 
-    //API route untuk menampilkan data perusahaan
-    Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
+        
 
-    //API route untuk menampilkan iklan lowongan
-    Route::get('/lowongan', [LowonganController::class, 'lihatlowongan']);
+        //API route untuk lihat lamar pekerjaan
+        Route::get('/lowongan/lihat', [LowonganController::class, 'lihatlamar']);
 
+        //API route untuk menampilkan data perusahaan
+        Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
 
+<<<<<<< HEAD
     Route::group(['middleware'=>['auth:sanctum']], function (){
     // API route for logout user
+=======
+        //API route untuk menampilkan iklan lowongan
+        Route::get('/lowongan', [LowonganController::class, 'lihatlowongan']);
+
+    Route::group(['middleware'=>['auth:sanctum']], function (){
+        // API route for logout user
+>>>>>>> 2efa94bb623ebcdc36d30f447725711120aa07cd
         Route::post('/logout', [AuthMobileController::class, 'logout']);
     
     });

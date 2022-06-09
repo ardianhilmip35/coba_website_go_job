@@ -24,10 +24,11 @@
                         </tr>
                       </thead>
                       <tbody>
+                        @php $no = 1; @endphp
                         @foreach ($dtLaporan as $index => $item)
                         @if ($item->lowongan->users_id == Auth::user()->id)
                           <tr>
-                            <th scope="row">{{ $index + $dtLaporan->firstItem()}}</th>
+                            <th scope="row">{{ $no++ }}</th>
                             <td>{{ $item->pelamar->nama_pelamar }}</td>
                             <td>{{ $item->lowongan->namalowongan }}</td>
                             <td>{{ $item->lowongan->spesialis }}</td>

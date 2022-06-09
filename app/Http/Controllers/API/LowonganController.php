@@ -6,7 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Models\lamarkerja;
 use Illuminate\Http\Request;
 use App\Models\lowongan;
+use App\Models\UserMobile;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\DB;
 
 class LowonganController extends Controller
 {
@@ -17,60 +19,31 @@ class LowonganController extends Controller
      */
     public function lihatlowongan()
     {
-        $data = lowongan::select([
-        'id',
-        'namalowongan',
-        'jenispekerjaan',
-        'tingkatjabatan',
-        'gajipekerjaan',
-        'spesialis',
-        'pengalaman',
-        'deskripsipekerjaan',
-        'namaperusahaan',
-        'deskripsiperusahaan',
-        'pendidikan',
-        'alamatperusahaan',
-        'logo',
-        'gedung',
-        'created_at'
-        ])->get();
+        $data = lowongan::all();
 
         return response()->json($data);
 
     }
 
     public function lamar(Request $request){
-        $upload = Validator::make($request->all(),[
-            'lowongan_id' => 'required',
+        
+        $validatedData = $request->validate([
             'pelamar_id' => 'required',
+            'lowongan_id' => 'required',
             'deskripsi_lamaran' => 'required',
             'portofolio_pelamar' => 'required|mimes:pdf'
         ]);
 
-        if($upload->fails()){
-            return response()->json($upload->errors());       
-        }
+        $validatedData['pelamar_id'] = $request->pelamar_id;
+        $validatedData['portofolio_pelamar'] = $request->file('portofolio_pelamar')->move('img/uploads/lamaran', $request->file('portofolio_pelamar')->getClientOriginalName());
+        $create = lamarkerja::create($validatedData);
 
-        $upload = lowongan::FindOrFail($request->lowongan_id);
-
-        $upload = lamarkerja::create([
-            'lowongan_id' => $request->lowongan_id,
-            'pelamar_id' => $request->pelamar_id,
-            'deskripsi_lamaran' => $request->deskripsi_lamaran,
-            'portofolio_pelamar' => $request->file('portofolio_pelamar')->move('img/uploads/lamaran/', $request->file('portofolio_pelamar')->getClientOriginalName())
-        ]);
-
-        if ($upload) {
-            return response()->json([
-                'success' => true,
-                'message' => 'Lamaran berhasil dikirim',
-            ], 200);
-        } else {
-            return response()->json([
-                'success' => false,
-                'message' => 'Lamaran gagal dikirim',
-            ], 401);
-        }
-        
+        return response()->json($create);
     }
+
+    public function lihatlamar(Request $request){
+        $data = lamarkerja::where('pelamar_id', $request->user()->id)->get();
+        return response()->json($data);
+    }
+
 }
