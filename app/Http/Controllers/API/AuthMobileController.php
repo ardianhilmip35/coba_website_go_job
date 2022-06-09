@@ -29,7 +29,7 @@ class AuthMobileController extends Controller
 
         $token = $user->createToken('auth_token')->plainTextToken;
 
-        return response()->json(['message' => 'Selamat Datang '.$user->nama_pelamar.', di Aplikasi Go Job','access_token' => $token, 'token_type' => 'Bearer', 'data'=>$user ]);
+        return response()->json(['message' => 'Selamat Datang '.$user->nama_pelamar.', di Aplikasi Go Job','access_token' => $token, 'token_type' => 'Bearer', 'id'=>$user->id ]);
 
     }
 
@@ -55,7 +55,7 @@ class AuthMobileController extends Controller
         $token = $user->createToken('auth_token')->plainTextToken;
 
         return response()
-            ->json(['data' => $user,'access_token' => $token, 'token_type' => 'Bearer', 'id' => $user->id]);
+            ->json(['data' => $user,'access_token' => $token, 'token_type' => 'Bearer', 'data' => $user]);
     }
 
     // method for user logout and delete token
