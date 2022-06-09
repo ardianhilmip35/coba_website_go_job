@@ -33,28 +33,28 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
     Route::group(['middleware'=>['auth:sanctum']], function (){
 
-    //API route untuk update data pelamar
-    Route::post('/profile/update-profile',[ProfileMobileController::class,'update_profile']);
+        //API route untuk update data pelamar
+        Route::post('/profile/update-profile',[ProfileMobileController::class,'update_profile']);
 
-    //API route untuk tampil data pelamar
-    Route::get('/profile', function(Request $request) {
-        return auth()->user();
-    });
+        //API route untuk tampil data pelamar
+        Route::get('/profile', function(Request $request) {
+            return auth()->user();
+        });
 
-    
+        
 
-    //API route untuk lihat lamar pekerjaan
-    Route::get('/lowongan/lihat', [LowonganController::class, 'lihatlamar']);
+        //API route untuk lihat lamar pekerjaan
+        Route::get('/lowongan/lihat', [LowonganController::class, 'lihatlamar']);
 
-    //API route untuk menampilkan data perusahaan
-    Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
+        //API route untuk menampilkan data perusahaan
+        Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
 
-    //API route untuk menampilkan iklan lowongan
-    Route::get('/lowongan', [LowonganController::class, 'lihatlowongan']);
+        //API route untuk menampilkan iklan lowongan
+        Route::get('/lowongan', [LowonganController::class, 'lihatlowongan']);
 
 
-    // API route for logout user
-    Route::post('/logout', [AuthMobileController::class, 'logout']);
+        // API route for logout user
+        Route::post('/logout', [AuthMobileController::class, 'logout']);
     
     });
 
