@@ -30,7 +30,7 @@ class HomeController extends Controller
         $jumlah_lamarkerja = lamarkerja::where('pelamar_id', Auth::user()->id)->count();
         
 
-        $total_pelamar = lamarkerja::select(DB::raw("CAST(COUNT(id) as int) as id"))
+        $total_pelamar = lamarkerja::select(DB::raw("CAST(SUM(id) as int) as id"))
         ->GroupBy(DB::raw("MONTH(created_at)"))
         ->pluck('id');
         

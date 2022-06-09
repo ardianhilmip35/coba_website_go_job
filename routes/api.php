@@ -50,16 +50,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
         //API route untuk menampilkan data perusahaan
         Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
 
-<<<<<<< HEAD
     Route::group(['middleware'=>['auth:sanctum']], function (){
     // API route for logout user
-=======
-        //API route untuk menampilkan iklan lowongan
-        Route::get('/lowongan', [LowonganController::class, 'lihatlowongan']);
-
-    Route::group(['middleware'=>['auth:sanctum']], function (){
-        // API route for logout user
->>>>>>> 2efa94bb623ebcdc36d30f447725711120aa07cd
         Route::post('/logout', [AuthMobileController::class, 'logout']);
     
     });
