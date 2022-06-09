@@ -44,11 +44,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
         
 
-        //API route untuk lihat lamar pekerjaan
-        Route::get('/lowongan/lihat', [LowonganController::class, 'lihatlamar']);
+    //API route untuk lihat lamar pekerjaan
+    Route::get('/lamaran/lihat', [LowonganController::class, 'lihatlamar']);
 
-        //API route untuk menampilkan data perusahaan
-        Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
+    //API route untuk lihat lamar pekerjaan
+    Route::get('/lowongan/lihat', [LowonganController::class, 'lihatlowongan']);
+
+    //API route untuk menampilkan data perusahaan
+    Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
 
     Route::group(['middleware'=>['auth:sanctum']], function (){
     // API route for logout user
