@@ -22,7 +22,12 @@ use App\Http\Controllers\User\RegisterController;
 
 //Route aDMIN
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::resource('/lowongan', LowonganController::class);
+// Route::resource('/lowongan', LowonganController::class)->name('lowongan');
+Route::get('/lowongan', [LowonganController::class, 'index'])->name('lowongan.index');
+Route::get('/lowongan/create', [LowonganController::class, 'create'])->name('lowongan.create');
+Route::post('/lowongan', [LowonganController::class, 'store'])->name('lowongan.store');
+Route::get('/lowongan/edit/{id}', [LowonganController::class, 'edit'])->name('lowongan.edit');
+Route::post('/lowongan/update/{id}', [LowonganController::class, 'update'])->name('lowongan.update');
 Route::get('/lowongan/delete-lowongan/{id}', [LowonganController::class, 'destroy'])->name('lowongan.delete-lowongan');
 Route::get('/perusahaan', [UpdateProfilController::class, 'index'])->name('perusahaan');
 Route::get('/perusahaan/edit', [UpdateProfilController::class, 'edit'])->name('perusahaan.edit');

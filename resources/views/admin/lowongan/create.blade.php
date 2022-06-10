@@ -4,7 +4,7 @@
 @section('content') 
     <section style=" margin-top: 130px; margin-left: 100px; margin-right: 100px; margin-bottom: 120px; background-color: #D7E9F7; border-radius: 10px; padding: 30px;">
             
-        <form action="{{ '/lowongan' }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('lowongan.create') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <input id="users_id" name="users_id" value="{{ Auth::user()->id }}" style="background-color: #D7E9F7; color:#D7E9F7; border:#D7E9F7; " required>
                 <h5 class="fw-bold">Tambah data Lowongan</h5>

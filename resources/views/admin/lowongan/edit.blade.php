@@ -3,9 +3,9 @@
 @section('title', 'Edit Lowongan')
 @section('content') 
     <section style=" margin-top: 130px; margin-left: 50px; margin-bottom: 120px; margin-right: 50px;  background-color: #D7E9F7; border-radius: 10px; padding: 30px;">
-            <form method="POST" action="{{ url('lowongan/' . $iklan->id)}}" enctype="multipart/form-data" class="form">
+            <form method="POST" action="{{ route('lowongan.update', $iklan->id)}}" enctype="multipart/form-data" class="form">
                 
-                @method('patch')
+                @method('post')
                 @csrf
                     <h5 class="fw-bold">Edit data Lowongan</h5>
                     <p>Silahkan edit data lowongan jika ada kekeliruan pada data yang sudah diisi sebelumnya.</p>
