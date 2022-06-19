@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Sanctum\Contracts\HasApiTokens;
+use Illuminate\Support\Facades\DB; 
 
 class lowongan extends Model
 {
@@ -44,4 +45,9 @@ class lowongan extends Model
         return $this->hasMany(lamarkerja::class);
     }
 
+    static function getlowongan(){
+        $return = DB::table('lowongan')
+        ->join('users',  'lowongan.users_id','=','users.id');
+        return $return;
+    }
 }

@@ -20,7 +20,7 @@
                           <th scope="col">Tingkat Jabatan</th>
                           <th scope="col">Email</th>
                           <th scope="col">Terdaftar</th>
-                          <th scope="col">Aksi</th>
+                          {{-- <th scope="col">Aksi</th> --}}
                         </tr>
                       </thead>
                       <tbody>
@@ -35,7 +35,7 @@
                             <td>{{ $item->lowongan->tingkatjabatan }}</td>
                             <td>{{ $item->pelamar->email }}</td>
                             <td>{{ $item->created_at }}</td>
-                          <td><a href="{{$item->portofolio_pelamar }}"><button type="button" class="btn btn-primary btn-sm">Lihat</button></a></td>
+                          {{-- <td><a href="{{$item->portofolio_pelamar }}"><button type="button" class="btn btn-primary btn-sm">Lihat</button></a></td> --}}
                           </tr>
                         @endif
                         @endforeach

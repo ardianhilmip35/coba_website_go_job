@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Models\lowongan;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\UserMobile;
+
 
 class PerusahaanController extends Controller
 {
@@ -13,18 +16,13 @@ class PerusahaanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function lihatperusahaan()
+    public function lihatperusahaan(Request $request)
     {
-        $data = User::select([
-            'id',
-            'nama_perusahaan',
-            'deskripsi_perusahaan',
-            'telp_perusahaan',
-            'alamat_perusahaan',
-            'logo',
-            'gedung',
-            'website_perusahaan'
-        ])->get();
-        return response()->json($data);
+        $data = lowongan::where('users_id', $request->users_id)->first();
+        return response()->json([
+            'data' => $data
+            ]
+        );
+        // return response()->json($data);
     }
 }

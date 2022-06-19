@@ -51,7 +51,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     Route::get('/lowongan/lihat', [LowonganController::class, 'lihatlowongan']);
 
     //API route untuk menampilkan data perusahaan
-    Route::get('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
+    Route::post('/perusahaan', [PerusahaanController::class, 'lihatperusahaan']);
 
     Route::group(['middleware'=>['auth:sanctum']], function (){
     // API route for logout user
