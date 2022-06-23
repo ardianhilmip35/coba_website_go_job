@@ -46,7 +46,7 @@
 
 
   <!-- PROJECT -->
-        <div class="row project" id="project">
+        {{-- <div class="row project" id="project">
 
               <div class="col-lg-12 col-12">
 
@@ -98,8 +98,106 @@
                     </div>
                   </div>
               </div>
-        </div>
+        </div> --}}
   <!-- Akhir Project -->
+
+  <!--Slider-->
+  <!-- PROJECT -->
+  <section class="project section-padding" id="project">
+    <div class="container-fluid">
+         <div class="row">
+
+              <div class="col-lg-12 col-12">
+
+                    <h2 class="mb-5 text-center" data-aos="fade-up">
+                      Perusahaan Yang Bekerja Sama
+                      <strong style="color:#021668; ">Dengan Kami</strong>
+                  </h2>
+
+                   <div class="owl-carousel owl-theme" id="project-slide">
+                        <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                             <img src="img/alfamart.jpg" class="img-fluid" alt="perusahaan1">
+
+                             <div class="project-info">
+                                  <small>Company</small>
+
+                                  <h3>
+                                       <a href="">
+                                            <h3 class="card-text"><strong>PT Sumber Alfaria Trijaya Tbk</strong></>
+                                            <i class="fa fa-angle-right project-icon"></i>
+                                       </a>
+                                  </h3>
+                             </div>
+                        </div>
+
+                        <div class="item project-wrapper" data-aos="fade-up">
+                             <img src="img/linked.jpg" class="img-fluid" alt="perusahaan2">
+
+                             <div class="project-info">
+                                  <small>Company</small>
+
+                                  <h3>
+                                       <a href="">
+                                            <h3 class="card-text]"><strong>LINKEDIN</strong></>
+                                            <i class="fa fa-angle-right project-icon"></i>
+                                       </a>
+                                  </h3>
+                             </div>
+                        </div>
+
+                        <div class="item project-wrapper" data-aos="fade-up">
+                             <img src="img/jac1.jpg" class="img-fluid" alt="perusahaan3">
+
+                             <div class="project-info">
+                                  <small>Company</small>
+
+                                  <h3>
+                                       <a href="">
+                                            <h3 class="card-text"><strong>PT. JAC INDONESIA</strong></>
+                                            <i class="fa fa-angle-right project-icon"></i>
+                                       </a>
+                                  </h3>
+                             </div>
+                        </div>
+
+                        <div class="item project-wrapper" data-aos="fade-up">
+                             <img src="img/hebros.jpg" class="img-fluid" alt="perusahaan4">
+
+                             <div class="project-info">
+                                  <small>Company</small>
+
+                                  <h3>
+                                       <a href="">
+                                            <h3 class="card-text"><strong>PT. HEBROS</strong></>
+                                            <i class="fa fa-angle-right project-icon"></i>
+                                       </a>
+                                  </h3>
+                             </div>
+                        </div>
+
+                        <div class="item project-wrapper" data-aos="fade-up">
+                             <img src="img/gojek.png" class="img-fluid" alt="perusahaan5">
+
+                             <div class="project-info">
+                                  <small>Company</small>
+
+                                  <h3>
+                                       <a href="">
+                                            <h3 class="card-text"><strong>PT. GO-JEK Indonesia</strong></>
+                                            <i class="fa fa-angle-right project-icon"></i>
+                                       </a>
+                                  </h3>
+                             </div>
+                        </div>
+                   </div>
+              </div>
+
+         </div>
+    </div>
+</section>
+  <!-- Akhie Slider-->
+
+
 
   <!-- Awal Testi -->
   <section  id="testi" class="testi">
