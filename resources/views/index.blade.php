@@ -124,7 +124,6 @@
                                   <h3>
                                        <a href="">
                                             <h3 class="card-text"><strong>PT Sumber Alfaria Trijaya Tbk</strong></>
-                                            <i class="fa fa-angle-right project-icon"></i>
                                        </a>
                                   </h3>
                              </div>
@@ -139,7 +138,6 @@
                                   <h3>
                                        <a href="">
                                             <h3 class="card-text]"><strong>LINKEDIN</strong></>
-                                            <i class="fa fa-angle-right project-icon"></i>
                                        </a>
                                   </h3>
                              </div>
@@ -153,8 +151,7 @@
 
                                   <h3>
                                        <a href="">
-                                            <h3 class="card-text"><strong>PT. JAC INDONESIA</strong></>
-                                            <i class="fa fa-angle-right project-icon"></i>
+                                            <h3 class="card-text"><strong>PT. JAC INDONESIA</strong></>>
                                        </a>
                                   </h3>
                              </div>
@@ -169,7 +166,6 @@
                                   <h3>
                                        <a href="">
                                             <h3 class="card-text"><strong>PT. HEBROS</strong></>
-                                            <i class="fa fa-angle-right project-icon"></i>
                                        </a>
                                   </h3>
                              </div>
@@ -184,7 +180,6 @@
                                   <h3>
                                        <a href="">
                                             <h3 class="card-text"><strong>PT. GO-JEK Indonesia</strong></>
-                                            <i class="fa fa-angle-right project-icon"></i>
                                        </a>
                                   </h3>
                              </div>
@@ -195,7 +190,7 @@
          </div>
     </div>
 </section>
-  <!-- Akhie Slider-->
+  <!-- Akhir Slider-->
 
 
 
