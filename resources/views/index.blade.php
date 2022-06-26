@@ -8,7 +8,7 @@
       <div class="row" style="background-image: url(img/bg1.jpg); background-size: 100% 100%; background-repeat: no-repeat; 
       padding-top: 6rem; padding-bottom:100px;">
         <h1 class="display-2 fw-bold">Selamat Datang di Go Job</h1>
-          <p class="lead">
+          <p class="lead" style="color: #ffffff">
               Go Job adalah aplikasi yang menyediakan lowongan pekerjaan dan pelamar yang berkualitas.
           </p>
           <p>

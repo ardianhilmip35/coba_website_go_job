@@ -16,15 +16,15 @@
           <a href=""><img src="/img/twitter.png" width="60px" alt="twitter"></a>
           <a href=""><img src="/img/linkedin.png" width="46px" alt="ig"></a>
           <a href=""><img src="/img/youtube.png" width="60px" alt="ig"></a>
-          <p class="mt-2">
+          <p class="mt-2 text-light">
             <strong>Perlu Bantuan?</strong> Kunjungi Online Help Central Kami
           </p>
           </div>
   
           <hr class="mb-4">
           <div class="row align-items-center justify-content-center">
-            <div class="col-md-7 col-lg-8 ">
-              <p>Produced by Newbie Team. Since @2022
+            <div class="col-md-7 col-lg-8">
+              <p class="text-light">Produced by Newbie Team. Since @2022
                 <a href="#" style="text-decoration: none;"></a>
               </p>
   
